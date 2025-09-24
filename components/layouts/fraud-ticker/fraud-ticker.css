@@ -16,6 +16,10 @@
   filter: brightness(0.7);
 }
 
+.fraud-ticker-popup .nj-popup-close:hover {
+  opacity: 0.8;
+}
+
 .fraud-ticker-popup .nj-popup-box {
   padding: 50px;
   /* max-height: max-content; */

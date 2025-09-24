@@ -174,8 +174,8 @@ tr.total-row td {
   background: var(--bg-c9);
 }
 
-.table-area .view-filters {
+/* .table-area .view-filters {
   display: none;
-}
+} */
 
 /*** END OF New Table Modification ***/

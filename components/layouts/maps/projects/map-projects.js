@@ -1,4 +1,5 @@
 $.fn.wbMapProject = function (options) {
+  console.log(options)
   var self = this,
     mapObject,
     settings = $.extend(

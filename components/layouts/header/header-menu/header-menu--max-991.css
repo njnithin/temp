@@ -213,6 +213,8 @@ body.toolbar-fixed:not(.toolbar-tray-open) .header-mid-right {
   transition: right 0.25s ease;
   background: var(--menu-sub-bg1);
   list-style-type: none;
+  /* Issue 2: https://projects.panapps.co/issues/401463 */
+  padding-bottom: 100px;
 }
 
 .site-header li.has-sub.show-menu > ul {

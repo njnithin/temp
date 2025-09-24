@@ -1,4 +1,18 @@
 (function ($) {
+  /*** Filter Related functions. ***/
+  function filterSettings() {
+    $('.listing-view').each(function () {
+      let $view = $(this);
+      $view
+        .find('.form-select')
+        .each(function () {
+          console.log($(this));
+          $(this).select2(
+          ).css('border', '5px solid red');
+        })
+    })
+  }
+  /*** END OF Filter Related functions. ***/
   function tableGeneralSettings($tableArea) {
     $tableArea.find('.table-striped')
       .removeClass('table-striped');
@@ -215,6 +229,7 @@
     })
     /*** END OF Init table on load. ***/
     changeTableOnMapClick();
+    // filterSettings();
   });
   // $(window).on('scroll', function () {});
   // $( document ).ajaxComplete(function() {})

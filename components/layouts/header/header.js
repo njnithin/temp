@@ -8,43 +8,47 @@
         $runUntilFind = $runUntilFind === undefined ? true : $runUntilFind,
         $activateParentLinks = $activateParentLinks === undefined ? false : $activateParentLinks,
         $linkToActivate;
-      // console.log(
-      //   "link:" + $link + "\n",
-      //   "anchor tag directly passed instead of url:" + $isAnchorTag + "\n",
-      //   "run until header sub loaded:" + $runUntilFind + "\n",
-      //   "activate all parent links:" + $activateParentLinks + "\n"
-      // )
+      /* console.log(
+        "link:" + $link + "\n",
+        "anchor tag directly passed instead of url:" + $isAnchorTag + "\n",
+        "run until header sub loaded:" + $runUntilFind + "\n",
+        "activate all parent links:" + $activateParentLinks + "\n"
+      ) */
       // console.log('Inside activateSubLink() --> Header.js');
       // an href is passed as parameter
-      if ($runUntilFind === true) {
-        // console.log('run until find');
-        // check whether submenu not loaded
-        // console.log($intrl)
-        $intervals.push(setInterval(checkSubmenuAppended, 500));
-        function checkSubmenuAppended() {
-          if ($siteHeader.hasClass('submenu-appended')) {
-            findLinkAndActivate();
-            $intervals.forEach(function ($interval) {
-              clearInterval($interval);
-            });
-            // console.log('found !!!', $intervals);
-            $intervals = [];
-            // console.log('Cleared intervals', $intervals);
-            // console.log('Submenu appended');
-            return true
+      try {
+        if ($runUntilFind === true) {
+          // console.log('run until find');
+          // check whether submenu not loaded
+          // console.log($intrl)
+          $intervals.push(setInterval(checkSubmenuAppended, 500));
+          function checkSubmenuAppended() {
+            if ($siteHeader.hasClass('submenu-appended')) {
+              findLinkAndActivate();
+              $intervals.forEach(function ($interval) {
+                clearInterval($interval);
+              });
+              // console.log('found !!!', $intervals);
+              $intervals = [];
+              // console.log('Cleared intervals', $intervals);
+              // console.log('Submenu appended');
+              return true
+            }
+            // console.log('Checking whether submenu appended...');
           }
-          // console.log('Checking whether submenu appended...');
         }
-      }
-      // target anchor tag element is passed as parameter
-      else {
-        // console.log('direct link anchor tag element passed');
-        findLinkAndActivate();
+        // target anchor tag element is passed as parameter
+        else {
+          // console.log('direct link anchor tag element passed');
+          findLinkAndActivate();
+        }
+      } catch (err) {
+        console.log(err);
       }
       function findLinkAndActivate() {
         // console.log('findLinkAndActivate() function run');
-        //sublinks active
-        // console.log($link)
+        //sublinks active)
+        // console.log($link);
         if ($isAnchorTag === false) {
           $link = decodeURIComponent($link);
           // console.log($link)
@@ -58,6 +62,14 @@
           .find('>a')
           .removeClass($activeClasses);
         if ($linkToActivate.length) {
+          /* Issue 5 : https://projects.panapps.co/issues/400696 */
+          $locationHash = window.location.hash;
+          if ($locationHash) {
+            let $hashSublink = $linkToActivate.siblings('.sub-item').find('.sub-link >a[href="' + $link + $locationHash + '"]');
+            if ($hashSublink) {
+              $hashSublink.addClass($activeClasses);
+            }
+          }
           // console.log($activateParentLinks)
           if ($activateParentLinks === true) {
             $linkToActivate
@@ -197,6 +209,13 @@
         ],
         "links": ["/gallery"],
       },
+      {
+        "paths": [
+          "photo-gallery",
+          "video-gallery",
+        ],
+        "drupalPaths": ["resources"],
+      }
       ],
         activeDataLength = activeData.length,
         i = 0;
@@ -205,9 +224,13 @@
           paths = current.paths,
           links = current.links != undefined ? current.links : [],
           destinations = current.destinations != undefined ? current.destinations : [],
+          drupalPaths = current.drupalPaths != undefined ? current.drupalPaths : [],
           targetClasses = current.classes != undefined ? current.classes : [];
-        // console.log(paths, urlLink);
         if (paths.indexOf(urlLink) > -1) {
+          /* Active links based on drupal path */
+          for (j = 0; j < drupalPaths.length; j++) {
+            activateLinkWithDrupalPath(drupalPaths[j].replace(/\//g, ""));
+          }
           /* Activate based on classes */
           for (j = 0; j < targetClasses.length; j++) {
             $(".site-header ." + targetClasses[j])
@@ -223,7 +246,6 @@
           for (j = 0; j < destinations.length; j++) {
             let urlParameterDestination = getUrlParam('destination'),
               destination = destinations[j];
-            // console.log("URL parameter destination=" + destination + ") checked and activated");
             // console.log(urlParameterDestination, destination)
             if (urlParameterDestination != null & urlParameterDestination === destination) {
               activateLinkWithDrupalPath(destinations[j].replace(/\//g, ""));
