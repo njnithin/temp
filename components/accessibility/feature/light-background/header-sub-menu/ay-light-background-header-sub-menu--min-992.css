@@ -1,0 +1,26 @@
+/* >>> Sub menu styling <<< */
+/*** Background black ***/
+
+/*** END OF Background black ***/
+[ay-theme="light-background"] .site-header .sub-item {
+  background: var(--ay-bg);
+}
+
+/*** Color ***/
+[ay-theme="light-background"] .site-header .level-1 a,
+[ay-theme="light-background"] .site-header .level-1 li:not(:hover)>a.active {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .site-header .level-1 li>a.active {
+  font-weight: 600;
+}
+
+/*** END OF Color ***/
+
+/*** Full border ***/
+[ay-theme="light-background"] .site-header .sub-item {
+  border: 1px solid var(--ay-font-color);
+}
+
+/*** END OF Full border ***/

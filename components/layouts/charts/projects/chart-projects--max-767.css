@@ -1,0 +1,9 @@
+.charts {
+  --chart-items: 1;
+}
+
+.chart-top {
+  min-height: auto;
+}
+
+/*** END OF Custom legends styling ***/

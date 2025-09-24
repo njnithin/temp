@@ -1,0 +1,63 @@
+/* >>> Users list <<< */
+.users-list-sec {
+  --users-list-count: 3;
+  --users-list-gap: 50px 30px;
+}
+
+.users-list-sec>.view-content {
+  /* .users-list-sec>.view-content>div { */
+  display: grid;
+  grid-template-columns: repeat(var(--users-list-count), minmax(0, 1fr));
+  grid-gap: var(--users-list-gap);
+}
+
+.users-list-sec .pager {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.users-list-sec>.view-content>div::after {
+  display: none;
+}
+
+.user-preview {
+  position: relative;
+  padding-bottom: 59px;
+  border-bottom: 1px solid var(--br-c4);
+  height: 100%;
+}
+
+
+.user-preview-img {
+  border: 1px solid var(--br-c4);
+  margin-bottom: 23px;
+}
+
+.user-preview-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.56;
+  color: var(--secondary);
+  margin-bottom: 16px;
+}
+
+.user-preview-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+}
+
+.user-preview-contact {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.users-list-sec .view-more-less-wrap {
+  text-align: center;
+  margin-top: 50px;
+}

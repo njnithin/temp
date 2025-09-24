@@ -1,0 +1,54 @@
+/* >>> Status Card <<< */
+.status-card {
+  position: relative;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  padding: 53px 35px 0 32px;
+  height: 100%;
+}
+
+.status-card::before {
+  content: "";
+  width: 10px;
+  height: 85px;
+  background: var(--black);
+  position: absolute;
+  top: 61px;
+  left: 0;
+}
+
+/* .status-card-title,
+.status-card-title a {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-size: ;
+} */
+.status-card-title {
+  margin-bottom: 24px;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+}
+
+.status-card-title a:hover {
+  color: var(--secondary);
+}
+
+.status-card-desc {
+  font-size: 1.125rem;
+  /* color: var(--white); */
+  /* contrast issue */
+  color: var(--black);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.status-card-content {
+  padding-bottom: 107px;
+}
+
+.status-card-more {
+  position: absolute;
+  bottom: 60px;
+}

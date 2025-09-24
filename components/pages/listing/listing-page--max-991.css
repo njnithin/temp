@@ -1,0 +1,19 @@
+.listing-page .region-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.listing-intro-box {
+  margin-bottom: 40px;
+}
+
+.listing-view {
+  --lv-items: 2;
+  --lv-gap: 30px;
+  margin-bottom: 60px;
+}
+
+.listing-view .view-content>div {
+  grid-template-columns: repeat(var(--lv-items), minmax(0, var(--lv-max-width)));
+  grid-gap: var(--lv-gap);
+}

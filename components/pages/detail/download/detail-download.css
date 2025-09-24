@@ -1,0 +1,170 @@
+/*** Download Section ***/
+.files-title {
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.attachment-sec h3 {
+  margin-bottom: 35px;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+/* .attachment-sec .files {
+  margin-bottom: 55px;
+} */
+
+.file-item:not(:last-child),
+.each-file:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.file-wrap {
+  margin-bottom: 55px;
+}
+
+.common-article .file-wrap {
+  margin-bottom: 0;
+}
+
+.download-section {
+  margin-bottom: 55px;
+}
+
+.download-section p:first-child {
+  margin-bottom: 10px;
+}
+
+.each-file {
+  position: relative;
+  --file-icon-size: 50px;
+  --file-icon-gap: 15px;
+  min-height: var(--file-icon-size);
+  display: flex;
+  align-items: center;
+}
+
+.each-file a {
+  /* display: inline-flex;
+  align-items: center; */
+  display: inline-block;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: var(--fc-c1);
+  transition: all 0.3s ease;
+  margin-left: calc(var(--file-icon-size) + var(--file-icon-gap));
+  /* background: url(img/pdf.svg) center left no-repeat; */
+  /* padding-left: 30px; */
+  border-bottom: 1px solid transparent;
+}
+
+.each-file a::before {
+  content: '';
+  width: var(--file-icon-size);
+  height: var(--file-icon-size);
+  display: block;
+  border: 1px solid var(--br-c2);
+  border-radius: 100%;
+  /* margin-right: 15px; */
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.each-file a.pdf::before {
+  background: url(img/pdf.svg) center center no-repeat;
+}
+
+.each-file a.pdf:hover::before {
+  background: url(img/pdf_hover.svg) center center no-repeat;
+}
+
+/* .each-file a.pdf:hover::before {
+  background: url(img/pdf_hover.svg) center center no-repeat;
+} */
+/* txt, doc, docx, xls, xlsx, ppt, pptx, odt, ods, csv, pdf */
+
+.each-file a.txt::before {
+  background: url(img/txt.svg) center center no-repeat;
+}
+
+.each-file a.txt:hover::before {
+  background: url(img/txt_hover.svg) center center no-repeat;
+}
+
+.each-file a.doc::before,
+.each-file a.docx::before {
+  background: url(img/word.svg) center center no-repeat;
+}
+
+.each-file a.doc:hover::before,
+.each-file a.docx:hover::before {
+  background: url(img/word_hover.svg) center center no-repeat;
+}
+
+.each-file a.xls::before,
+.each-file a.xlsx::before {
+  background: url(img/excel.svg) center center no-repeat;
+}
+
+.each-file a.xls:hover::before,
+.each-file a.xlsx:hover::before {
+  background: url(img/excel_hover.svg) center center no-repeat;
+}
+
+.each-file a.ppt::before,
+.each-file a.pptx::before {
+  background: url(img/ppt.svg) center center no-repeat;
+}
+
+.each-file a.ppt:hover::before,
+.each-file a.pptx:hover::before {
+  background: url(img/ppt_hover.svg) center center no-repeat;
+}
+
+.each-file a.odt::before {
+  background: url(img/odt.svg) center center no-repeat;
+}
+
+.each-file a.odt:hover::before {
+  background: url(img/odt_hover.svg) center center no-repeat;
+}
+
+.each-file a.ods::before {
+  background: url(img/ods.svg) center center no-repeat;
+}
+
+.each-file a.ods:hover::before {
+  background: url(img/ods_hover.svg) center center no-repeat;
+}
+
+.each-file a.csv::before {
+  background: url(img/csv.svg) center center no-repeat;
+}
+
+.each-file a.csv:hover::before {
+  background: url(img/csv_hover.svg) center center no-repeat;
+}
+
+.each-file a:hover {
+  /* color: var(--primary); */
+  border-color: var(--br-c10);
+}
+
+/* .attachment-sec .each-file a:hover::before, */
+.detail-attachment .each-file a:hover::before,
+.details-body .each-file a:hover::before {
+  background-color: var(--br-c10);
+  border: 1px solid var(--br-c10);
+}
+
+/*** END OF Download Section ***/
+
+.file-wrap .view-more-less-wrap {
+  text-align: center;
+  margin-top: 30px;
+}

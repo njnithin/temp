@@ -1,0 +1,9 @@
+[ay-theme="high-contrast"] .pagination * {
+  color: var(--ay-font-color) !important;
+}
+
+[ay-theme="high-contrast"] .page-item.active a,
+[ay-theme="high-contrast"] .pagination a:hover,
+[ay-theme="high-contrast"] .pagination a:hover * {
+  color: var(--ay-alt) !important;
+}

@@ -1,0 +1,86 @@
+/*** Only for Header Toggle Search Style: added just before production release ***/
+/* Contact us menu added to header creates conjusted link, added after suggestion from PM */
+.header-toggle-search {
+  font-size: 0;
+  background: url(img/search/toggle-search/search.svg) center no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 13px !important;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.header-loaded .header-toggle-search {
+  pointer-events: auto;
+}
+
+.header-toggle-search:hover {
+  background: var(--primary) url(img/search/toggle-search/search_hover.svg) center no-repeat;
+}
+
+.header-toggle-search-open .header-toggle-search {
+  background: url(img/search/toggle-search/search-close.svg) center no-repeat;
+  background-size: 12px !important;
+}
+
+.header-toggle-search-open .header-toggle-search:hover {
+  background: var(--primary) url(img/search/toggle-search/search-close_hover.svg) center no-repeat;
+}
+
+.header-search-block {
+  /* position: fixed; */
+  position: absolute;
+  top: calc(var(--header-height) + 1px);
+  /* right: var(--header-padding); */
+  right: 0;
+  transition: top var(--header-animation-time) ease;
+  /* transition: top var(--header-animation-time) ease, box-shadow 0.5s ease; */
+  overflow: hidden;
+}
+
+.header-search-block form .form-submit {
+  width: 20px;
+  height: 20px;
+  right: 15px;
+}
+
+.header-search-block .form-search {
+  padding-left: 20px !important;
+  padding-right: 45px !important;
+}
+
+.user-logged-in .header-search-block {
+  right: calc(var(--header-user-size) + 35px);
+}
+
+.header-search-block form {
+  position: relative;
+  margin-top: calc(var(--header-height) * -1);
+  transition: margin 0.5s ease;
+  pointer-events: none;
+}
+
+/* .header-toggle-search-open .header-search-block {
+  box-shadow: 0 0 4px 1px var(--tc-c1);
+  --header-search-input-width: 175px;
+} */
+
+.header-toggle-search-open .header-search-block form {
+  margin-top: 0;
+  pointer-events: auto;
+}
+
+.header-search-block .form-search {
+  border-radius: 0;
+  border-color: var(--br-c4);
+}
+
+body.toolbar-fixed.toolbar-tray-open .header-search-block form,
+body.toolbar-fixed:not(.toolbar-tray-open) .header-search-block form {
+  top: unset;
+}
+
+/*** END OF Only for Header Toggle Search Style: added just before production release ***/

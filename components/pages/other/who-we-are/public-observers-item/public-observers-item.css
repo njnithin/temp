@@ -1,0 +1,30 @@
+/* >>> Public Observers item <<< */
+.po-item {
+  background: var(--white);
+  padding: 47.6px 60px 47.6px 65px;
+  display: grid;
+  grid-template-columns: 225px minmax(0, 1fr);
+  /* align-items: center; */
+  /* Issue 1: https://projects.panapps.co/issues/390643 */
+  align-items: start;
+  grid-gap: 65px;
+}
+
+.po-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.po-item-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.56;
+  color: var(--secondary);
+  /* to align with top image */
+  margin-bottom: 15px;
+}
+
+.po-item-desc {
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: var(--fc-c1);
+}

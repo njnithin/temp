@@ -1,0 +1,36 @@
+/* >>> Contact us page <<< */
+/*** Contact us top section ***/
+.contact-us-top {
+  margin: 90px auto 55px;
+}
+
+.contact-us-top p {
+  margin-bottom: 10px;
+}
+
+.contact-us-top a {
+  color: var(--fc-c1);
+  text-decoration: underline;
+}
+
+.contact-us-top a:hover {
+  color: var(--primary);
+}
+
+/*** END OF Contact us top section ***/
+
+/*** Contact us bottom section ***/
+.contact-us-addresses {
+  background: var(--bg-c1);
+  padding: 55px 0 100px;
+}
+
+.contact-card-item:first-child {
+  margin-top: 40px;
+}
+
+.contact-card-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/*** END OF Contact us bottom section ***/

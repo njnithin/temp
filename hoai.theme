@@ -1,0 +1,199 @@
+<?php
+
+/**
+ * @file
+ * HOAI theme file.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\Xss;
+use Drupal\views\ViewExecutable;
+
+
+/**
+ * Hook preprocess_html.
+ */
+function hoai_preprocess_html(&$variables) {
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
+  $current_path = \Drupal::service("path.current")->getPath();
+  $path = explode("/", $current_path);
+  $roles = \Drupal::currentUser()->getRoles();
+  $route_match = \Drupal::routeMatch();
+  // Common libraries.
+  $commonLibraries = [
+    'hoai/details-body-table'
+  ];
+  $variables['#attached']['library'] = $commonLibraries;
+  // 404 and exceptions
+  $status = \Drupal::requestStack()->getCurrentRequest()->attributes->get('exception');
+  if ($status) {
+    if ($status->getStatusCode() == 404) {
+      $variables['#attached']['library'][] = 'hoai/page-exception';
+      $variables['attributes']['class'][] = 'page-exception page-404 page-not-found';
+    }
+    elseif ($status->getStatusCode() == 403) {
+      $variables['#attached']['library'][] = 'hoai/page-exception';
+      $variables['attributes']['class'][] = 'page-exception page-403 page-forbidden';
+    }
+    elseif ($status->getStatusCode() == 401) {
+      $variables['#attached']['library'][] = 'hoai/page-exception';
+      $variables['attributes']['class'][] = 'page-exception  page-401 page-unauthorized';
+    }
+  }
+  /***** PAGES. *****/
+  // Homepage.
+  if ($is_front) {
+    $variables['#attached']['library'][] = 'hoai/home';
+    // Home classes.
+    $variables["attributes"]["class"][] = "home hide-page-header";
+  }
+  else if (
+    $path[1] === 'node'
+  ) {
+    // Table not styled https://projects.panapps.co/issues/370828.
+    $variables['#attached']['library'][] = 'hoai/details-body';
+    $variables["attributes"]["class"][] = "node-page not-editor-theme";
+  }
+  elseif (
+    $path[1] === 'search'
+  ) {
+    $variables['#attached']['library'][] = 'hoai/search-page';
+    $variables["attributes"]["class"][] = "search-page hide-page-header";
+  }
+  elseif (
+    $path[1] === 'resources' ||
+    $path[1] === 'whats-new'
+  ) {
+    $listingCommonClasses = [
+      'listing-page',
+      'hide-page-header',
+      'unset-region-padding',
+    ];
+    /*** Common styles for listing page. ***/
+    $variables['#attached']['library'][] = 'hoai/listing-page';
+    $variables["attributes"]["class"] = $listingCommonClasses;
+    /*** END OF Common styles for listing page. ***/
+    /* Resources */
+    if (
+      $path[1] === 'resources'
+    ) {
+      $variables['#attached']['library'][] = 'hoai/resource-listing-page';
+      $variables['attributes']['class'][] = "resource-listing";
+    }
+    elseif (
+      $path[1] === 'whats-new'
+    ) {
+      $variables['#attached']['library'][] = 'hoai/whats-new-listing';
+      $variables['attributes']['class'][] = "whats-new-listing";
+    }
+  }
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node) {
+    $node_id = $node->id();
+    if ($node_id > 0) {
+      $alias = \Drupal::service('path_alias.manager')->getAliasByPath('/node/' . $node_id);
+      $type = $node->type->target_id;
+      $alias_path = explode("/", $alias);
+      $content_type = $node->getType();
+      // Basic page Template.print_r($path);
+      $basicPages = [
+        'legal-information',
+        'privacy-policy',
+        'general-page'
+      ];
+      // gallery page is having different struct, so seperate tab and listing filter added
+      if($alias_path[1] === 'gallery'){
+        $listingCommonClasses = [
+          'listing-page',
+          'hide-page-header',
+          'unset-region-padding',
+        ];
+        $variables["attributes"]["class"] = $listingCommonClasses;
+        $variables['#attached']['library'][] = 'hoai/gallery-page';
+        $variables['attributes']['class'][] = "gallery-page";
+      }
+      if (in_array($alias_path[1], $basicPages)) {
+        $variables['#attached']['library'][] = 'hoai/basic-page';
+        $variables['attributes']['class'][] = 'hide-page-header basic-page';
+      }
+      if ($content_type == 'publications' || $content_type == 'annual_report' || $content_type == 'analytics') {
+        $variables['attributes']['class'][] = 'publications-reports-detail-page';
+      }
+      /* Who we are page. */
+      if (
+        $alias_path[1] === 'who-we-are' ||
+        $alias_path[1] === 'trust-fund'
+      ) {
+        $variables['#attached']['library'][] = 'hoai/progress-page';
+        $variables["attributes"]["class"][]  = "hide-page-header progress-page unset-region-padding";
+        if ($alias_path[1] === 'who-we-are') {
+          $variables['#attached']['library'][] = 'hoai/who-we-are-page';
+          $variables["attributes"]["class"][]  = "who-we-are alterate-gray-bg";
+        }
+        elseif ($alias_path[1] === 'trust-fund') {
+          $variables['#attached']['library'][] = 'hoai/trust-fund-page';
+          $variables["attributes"]["class"][]  = "trust-fund";
+        }
+      }
+      elseif ($alias_path[1] === 'projects') {
+        $variables['#attached']['library'][] = 'hoai/projects-page';
+        $variables["attributes"]["class"][]  = "projects-page";
+      }
+      elseif ($alias_path[1] === 'what-we-do') {
+        $variables['#attached']['library'][] = 'hoai/what-we-do-page';
+        $variables["attributes"]["class"][]  = "what-we-do what-we-do-page";
+      }
+      elseif ($alias_path[1] === 'contact-us') {
+        $variables['#attached']['library'][] = 'hoai/contact-us';
+        $variables["attributes"]["class"][]  = "contact-us";
+      }
+      elseif (
+        $alias_path[1] === 'secure-files'
+      ) {
+        $variables['#attached']['library'][] = 'hoai/secure-files';
+        $variables["attributes"]["class"][] = "secure-files-page";
+      }
+      /* Detail pages. */
+      elseif (
+        $alias_path[1] === 'communique' ||
+        $alias_path[1] === 'ministerial-communique' ||
+        $alias_path[1] === 'analytics' ||
+        $alias_path[1] === 'annual-report' ||
+        $alias_path[1] === 'technical-meetings' ||
+        $alias_path[1] === 'publication' ||
+        $alias_path[1] === 'document-report' ||
+        $alias_path[1] === 'mdtf' ||
+        $alias_path[1] === 'news' ||
+        $alias_path[1] === 'events' ||
+        $alias_path[1] === 'media-coverage' ||
+        $alias_path[1] === 'blogs' ||
+        $alias_path[1] === 'press-release' ||
+        $alias_path[1] === 'stories' ||
+        $alias_path[1] === 'pillar'
+      ) {
+        // Load banner.
+        if ($alias_path[1] === 'pillar') {
+          $variables['#attached']['library'][] = 'hoai/pillar-page';
+          $variables["attributes"]["class"][] = "pillar-page";
+        }
+        $variables['#attached']['library'][] = 'hoai/detail-page';
+        $variables["attributes"]["class"][] = "detail-page hide-page-header unset-region-padding";
+      }
+    }
+  }
+  /***** END OF PAGES. *****/
+  /***** ACCESSIBILITY. *****/
+  $variables['#attached']['library'][] = 'hoai/z-accessibility';
+  /***** END OF ACCESSIBILITY. *****/
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+
+function hoai_views_pre_render(ViewExecutable $view) {
+  if ($view->id() === 'fraud_ticker_notification' && $view->current_display === 'block_1') {
+    // Fraud Ticker
+    $view->element['#attached']['library'][] = 'hoai/fraud-ticker';
+  }
+}

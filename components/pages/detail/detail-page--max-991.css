@@ -1,0 +1,17 @@
+.detail-head,
+.detail-view,
+.download-section {
+  margin-bottom: 40px;
+}
+
+.details-body h2 {
+  margin-bottom: 18px;
+}
+
+.publications-reports-detail-page .image-body-wrapper {
+  flex-direction: column;
+}
+
+.publications-reports-detail-page .image-body-wrapper .details-body {
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+:root {
+  --container-width: 1170px;
+}
+
+.container-810 {
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,9 @@
+.listing-view {
+  --lv-items: 2;
+  --lv-gap: 20px;
+  --lv-max-width: 325px;
+}
+
+.listing-view {
+  margin-bottom: 40px;
+}

@@ -1,0 +1,229 @@
+/* >>> Buttons <<< */
+/*** primary button ***/
+.primary-btn,
+.primary-btn-wrap a,
+.subscribe-btn,
+.subscribe-btn:active,
+.secure-access-key .form-submit {
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  /* color: var(--white); */
+  /* fix contrast issue */
+  color: var(--black);
+  min-height: 30px;
+  padding: 3.5px 25px;
+  text-transform: uppercase;
+  transition: var(--transition-all);
+  min-width: 94px;
+  display: inline-flex;
+  border-radius: 0;
+}
+
+.primary-btn:hover,
+.primary-btn-wrap a:hover,
+.subscribe-btn:hover,
+.subscribe-btn:active,
+.secure-access-key .form-submit:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+/*** END OF primary button ***/
+/*** Secondary Button ***/
+.secondary-btn,
+.secondary-btn-wrap a,
+.listing-view .pager .button,
+.users-list-sec .pager .button {
+  font-size: var(--fs-px12);
+  line-height: 1.2;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 7.5px 15px;
+  min-height: 32px;
+  transition: var(--transition-all);
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.listing-view .pager .button:not(:hover),
+.users-list-sec .pager .button:not(:hover) {
+  background: transparent;
+}
+
+.secondary-btn:hover,
+.secondary-btn-wrap a:hover,
+.listing-view .pager .button:hover,
+.users-list-sec .pager .button:hover {
+  background: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+.secondary-btn--black,
+.secondary-btn-wrap--black a {
+  color: var(--black);
+}
+
+.secondary-btn--orange,
+.secondary-btn-wrap--orange a {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/*** END OF Secondary Button ***/
+
+/*** Readmore button ***/
+.readmore-btn,
+.readmore-btn-wrap a {
+  font-size: var(--fs-px12);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 7.5px 20px;
+  border: 1px solid var(--white);
+  min-height: 32px;
+  transition: var(--transition-all);
+}
+
+.readmore-btn:hover,
+.readmore-btn-wrap a:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/*** END OF Readmore button ***/
+/*** Banner Arrow ***/
+.banner-arrow,
+.banner-arrow-wrap a {
+  display: flex;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background: url(img/arrow-circle.svg) center no-repeat;
+  /* https://projects.panapps.co/issues/390680 (1)*/
+  border-radius: 50%;
+}
+
+
+.banner-arrow:hover,
+.banner-arrow-wrap a:hover {
+  background: url(img/arrow-circle-hover.svg) center no-repeat;
+}
+
+/*** END OF Banner Arrow ***/
+/*** Readmore with arrow ***/
+.readmore-arrow,
+.readmore-arrow-wrap a {
+  font-size: var(--fs-px12);
+  text-transform: uppercase;
+  color: var(--black);
+  background: url(img/readmore.png) center right 0 no-repeat;
+  transition: var(--transition-all);
+  padding-right: 48px;
+}
+
+.readmore-arrow:hover,
+.readmore-arrow-wrap a:hover {
+  background: url(img/readmore_hover.png) center right 5px no-repeat;
+  color: var(--primary);
+}
+
+.readmore-arrow--white,
+.readmore-arrow-wrap--white a {
+  color: var(--white);
+  filter: brightness(0) invert(1);
+}
+
+.readmore-arrow--white:hover,
+.readmore-arrow-wrap--white a:hover {
+  color: var(--black);
+  filter: brightness(0);
+}
+
+/*** END OF Readmore with arrow ***/
+/*** Prev Next ***/
+.new-arrow,
+.new-arrow-wrap a {
+  display: flex;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url('img/prev_next.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: var(--white);
+}
+
+.new-arrow:hover,
+.new-arrow-wrap a:hover {
+  background: url('img/prev_next_hover.png');
+}
+
+.new-arrow-next,
+.new-arrow-next-wrap a,
+.new-arrow-next:hover,
+.new-arrow-next-wrap a:hover {
+  background-position: -34px 0;
+}
+
+/*** END OF Prev Next ***/
+/*** Editor icon ***/
+.editor-icon a {
+  font-size: 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 17px !important;
+  transform: var(--transition-all);
+  border-radius: 100%;
+  border: 1px solid var(--primary);
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.editor-icon a {
+  background: url(img/edit.svg) center no-repeat;
+}
+
+.editor-icon a:hover {
+  background: var(--primary) url(img/edit_hover.svg) center no-repeat;
+}
+
+/*** END OF Editor icon ***/
+/*** User preview social media icon ***/
+
+
+.user-preview-contact a {
+  display: inline-block;
+  font-size: 0;
+  width: 26px;
+  height: 26px;
+  background: url('img/user_social_media.svg') no-repeat;
+  transition: all 0.3s ease;
+}
+
+.user-preview-contact a:not(:last-child) {
+  margin-right: 4px;
+}
+
+.user-preview-contact .twitter {
+  background-position: 0 0;
+}
+
+.user-preview-contact .twitter:hover {
+  background-position: 0 -29px;
+}
+
+.user-preview-contact .linkedin {
+  background-position: -29px 0;
+}
+
+.user-preview-contact .linkedin:hover {
+  background-position: -29px -29px;
+}
+
+/*** END OF User preview social media icon ***/

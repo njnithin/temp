@@ -1,0 +1,17 @@
+body {
+  --pro-view-top-space: 70px;
+  --pro-view-bottom-space: 70px;
+}
+
+.progress-view > .view-header {
+  display: none;
+}
+
+.progress-view > .view-content {
+  padding-left: 0;
+  max-width: 100%;
+}
+
+.cd-articles {
+  --section-gap: 45px;
+}

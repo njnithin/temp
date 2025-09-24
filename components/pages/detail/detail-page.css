@@ -1,0 +1,100 @@
+/* >>> Detail page common style <<< */
+.detail-view {
+  /* margin: 30px auto 110px; */
+  /* issue: 5 --> https://projects.panapps.co/issues/359493 */
+  margin: 30px auto 100px;
+}
+
+/*** Back button ***/
+.back-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*** END OF Back button ***/
+
+
+/*** Detail header section ***/
+.detail-header {
+  margin-top: 31px;
+}
+
+.detail-type {
+  /* color: var(--primary); */
+  /* contrast issue wave tool */
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 30px;
+  margin-left: 3px;
+}
+
+.detail-head {
+  /* font-size: 3.125rem; */
+  font-weight: 700;
+  color: var(--fc-c1);
+  margin-bottom: 50px;
+  /* bug fix */
+  font-size: 2.5rem;
+}
+
+.detail-meta {
+  margin-bottom: 42px;
+}
+
+.detail-meta-label {
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: var(--fc-c1);
+}
+
+.detail-meta-value {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--fc-c1);
+  margin-left: 5px;
+}
+
+.detail-img {
+  margin-bottom: 30px;
+}
+
+/*** END OF Detail header section ***/
+/*** publications-reports-body detail page***/
+.publications-reports-detail-page .image-body-wrapper {
+  margin-bottom: 30px;
+}
+
+.publications-reports-detail-page .detail-attachment {
+  clear: both;
+}
+
+.publications-reports-detail-page .image-body-wrapper .detail-img {
+  height: 508px;
+  width: 360px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--br-c4);
+  padding: 25px;
+  margin-bottom: 0;
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.publications-reports-detail-page .image-body-wrapper .details-body {
+  min-height: 508px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detail-attachment>p>strong {
+  padding-top: 10px;
+  display: block;
+}
+
+/*** END OF publications-reports-body detail page***/

@@ -1,0 +1,16 @@
+.listing-view {
+  --lv-items: 1;
+  --lv-gap: 20px;
+}
+
+.listing-view .view-content>div {
+  justify-content: center;
+}
+
+.listing-view .form--inline {
+  margin: 26px 0 25px;
+}
+
+body .listing-view .pager .button {
+  font-size: 0.923rem;
+}

@@ -1,0 +1,44 @@
+/* >>> Resources <<< */
+.resources-block {
+  position: relative;
+  --resources-item-count: 3;
+  --resources-item-gap: 30px;
+}
+
+.resources-block>[data-block="fullwidth_content"] {
+  position: relative;
+  z-index: 1;
+  background: url(img/resources-pattern-top.svg) center top 0, url(img/resources-pattern-bottom.svg) center bottom 0;
+  background-repeat: no-repeat;
+}
+
+.resources-sec {
+  padding-top: 102px;
+  padding-bottom: 110px;
+}
+
+.resources-desc {
+  max-width: 580px;
+  margin-bottom: 32px;
+}
+
+
+.resources-sec>.view-content {
+  display: grid;
+  grid-template-columns: repeat(var(--resources-item-count), minmax(0, 1fr));
+  grid-gap: var(--resources-item-gap);
+}
+
+.resources-title {
+  margin-bottom: 23px;
+}
+
+.resources-sec>.view-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.resources-sec .secondary-btn-wrap {
+  display: flex;
+}

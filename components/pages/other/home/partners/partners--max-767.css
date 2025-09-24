@@ -1,0 +1,38 @@
+.partners-block {
+  --partners-block-b-gap: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.partners-title {
+  margin-bottom: 50px;
+}
+
+.member-states-sec>.view-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 30px;
+}
+
+.member-states-sec .each-partner:not(:last-child) {
+  margin: 0;
+}
+
+.partners-block>div:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.partners-title {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+}
+
+.developement-partners-sec>.view-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 30px;
+}
+
+.developement-partners-sec .each-partner:not(:last-child) {
+  margin-right: 0;
+}

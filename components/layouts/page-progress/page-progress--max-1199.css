@@ -1,0 +1,8 @@
+body {
+  --pro-lr-gap: 70px;
+  /* End of Aside related variables */
+}
+
+.progress-page [id] {
+  scroll-margin-top: 80px;
+}

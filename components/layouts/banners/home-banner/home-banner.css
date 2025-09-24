@@ -1,0 +1,109 @@
+/* Home banner settings */
+.home-banner ul.slick-dots {
+  display: none !important;
+}
+
+.home-banner {
+  --home-banner-height: 720px;
+  transition: opacity 0.3s ease;
+}
+
+.home-banner:not(.slick-created) {
+  height: var(--home-banner-height);
+  overflow: hidden;
+}
+
+.banner-img img {
+  height: var(--home-banner-height);
+}
+
+
+.banner-arrow {
+  animation: bounce 2s infinite;
+  /* contrast issue */
+  color: var(--white);
+}
+
+/* contrast issue */
+.home-banner .view-header h1 {
+  color: var(--white);
+}
+
+/*** Video Banner Style ***/
+/*** Videos inside banner ***/
+.banner.has-video .slick-track {
+  display: flex;
+}
+
+.banner.has-video .banner-slide {
+  height: auto;
+  align-items: center;
+}
+
+.banner.has-video .slick-initialized .banner-slide {
+  display: flex;
+}
+
+.banner-video {
+  display: none;
+  /* min-height: var(--home-banner-height); */
+  max-height: var(--home-banner-height);
+  overflow: hidden;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.banner-item-video {
+  width: 100%;
+}
+
+.banner-video.show-video {
+  display: block;
+}
+
+.banner-scroll-arrow {
+  transition: bottom 0.3s ease;
+}
+
+.home-banner:not(.slick-created),
+.banner-img img {
+  transition: height var(--header-animation-time) ease;
+}
+
+.banner-video {
+  transition: max-height var(--header-animation-time) ease;
+}
+
+.banner.has-video .banner-scroll-arrow {
+  display: none;
+}
+
+/*** END OF Videos inside banner ***/
+/*** Touch device issue not able to swap video on banner ***/
+/* .video-present --> atleast one video present slick dots added at bottom for navigation */
+.touch-device .home-banner.video-present {
+  overflow: visible;
+}
+
+/* not able to slide while on video */
+.touch-device .home-banner.video-present .slick-arrow {
+  display: none !important;
+}
+
+.touch-device .home-banner.video-present ul.slick-dots {
+  margin-bottom: -36px;
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  z-index: 1;
+  background: var(--tc-c14);
+  min-height: 37px;
+}
+
+/*** END OF Touch device issue when video present ***/
+
+/*** END OF Video Banner Style ***/

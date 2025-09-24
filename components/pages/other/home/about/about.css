@@ -1,0 +1,38 @@
+/* >>> Home About <<< */
+.home-about-block {
+  background: var(--bg-c3);
+  padding: 90px 0;
+}
+
+.home-about-sec {
+  --home-about-img-width: 524px;
+  --home-about-box-left: 194px;
+}
+
+.home-about-title {
+  margin-bottom: 23px;
+}
+
+.home-about-content {
+  display: grid;
+  grid-template-columns: minmax(0, var(--home-about-img-width)) minmax(0, 1fr);
+  align-items: center;
+}
+
+.home-about-box {
+  margin-left: calc(var(--home-about-box-left)*-1);
+  padding: 50px 50px 66px 80px;
+  background: var(--white) url(img/about-pattern.svg) center left 15px no-repeat;
+  max-width: 810px;
+  box-shadow: 4px 3px 12px 1px var(--tc-c1);
+  position: relative;
+  z-index: 1;
+}
+
+.home-about-desc *:last-of-type {
+  margin-bottom: 0;
+}
+
+.home-about-more {
+  margin-top: 35px;
+}

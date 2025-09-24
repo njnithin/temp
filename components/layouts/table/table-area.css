@@ -1,0 +1,181 @@
+/*** Common ***/
+.table-area table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-area a {
+  display: inline-block;
+}
+
+.table-area a:not(:hover) {
+  color: var(--fc-c1);
+}
+
+.table-area a {
+  text-decoration: underline;
+}
+
+.table-area thead th {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  /* color: var(--fc-c1); */
+  color: var(--white);
+  /* background: var(--bg-c7); */
+  background: var(--bg-c8);
+  vertical-align: middle;
+}
+
+.table-area table {
+  margin-bottom: 0;
+}
+
+.sub-pillars-sections .view-content .table-wrap:not(:first-child) thead th {
+  height: 0;
+  opacity: 0;
+  font-size: 0;
+  padding: 0;
+}
+
+.table-area thead,
+.table-area tbody,
+.table-area tfoot,
+.table-area tr,
+.table-area td,
+.table-area th {
+  border: 0;
+}
+
+.table-area th,
+.table-area td {
+  padding: 10px 45px 10px 15px;
+}
+
+/* .table-area tbody tr:not(:last-child) {
+  border-bottom: 1px solid var(--bg-c7);
+} */
+
+.table-area th:first-child,
+.table-area td:first-child {
+  width: 380px;
+}
+
+.table-area th:not(:first-child, :last-child),
+.table-area td:not(:first-child, :last-child) {
+  width: 197px;
+}
+
+.table-area th:last-child,
+.table-area td:last-child {
+  width: 167px;
+  padding-right: 26px;
+}
+
+.table-area tr,
+.table-area tr td {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+  vertical-align: middle;
+}
+
+.table-area .sub-row-title-td,
+.table-area .row-highlight td {
+  font-weight: 700;
+  /* background: var(--bg-c1); */
+  background: var(--bg-c9);
+  color: var(--black);
+}
+
+.table-area th:nth-child(4),
+.table-area td:nth-child(4) {
+  text-align: right;
+}
+
+.sub-total-row td {
+  font-weight: 700;
+}
+
+tr.total-row td {
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5555555555555556;
+  text-align: left;
+  background: var(--br-c2);
+}
+
+.table-area td {
+  position: relative;
+}
+
+.table-area td .editor-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: 0 !important;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.table-area td .editor-icon a {
+  width: 10px !important;
+  height: 10px !important;
+  background-size: 15px !important;
+  padding: 11px;
+}
+
+.table-ck-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*** Multiline ul li without bullet points inside table ***/
+.table-area ul.multi-line-text {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.table-area ul.multi-line-text li:not(:last-child) {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+  margin-bottom: 12px;
+}
+
+/*** END OF Multiline ul li without bullet points inside table ***/
+
+/*** END OF Common ***/
+/*** New Table Modification ***/
+.table-area th:not(:last-child),
+.table-area td:not(:last-child) {
+  border-right: 1px solid var(--white);
+}
+
+.table-area tr:not(.row-highlight, .sub-row-title, .total-row):nth-child(even) td {
+  background: var(--bg-c10);
+  transition: all 0.3s ease;
+}
+
+.table-area tr:not(.row-highlight, .sub-row-title, .total-row):nth-child(odd) td {
+  background: var(--bg-c11);
+  transition: all 0.3s ease;
+}
+
+.table-area tr:not(.row-highlight, .sub-row-title, .total-row, .sub-total-row):nth-child(even):hover td,
+.table-area tr:not(.row-highlight, .sub-row-title, .total-row, .sub-total-row):nth-child(odd):hover td {
+  filter: contrast(0.8);
+}
+
+.table-area tr.total-row td {
+  background: var(--bg-c9);
+}
+
+.table-area .view-filters {
+  display: none;
+}
+
+/*** END OF New Table Modification ***/

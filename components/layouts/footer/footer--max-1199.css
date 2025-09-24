@@ -1,0 +1,14 @@
+/* >>> Footer max 1199 <<< */
+.site-footer {
+  --sf-gap: 40px;
+}
+
+.hoai-newsletter-title,
+.hoai-newsletter h2 {
+  /* font-size: 1.01rem; */
+  font-size: 0.8rem;
+}
+
+.footer-links .nav {
+  grid-gap: 19px 30px;
+}

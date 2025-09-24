@@ -1,0 +1,23 @@
+.home-banner {
+  --home-banner-height: calc(100vh - var(--header-height));
+}
+
+.touch-device .home-banner.video-present {
+  --home-banner-height: calc(100vh - var(--header-height) - 37px);
+}
+
+body.toolbar-fixed.toolbar-tray-open .home-banner {
+  --home-banner-height: calc(100vh - var(--toolbar-tray-open-padding-top));
+}
+
+body.toolbar-fixed:not(.toolbar-tray-open) .home-banner {
+  --home-banner-height: calc(100vh - var(--toolbar-tray-closed-padding-top));
+}
+
+/* end of header fix admin cases */
+
+.banner.has-video .banner-scroll-arrow {
+  display: none;
+  /* display: flex; */
+  bottom: 60px;
+}

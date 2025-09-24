@@ -1,0 +1,36 @@
+.detail-head,
+.detail-view,
+.download-section {
+  margin-bottom: 30px;
+}
+
+.publications-reports-detail-page .image-body-wrapper .detail-img {
+  width: 100%;
+}
+
+.each-file {
+  --file-icon-size: 30px;
+  --file-icon-gap: 10px;
+}
+
+.each-file a::before {
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-size: 12px !important;
+}
+
+.attachment-sec h3 {
+  margin-bottom: 20px;
+}
+
+.file-wrap {
+  margin-bottom: 35px;
+}
+
+/* .each-file a::before {
+  width: 30px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 30px;
+  background-size: 15px 15px;
+} */

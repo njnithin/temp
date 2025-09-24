@@ -1,0 +1,11 @@
+:root {
+  --container-width: 1170px;
+  --container-actual-width: calc(var(--container-width) - var(--total-lr-padding));
+  --total-lr-padding: 30px;
+}
+
+.custom-container-mw-810 {
+  max-width: 810px;
+  margin: 0 auto;
+  width: 100%;
+}

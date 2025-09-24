@@ -1,0 +1,7 @@
+.resource-card {
+  --resource-card-img-height: 250px;
+}
+
+.resource-card-content-wrap {
+  padding: 19px 25px 80px 25px;
+}

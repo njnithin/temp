@@ -1,0 +1,43 @@
+/* >>> Header Menu For Smaller devices <<< */
+[ay-theme="light-background"] .menu-toggle {
+  filter: brightness(0);
+}
+
+[ay-theme="light-background"] body {
+  --header-menu-active-bg: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a,
+[ay-theme="light-background"] .site-header .sub-link>a,
+[ay-theme="light-background"] .site-header .parent-link a {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a.is-active,
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a.active,
+[ay-theme="light-background"] .site-header li>a.active {
+  color: var(--ay-bg);
+}
+
+[ay-theme="light-background"] .site-header li.has-sub>ul {
+  background: var(--ay-bg);
+}
+
+[ay-theme="light-background"] .header-mid-right {
+  border: 2px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .header-mid-right,
+[ay-theme="light-background"] .site-header li.has-sub>ul {
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a,
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>span {
+  border-bottom: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .site-header .back-li a,
+[ay-theme="light-background"] .site-header li.has-sub>a:not(.active)::before {
+  filter: invert(1);
+}

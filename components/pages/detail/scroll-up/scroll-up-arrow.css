@@ -1,0 +1,29 @@
+/* >>> Scroll up aroow, currently used in detail page common template <<< */
+.scroll-up-arrow-wrap {
+  position: fixed;
+  bottom: 30px;
+  right: var(--header-padding);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  --scroll-up-arrow-size: 50px;
+}
+
+.scroll-up-arrow-wrap.shown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-up-arrow {
+  display: flex;
+  font-size: 0;
+  width: var(--scroll-up-arrow-size);
+  height: var(--scroll-up-arrow-size);
+  background: url(img/up-arrow.svg) center no-repeat;
+  background-size: contain !important;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-arrow:hover {
+  background: url(img/up-arrow-hover.svg) center no-repeat;
+}

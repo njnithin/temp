@@ -1,0 +1,22 @@
+/* >>> Detail page Banner <<< */
+.detail-banner {
+  --detail-banner-height: 450px;
+}
+
+.detail-banner--height-350 {
+  --detail-banner-height: 350px;
+}
+
+.banner-img img {
+  height: var(--detail-banner-height);
+}
+
+.banner-content,
+.banner-content-container {
+  height: 100%;
+}
+
+.banner-detail-title {
+  margin-bottom: 0;
+  font-size: var(--fs-px50);
+}

@@ -1,0 +1,20 @@
+/* Footer */
+[ay-theme="light-background"] .footer-social-media-icons a:hover {
+  opacity: 0.5;
+}
+
+[ay-theme="light-background"] .hoai-newsletter .subscribe-btn:active,
+[ay-theme="light-background"] .hoai-newsletter .subscribe-btn:focus,
+[ay-theme="light-background"] .hoai-newsletter .subscribe-btn:disabled {
+  background: var(--ay-font-color) !important;
+  color: var(--ay-bg) !important;
+  border-color: var(--ay-font-color) !important;
+}
+
+[ay-theme="light-background"] .hoai-newsletter .alert {
+  background: var(--ay-bg);
+  color: var(--ay-font-color);
+  border: 1px solid var(--ay-font-color);
+}
+
+/* End of  Footer */

@@ -1,0 +1,20 @@
+.home-about-block {
+  padding: 50px 0;
+}
+
+.home-about-sec {
+  --home-about-box-left: 0;
+}
+
+.home-about-content {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.home-about-box {
+  padding: 30px 40px 40px 75px;
+}
+
+.home-about-left-img img {
+  height: 320px;
+  object-fit: cover;
+}

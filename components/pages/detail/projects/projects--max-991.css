@@ -1,0 +1,12 @@
+.each-blk-wrap {
+  --blk-gap: 40px;
+}
+
+/* https://projects.panapps.co/issues/358882 issue 1 */
+.projects-page .asa .overview {
+  margin: 0;
+}
+
+.each-blk-title {
+  margin-bottom: 25px;
+}

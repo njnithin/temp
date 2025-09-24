@@ -1,0 +1,50 @@
+[ay-theme="light-background"] .table-area tr,
+[ay-theme="light-background"] .table-area .sub-row-title-td,
+[ay-theme="light-background"] .table-area .row-highlight td,
+[ay-theme="light-background"] .table-area ul.multi-line-text li:not(:last-child) {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .table-area table * {
+  color: var(--ay-font-color) !important;
+}
+
+[ay-theme="light-background"] .table-area thead th,
+[ay-theme="light-background"] .table-area tr,
+[ay-theme="light-background"] .table-area tr td {
+  background: var(--ay-bg);
+}
+
+[ay-theme="light-background"] .table-area tr td {
+  background: var(--ay-bg) !important;
+}
+
+[ay-theme="light-background"] .table-area table {
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .table-area thead th,
+[ay-theme="light-background"] .table-area table tr:not(:last-child) {
+  border-bottom: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .table-area th:not(:last-child),
+[ay-theme="light-background"] .table-area td:not(:last-child) {
+  border-right: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .table-area th {
+  filter: contrast(0.95);
+}
+
+[ay-theme="light-background"] .table-area tr:not(.row-highlight, .sub-row-title, .total-row, .sub-total-row):nth-child(even) td {
+  filter: contrast(0.85) !important;
+}
+
+[ay-theme="light-background"] .table-area tr:not(.row-highlight, .sub-row-title, .total-row, .sub-total-row):nth-child(odd) td {
+  filter: contrast(0.75) !important;
+}
+
+[ay-theme="light-background"] .table-area a:hover {
+  opacity: 0.8;
+}

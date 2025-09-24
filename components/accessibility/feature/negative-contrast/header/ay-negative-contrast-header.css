@@ -1,0 +1,17 @@
+.header-search-block .form-search:placeholder {
+  color: var(--ay-font-color);
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+
+.header-search-block .form-search::placeholder {
+  color: var(--ay-font-color);
+}
+
+/* Internet Explorer 10-11 */
+
+/* Microsoft Edge */
+
+.header-search-block .form-search::-ms-input-placeholder {
+  color: var(--ay-font-color);
+}

@@ -1,0 +1,4 @@
+.status-sec {
+  --status-items-gap: 15px;
+  --status-content-min-height: 640px;
+}

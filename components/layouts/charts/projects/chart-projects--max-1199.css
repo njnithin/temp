@@ -1,0 +1,11 @@
+.charts {
+  --chart-items-gap: 10px;
+}
+
+.chart-card {
+  padding: 30px 10px;
+}
+
+.custom-legend:not(:last-child) {
+  margin-right: 10px;
+}

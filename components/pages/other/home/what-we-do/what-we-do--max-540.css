@@ -1,0 +1,11 @@
+.what-we-do-block {
+  --we-do-card-container-height: 450px;
+}
+
+.what-we-do-sec .we-card-img img {
+  width: 100%;
+}
+
+.what-we-do-readmore {
+  margin: 30px 0 90px;
+}

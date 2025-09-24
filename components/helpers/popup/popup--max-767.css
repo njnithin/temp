@@ -1,0 +1,8 @@
+.nj-popup {
+  --nj-popup-size: 15px;
+  padding: 0 30px;
+}
+
+.nj-popup-box {
+  padding: 30px 25px;
+}

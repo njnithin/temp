@@ -1,0 +1,14 @@
+.pro-left {
+  justify-content: center;
+}
+
+.pro-title {
+  width: 100%;
+  margin-right: 0;
+  flex: unset;
+  justify-content: center;
+}
+
+.projects-status-sec>.view-content {
+  padding: 54px 37.5px;
+}

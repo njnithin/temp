@@ -1,0 +1,10 @@
+.whats-new-sec {
+  /* variables */
+  --new-item-gap: 20;
+  /* end of variables */
+}
+
+.whats-new-items .new-arrows,
+.whats-new-sec>.view-footer {
+  max-width: calc(var(--new-item-width)*1px);
+}

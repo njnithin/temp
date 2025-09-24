@@ -1,0 +1,82 @@
+.pillars-view {
+  --pillars-circle-size: 85px;
+  --each-pillar-gap: 50px;
+}
+
+.each-pillar:not(:last-child) {
+  padding-bottom: var(--each-pillar-gap);
+  margin-bottom: var(--each-pillar-gap);
+  border-bottom: 1px solid var(--br-c2);
+}
+
+.pillar-circle {
+  width: var(--pillars-circle-size);
+  height: var(--pillars-circle-size);
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  align-content: center;
+  margin-right: 20px;
+  color: var(--black);
+}
+
+.pillar-circle span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.pillar-no {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.21875;
+  /* issue-5 --> vetical center align https://projects.panapps.co/issues/359480 */
+  margin-top: -6px;
+}
+
+.pillar-label {
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1.2142857142857142;
+  /* to satisfy design */
+  margin-top: -3px;
+}
+
+.pillar-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* https://projects.panapps.co/issues/390689 (1) */
+.pillar-body p + ul {
+  margin-top: 15px;
+}
+
+.pillar-title,
+.pillar-title a {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.1818181818181819;
+  color: var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.pillar-title {
+  flex: 1;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--primary);
+}
+
+.pillar-title a:hover {
+  color: var(--primary);
+}
+
+.pillar-read-more {
+  margin-top: 30px;
+}

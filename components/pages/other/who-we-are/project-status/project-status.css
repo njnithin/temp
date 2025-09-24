@@ -1,0 +1,96 @@
+/* >>> Project Status <<< */
+.projects-status-sec>.view-content {
+  background: var(--secondary);
+  color: var(--white);
+  padding: 54px 48.5px;
+}
+
+.pro-item {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 80px;
+  --pro-item-circle-size: 125px;
+  max-width: 713px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pro-item:not(:last-child) {
+  margin-bottom: 53px;
+  padding-bottom: 53px;
+  border-bottom: 1px solid var(--br-c4);
+}
+
+.pro-left {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pro-left::after {
+  content: "";
+  width: 1px;
+  background: var(--br-c9);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+  height: 194px;
+  display: inline-block;
+}
+
+.pro-title {
+  flex: 1;
+  margin-right: 18px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pro-circle {
+  font-size: var(--fs-px65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  width: var(--pro-item-circle-size);
+  height: var(--pro-item-circle-size);
+  background: var(--primary);
+  /* contrast issue */
+  color: var(--black);
+  border-radius: 50%;
+}
+
+.pro-sign {
+  font-size: 2.9375rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.pro-value {
+  font-size: var(--fs-px65);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.36;
+}
+
+.pro-suffix {
+  font-size: 2.9375rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.pro-status {
+  font-size: 1rem;
+}
+
+.pro-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.pro-right>* {
+  width: 100%;
+}

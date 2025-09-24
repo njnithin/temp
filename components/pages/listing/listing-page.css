@@ -1,0 +1,64 @@
+/* >>> Listing page common style <<< */
+.listing-view {
+  margin-bottom: 100px;
+}
+
+.listing-view .pager__item {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.listing-view .hoai-card-content-wrap {
+  position: relative;
+  margin-top: -10px;
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*** Listing Intro ***/
+.listing-page .region-content {
+  margin-top: 90px;
+}
+
+.listing-intro-box {
+  margin-bottom: 50px;
+}
+
+/*** END OF Listing Intro ***/
+/*** LAYOUTS ***/
+.listing-view {
+  --lv-items: 3;
+  --lv-gap: 30px;
+  --lv-max-width: 360px;
+}
+
+/* 3 column layout */
+.listing-view {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.listing-view.loaded {
+  opacity: 1;
+}
+
+.listing-view:not(.gallery-listing-view) > .view-content > div,
+.gallery-content-view > .view-content > .views-infinite-scroll-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(var(--lv-items), minmax(0, var(--lv-max-width)));
+  grid-gap: var(--lv-gap);
+}
+
+.listing-view .view-content > div::after {
+  display: none;
+}
+
+.listing-view .pager {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/*** END OF LAYOUTS ***/

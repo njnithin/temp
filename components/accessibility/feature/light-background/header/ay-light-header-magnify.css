@@ -1,0 +1,10 @@
+/* Magnified Header */
+.magnified-font[ay-theme="light-background"] .site-header .header-mid {
+  background: var(--ay-bg);
+}
+
+.magnified-font[ay-theme="light-background"] .site-header .header-mid {
+  border-top: 1px solid var(--ay-font-color);
+  background: var(--ay-bg);
+}
+/* End of Magnified Header */

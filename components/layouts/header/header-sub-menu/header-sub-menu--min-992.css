@@ -1,0 +1,127 @@
+.site-header .navbar-nav>li {
+  position: relative;
+}
+
+.site-header ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.site-header .sub-item {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100%);
+  background: var(--white);
+  width: 200px;
+  left: 50%;
+  opacity: 0;
+  box-shadow: 0px 3px 10px 0px var(--tc-c5);
+  transition: opacity 1s ease 0s, transform .5s ease .1s;
+  transform: translate(-50%, -20px);
+}
+
+.site-header li.has-sub:hover>ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.root-level>li.has-sub:hover>ul {
+  transform: translate(-50%, 0);
+}
+
+.site-header .level-1 a {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--fc-c1);
+  padding: 10px 15px;
+}
+
+.site-header .level-1 li>a.active {
+  color: var(--primary);
+}
+
+.site-header .level-1 li:hover>a {
+  color: var(--black);
+  background: var(--bg-c11);
+}
+
+.site-header .level-1 li.has-sub>ul {
+  width: 100%;
+  /* top: -1px; */
+  top: 0;
+  transform: translate(-20%, 0);
+  left: 100%;
+  /* min-height: calc(100% + 2px); */
+  min-height: 100%;
+}
+
+.site-header .level-1 li.has-sub:hover>ul {
+  transform: translate(0, 0);
+}
+
+.site-header .level-1 li.has-sub>a {
+  position: relative;
+  padding-right: 30px;
+}
+
+.site-header .level-1 li.has-sub>a::after {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url(img/sub-arrow.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.site-header .sub-item.level-3 {
+  max-height: 360px;
+  /* max-height: 250px; */
+  overflow-y: auto;
+}
+
+.site-header .sub-item.level-3::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+.site-header .sub-item.level-3::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--fc-c3);
+}
+
+/* .site-header .level-2 li:not(:last-child)>a { */
+.site-header .level-2 li>a {
+  border-bottom: 1px solid var(--br-c2);
+}
+
+/* body.touch-device .site-header .parent-link.has-link {
+  display: block;
+}
+
+body.touch-device .site-header .parent-link.has-link a {
+  font-size: 0.875rem;
+  color: var(--black);
+  text-transform: uppercase;
+} */
+/* to avoid breakage during decrease font and reset click on accesibility panel */
+html:not(.magnified-font) .site-header .menu-scroll-panel-li {
+  display: none;
+}
+
+@media (pointer:coarse) {
+  .site-header .parent-link.has-link {
+    display: block;
+  }
+
+  .site-header .parent-link.has-link a {
+    font-size: 0.875rem;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+}

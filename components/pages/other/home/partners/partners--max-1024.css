@@ -1,0 +1,12 @@
+.partners-block {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.partners-block>div:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.partners-title {
+  margin-bottom: 40px;
+}

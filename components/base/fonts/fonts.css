@@ -1,0 +1,15 @@
+/* >>> Fonts Declaration for the site <<< */
+:root {
+  --primary-font: 'Lato', sans-serif;
+  --base-font-size: 16px;
+  --fs-px65: 4.0625rem;
+  --fs-px60: 3.75rem;
+  --fs-px50: 3.125rem;
+  --fs-px12: 0.75rem;
+  /* font size variable for font in pixel (very large and verysmall font size) */
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--primary-font);
+}

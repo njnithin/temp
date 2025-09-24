@@ -1,0 +1,54 @@
+/* >>> Whats new card  <<< */
+.new-card {
+  /* --new-card-img-height: 270px; */
+  --new-card-img-height: 100%;
+}
+
+.new-card-img {
+  position: relative;
+  background: var(--br-c2);
+}
+
+.new-card-img .new-card-type {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background: var(--primary);
+  /* contrast issue */
+  color: var(--black);
+  padding: 4.5px 27px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.new-card-img::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  background: url(img/shape.svg) center no-repeat;
+  bottom: -1px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  background-size: cover;
+}
+
+.new-card-img>a,
+.new-card-img img {
+  height: var(--new-card-img-height);
+}
+
+.new-card-img>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.new-card-img img {
+  width: 100%;
+  object-fit: cover;
+}

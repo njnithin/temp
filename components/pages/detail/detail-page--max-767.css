@@ -1,0 +1,19 @@
+.detail-header {
+  margin-top: 15px;
+}
+
+.detail-head,
+.detail-view,
+.download-section {
+  margin-bottom: 30px;
+}
+
+.details-body h2 {
+  margin-bottom: 18px;
+}
+
+.publications-reports-detail-page .image-body-wrapper .detail-img {
+  float: none;
+  height: 450px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,7 @@
+[ay-theme="high-contrast"] .search-result * {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="high-contrast"] .search-result-title a:hover {
+  color: var(--ay-alt);
+}

@@ -1,0 +1,15 @@
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a.is-active,
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a.active,
+[ay-theme="light-background"] .site-header .dropdown-menu .dropdown-item.is-active,
+[ay-theme="light-background"] .site-header .dropdown-menu .dropdown-item.active {
+  padding-left: 0;
+}
+
+[ay-theme="light-background"] .header-mid-right {
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>a,
+[ay-theme="light-background"] .site-header .navbar-nav>.nav-item>span {
+  border-bottom: 1px solid var(--ay-font-color);
+}

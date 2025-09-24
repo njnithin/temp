@@ -1,0 +1,12 @@
+[ay-theme="light-background"] .pagination * {
+  color: var(--ay-font-color) !important;
+}
+
+[ay-theme="light-background"] .pagination a:hover,
+[ay-theme="light-background"] .pagination a:hover * {
+  color: var(--ay-link-hover) !important;
+}
+
+[ay-theme="light-background"] .page-item.active a {
+  font-weight: 700;
+}

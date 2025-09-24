@@ -1,0 +1,42 @@
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination .page-item .page-link,
+.pagination .page-item .page-link:focus {
+  font-style: normal;
+  background: transparent;
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border: 0;
+  border-left: 1px solid var(--br-c2);
+  border-right: 1px solid var(--br-c2);
+  box-shadow: none;
+  border-radius: 0 !important;
+  padding: 0 12px;
+}
+
+.pagination .page-item:first-child .page-link {
+  border-left: 0;
+}
+
+.pagination .page-item:last-child .page-link {
+  border-right: 0;
+}
+
+.pagination .page-item:not(.active) {
+  color: var(--black);
+}
+
+/* Issue 1: https://projects.panapps.co/issues/390631 */
+.pagination .page-item.active .page-link,
+.pagination .page-item:not(.active) .page-link:hover {
+  /* color: var(--aqua); */
+  color: var(--primary);
+}
+
+.pagination .page-item.active .page-link {
+  font-weight: 600;
+}

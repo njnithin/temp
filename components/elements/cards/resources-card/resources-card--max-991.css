@@ -1,0 +1,11 @@
+.resource-card {
+  --resource-card-img-height: 230px;
+}
+
+.hoai-card-readmore {
+  bottom: 35px;
+}
+
+.resource-card-content-wrap {
+  padding: 19px 15px 80px 15px;
+}

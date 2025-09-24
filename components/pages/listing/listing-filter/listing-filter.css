@@ -1,0 +1,295 @@
+.listing-view .form-actions {
+  display: none;
+}
+
+.listing-view {
+  --select-width: 240px;
+}
+
+.gallery-page .listing-view {
+  --select-width: 400px;
+}
+
+/*** Filter Area ***/
+.listing-view label,
+.listing-view .custom-filter-label {
+  font-size: 1.125rem;
+  color: var(--fc-c1);
+  margin-right: 15px;
+}
+
+.listing-view select {
+  pointer-events: none;
+}
+
+.listing-view .form-select {
+  min-width: 200px;
+}
+
+.listing-view .form-select,
+.listing-view .form-select:focus,
+/* .listing-view .select2-selection, */
+.listing-view .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-size: 0.75rem;
+  /* color: var(--fc-c5); */
+  color: var(--black);
+  /* https://projects.panapps.co/issues/362286 */
+  /* text-transform: uppercase; */
+  flex: 1;
+  box-shadow: none;
+  outline: none;
+}
+
+.listing-view .select2-container--default.select2-container--open .select2-selection--single .select2-selection__rendered {
+  color: var(--fc-c5);
+}
+
+.select2-dropdown {
+  /* z-index: 8; */
+  /* listing tab z-index changed to 8 to keep the ay panel at the top */
+  z-index: 7;
+}
+
+.select2-results__option {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--fc-c5) !important;
+  padding: 10px 15px;
+}
+
+.select2-container--default .select2-results__option--selected {
+  /* pointer-events: none; */
+  display: none;
+}
+
+.select2-container--default .select2-results__option--selected,
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--bg-c4);
+}
+
+
+.select2-results__option:not(:last-child) {
+  border-bottom: 1px solid var(--br-c2);
+}
+
+.listing-view .form-select,
+.listing-view .form-select:focus,
+.listing-view .select2-selection {
+  border: 1px solid var(--black);
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.listing-view .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 30px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.listing-view .select2-container--default .select2-selection--single .select2-selection__arrow b,
+.listing-view .select2-container--default.select2-container--open .select2-selection__arrow b {
+  display: none;
+}
+
+.listing-view .select2-container--default .select2-selection--single .select2-selection__arrow {
+  position: absolute;
+  right: 15px;
+  background: url(img/dropdown.svg) center no-repeat;
+  width: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.listing-view .select2-container--default .select2-selection--single:hover .select2-selection__arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(img/dropdown_hover.svg) center no-repeat;
+}
+
+.listing-view .select2-container--default.select2-container--open .select2-selection__arrow {
+  /* transform: translateY(-50%) rotate(180deg); */
+  transform: translateY(-50%) rotate(180deg) !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 210px;
+}
+
+.select2-dropdown {
+  box-shadow: 0px 5px 10px 0px var(--tc-c5);
+  border-radius: 0;
+  border: 0;
+}
+
+.select2-results__options::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--bg-c5);
+}
+
+.select2-results__options::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: var(--bg-c6);
+}
+
+.listing-view input:not(.button) {
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+  min-height: 40px;
+  padding: 6px 45px 6px 25px;
+  max-width: 240px;
+}
+
+.listing-view input:not(.button) {
+  font-size: 0.875rem;
+  color: var(--fc-c6);
+  box-shadow: none;
+  outline: none;
+}
+
+.listing-view input:not(.button):placeholder {
+  font-size: 0.875rem;
+  color: var(--fc-c6);
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+
+.listing-view input:not(.button)::placeholder {
+  font-size: 0.875rem;
+  color: var(--fc-c6);
+}
+
+/* Internet Explorer 10-11 */
+
+/* Microsoft Edge */
+
+.listing-view input:not(.button)::-ms-input-placeholder {
+  font-size: 0.875rem;
+  color: var(--fc-c6);
+}
+
+.listing-view input:not(.button)::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.listing-search-wrap {
+  position: relative;
+  justify-content: end;
+  width: 100%;
+  max-width: 100%;
+}
+
+.listing-view .search-icon {
+  position: absolute;
+  font-size: 0;
+  background: url(img/search.svg) center no-repeat;
+  /* width: 15px; */
+  /* height: 15px; */
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+}
+
+.listing-view .search-icon:hover {
+  background: url(img/search_hover.svg) center no-repeat;
+}
+
+.listing-view .form-item:not(.wrapper-select-tabs) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.listing-view .form--inline {
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: var(--select-width) minmax(0, 1fr);
+  grid-gap: 15px;
+  margin: 46px 0 45px;
+  align-items: end;
+}
+
+.listing-view .form--inline::after {
+  display: none;
+}
+
+.show-validate-msg .validate-msg {
+  display: block;
+}
+
+.validate-msg {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 25px;
+  background: var(--white);
+  z-index: 1;
+  box-shadow: 0px 3px 10px 0px var(--tc-c5);
+  font-size: 0.875rem;
+  padding: 5px 8px;
+  display: none;
+}
+
+/*** /resources --> Ministerial meeting with title filter ***/
+.listing-view .form-item.hide-title-field {
+  display: none;
+}
+
+.listing-view.with-two-filter .form--inline {
+  position: relative;
+  justify-content: start;
+  grid-template-columns: var(--select-width) var(--select-width) minmax(0, 1fr);
+}
+
+.listing-view.with-two-filter .form--inline .form-item:not(.listing-search-wrap) {
+  width: 100%;
+  /* max-width: 400px; */
+  max-width: 100%;
+}
+
+.listing-view.with-two-filter .listing-search-wrap {
+  justify-content: flex-end;
+}
+
+.listing-view.with-two-filter .form-item:not(.wrapper-select-tabs) {
+  align-items: flex-end;
+  /* justify-content: flex-end; */
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.resource-listing .listing-view .title-filter {
+  display: none;
+}
+
+.resource-listing .listing-view.with-two-filter .title-filter {
+  display: flex;
+}
+
+/* .listing-view .form-item .select2-container {
+  width: 100% !important;
+} */
+
+.listing-view .title-filter .select2-container {
+  width: 100% !important;
+}
+
+/* filter by text in one line */
+.listing-view .form-item:first-child .select2-container {
+  flex: 1;
+}
+
+.listing-view .select2-container .select2-selection--single {
+  height: 34px;
+  padding-right: 35px;
+}
+
+/*** END OF /resources --> Ministerial meeting with title filter ***/
+/*** END OF Filter Area ***/

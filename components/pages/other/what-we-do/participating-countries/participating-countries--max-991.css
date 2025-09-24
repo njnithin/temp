@@ -1,0 +1,5 @@
+.par-countries {
+  --par-country-item-width: 1fr;
+  --par-country-item-gap: 20px;
+  --par-country-count: 3;
+}

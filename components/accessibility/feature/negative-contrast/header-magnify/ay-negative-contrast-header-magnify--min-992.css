@@ -1,0 +1,8 @@
+[ay-theme="negative-contrast"].magnified-font {
+  --mag-menu-main-bg: var(--ay-bg);
+  --mag-menu-sub-bg1: var(--ay-bg);
+  --mag-menu-sub-bg2: var(--ay-bg);
+  --mag-menu-sub-bg3: var(--ay-bg);
+  --mag-menu-link-color: var(--ay-font-color);
+  --mag-menu-highlight-color: var(--ay-alt);
+}

@@ -1,0 +1,5 @@
+.sup-countries {
+  --sup-country-item-width: 1fr;
+  --sup-country-item-gap: 20px;
+  --sup-country-item-count: 3;
+}

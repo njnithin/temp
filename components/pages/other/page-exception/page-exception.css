@@ -1,0 +1,26 @@
+.page-exception {
+  background: var(--bg-c1);
+}
+
+.page-exception main {
+  padding: 50px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.page-exception .region-content {
+  background: var(--white);
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.page-exception .block-system-main-block {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

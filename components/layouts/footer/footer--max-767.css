@@ -1,0 +1,17 @@
+/* >>> Footer max 767 <<< */
+.footer-top-container {
+  max-width: 380px;
+}
+
+.hoai-newsletter-input,
+.hoai-newsletter input.form-email {
+  height: 40px;
+}
+
+.hoai-newsletter-input-wrap .subscribe-btn {
+  min-height: 40px;
+}
+
+.hoai-newsletter .subscribe-btn {
+  min-height: 40px;
+}

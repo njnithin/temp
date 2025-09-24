@@ -1,0 +1,16 @@
+/* >>> Reset styles for the site <<< */
+body {
+  margin-top: 0;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.unset-region-padding .region-content {
+  padding: 0 !important;
+}
+
+.hide-page-header .block-page-title-block {
+  display: none;
+}

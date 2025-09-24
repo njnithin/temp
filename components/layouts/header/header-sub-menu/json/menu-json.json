@@ -1,0 +1,581 @@
+[
+  {
+    "text": "Home",
+    "link": "/",
+    "hasSub": false
+  },
+  {
+    "text": "Who We Are",
+    "link": "/who-we-are",
+    "hasSub": true,
+    "sub_menu": [
+      {
+        "text": "At a Glance",
+        "link": "/who-we-are#at-a-glance",
+        "hasSub": false
+      },
+      {
+        "text": "Member States",
+        "link": "/who-we-are#member-states",
+        "hasSub": false
+      },
+      {
+        "text": "Ministerial Platform",
+        "link": "/who-we-are#ministerial-platform",
+        "hasSub": false
+      },
+      {
+        "text": "Permanent Observer",
+        "link": "/who-we-are#permanent-observer",
+        "hasSub": false
+      },
+      {
+        "text": "Development Partners",
+        "link": "/who-we-are#development-partners",
+        "hasSub": false
+      },
+      {
+        "text": "The Secretariat ",
+        "link": "/who-we-are#the-secretariat",
+        "hasSub": false
+      }
+    ]
+  },
+  {
+    "text": "What we do",
+    "link": "/what-we-do",
+    "hasSub": true,
+    "sub_menu": [
+      {
+        "text": "Pillars of HoAI ",
+        "link": "/what-we-do#pillars-of-hoai",
+        "hasSub": true,
+        "sub_menu": [
+          {
+            "text": "Pillar1: Infrastructure Connectivity",
+            "link": "/what-we-do#PILLAR-1",
+            "hasSub": false
+          },
+          {
+            "text": "Pillar2: Economic and Market Integration",
+            "link": "/what-we-do#PILLAR-2",
+            "hasSub": false
+          },
+          {
+            "text": "Pillar3: Building Resilience",
+            "link": "/what-we-do#PILLAR-3",
+            "hasSub": false
+          },
+          {
+            "text": "Pillar4: Human Capital Development",
+            "link": "/what-we-do#PILLAR-4",
+            "hasSub": false
+          }
+        ]
+      },
+      {
+        "text": "Priority Package",
+        "link": "/what-we-do#priority-package",
+        "hasSub": false
+      }
+    ]
+  },
+  {
+    "text": "Resources",
+    "link": "/resources",
+    "hasSub": true,
+    "sub_menu": [
+      {
+        "text": "Ministerial Meetings",
+        "link": "/resources#ministerial-meetings",
+        "hasSub": true,
+        "sub_menu": [
+          {
+            "text": 2023,
+            "link": "/resources?year=2023#ministerial-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 290,
+                "text": "18th Ministerial Meeting ",
+                "link": "/communique/18th-ministerial-meeting?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              },
+              {
+                "nid": 87,
+                "text": "17th Ministerial Meeting ",
+                "link": "/communique/17th-ministerial-meeting?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              },
+              {
+                "nid": 85,
+                "text": "16th Ministerial Meeting",
+                "link": "/communique/16th-ministerial-meeting?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              },
+              {
+                "nid": 83,
+                "text": "15th Ministerial Meeting ",
+                "link": "/communique/15th-ministerial-meeting?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2022,
+            "link": "/resources?year=2022#ministerial-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 81,
+                "text": "14th Ministerial Meeting ",
+                "link": "/communique/14th-ministerial-meeting?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              },
+              {
+                "nid": 80,
+                "text": "13th Ministerial Meeting ",
+                "link": "/communique/13th-ministerial-meeting?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              },
+              {
+                "nid": 79,
+                "text": "12th Ministerial Meeting ",
+                "link": "/communique/12th-ministerial-meeting?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              },
+              {
+                "nid": 78,
+                "text": "11th Ministerial Meeting ",
+                "link": "/communique/11th-ministerial-meeting?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2021,
+            "link": "/resources?year=2021#ministerial-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 1664,
+                "text": "Strengthening Resilience in the Horn of Africa(9th HoA Ministerial  Roundtable)",
+                "link": "/communique/strengthening-resilience-horn-africa9th-hoa-ministerial-roundtable?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              },
+              {
+                "nid": 129,
+                "text": "Ministerial Communique dated 27 October 2021",
+                "link": "/communique/ministerial-communique-dated-27-october-2021?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              },
+              {
+                "nid": 128,
+                "text": "Ministerial Communique dated 26 June 2021",
+                "link": "/communique/ministerial-communique-dated-26-june-2021?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              },
+              {
+                "nid": 148,
+                "text": "Strengthen Crisis Recovery",
+                "link": "/communique/strengthen-crisis-recovery?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              },
+              {
+                "nid": 130,
+                "text": "Ministerial Communique dated 31 March 2021",
+                "link": "/communique/ministerial-communique-dated-31-march-2021?destination=/resources&amp;cat=Communique, Ministerial Communiques",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2020,
+            "link": "/resources?year=2020#ministerial-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 109,
+                "text": "HoAI Countries Commit to Redoubling Efforts on Regional Integration to Support Recovery from the Pandemic and Economic Crisis",
+                "link": "/communique/hoai-countries-commit-redoubling-efforts-regional-integration-support-recovery-pandemic?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              },
+              {
+                "nid": 94,
+                "text": "Countries Resolve to Pursue Regional Cooperation",
+                "link": "/communique/countries-resolve-pursue-regional-cooperation?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2019,
+            "link": "/resources?year=2019#ministerial-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 93,
+                "text": "Countries Come Together to Launch Horn of Africa Initiative",
+                "link": "/communique/countries-come-together-launch-horn-africa-initiative?destination=/resources&amp;cat=Communique",
+                "hasSub": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Technical Meetings ",
+        "link": "/resources#technical-meetings",
+        "hasSub": true,
+        "sub_menu": [
+          {
+            "text": 2023,
+            "link": "/resources?year=2023#technical-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 1665,
+                "text": "National ( Kenya) Consultation Workshop on HoAI Borderlands Roadmap",
+                "link": "/technical-meetings/national-kenya-consultation-workshop-hoai-borderlands-roadmap?destination=/resources&amp;cat=Technical Meetings",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2022,
+            "link": "/resources?year=2022#technical-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 303,
+                "text": "HoAI Secretariat holds trade facilitation workshop at the South Sudan Ministry of Trade",
+                "link": "/technical-meetings/hoai-secretariat-holds-trade-facilitation-workshop-at-the-south-sudan-ministry-of-trade?destination=/resources&amp;cat=Technical Meetings",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2021,
+            "link": "/resources?year=2021#technical-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 1662,
+                "text": "HoAI Digital Workshop",
+                "link": "/technical-meetings/hoai-digital-workshop?destination=/resources&amp;cat=Technical Meetings",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2020,
+            "link": "/resources?year=2020#technical-meetings",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 1663,
+                "text": "Outcome of Virtual Energy Technical Workshop",
+                "link": "/technical-meetings/outcome-virtual-energy-technical-workshop?destination=/resources&amp;cat=Technical Meetings",
+                "hasSub": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Annual Reports",
+        "link": "/resources#annual-reports",
+        "hasSub": true,
+        "sub_menu": [
+          {
+            "text": 2023,
+            "link": "/resources?year=2023#annual-reports",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 108,
+                "text": "HoAI Chair Report - 2022",
+                "link": "/annual-report/hoai-chair-report-2022?destination=/resources&amp;cat=Annual Report",
+                "hasSub": false
+              },
+              {
+                "nid": 106,
+                "text": "HoAI Chair Report - 2020",
+                "link": "/annual-report/hoai-chair-report-2020?destination=/resources&amp;cat=Annual Report",
+                "hasSub": false
+              },
+              {
+                "nid": 107,
+                "text": "HoAI Chair Report - 2021",
+                "link": "/annual-report/hoai-chair-report-2021?destination=/resources&amp;cat=Annual Report",
+                "hasSub": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Analytics and Publications",
+        "link": "/resources#analytics-and-publications",
+        "hasSub": true,
+        "sub_menu": [
+          {
+            "text": 2023,
+            "link": "/resources?year=2023#analytics-and-publications",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 1681,
+                "text": "Test  Analytics and Publication ",
+                "link": "/publication/test-analytics-and-publication?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 1680,
+                "text": "Test Publication and Analytics",
+                "link": "/publication/test-publication-and-analytics?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 1679,
+                "text": "sample publication",
+                "link": "/publication/sample-publication?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 795,
+                "text": "Roadmap for Accelerating Development in the Borderlands of the Horn of Africa",
+                "link": "/publication/roadmap-accelerating-development-borderlands-horn-africa?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 793,
+                "text": "Regional Private Sector Engagement Roadmap",
+                "link": "/publication/regional-private-sector-engagement-roadmap?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 1690,
+                "text": "Coordination Mechanism for Trade and  Investment policies",
+                "link": "/publication/coordination-mechanism-trade-and-investment-policies?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 136,
+                "text": "Partnership Framework For New Development Partners (DPs)",
+                "link": "/publication/partnership-framework-new-development-partners-dps?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 143,
+                "text": "Regional Trade Facilitation Roadmap",
+                "link": "/publication/regional-trade-facilitation-roadmap?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 304,
+                "text": "Sample Analytics",
+                "link": "/analytics/sample-analytics?destination=/resources&amp;cat=Analytics",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2022,
+            "link": "/resources?year=2022#analytics-and-publications",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 320,
+                "text": "The World Bank Regional Economic Memorandum (REM) for the Horn of Africa",
+                "link": "/publication/world-bank-regional-economic-memorandum-rem-horn-africa?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 133,
+                "text": "Missing Broadband Links in the Horn of Africa Region",
+                "link": "/publication/missing-broadband-links-horn-africa-region?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              },
+              {
+                "nid": 796,
+                "text": "South Sudan: Trade Facilitation environment and main constraints to trade",
+                "link": "/analytics/south-sudan-trade-facilitation-environment-and-main-constraints-trade?destination=/resources&amp;cat=Analytics",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2021,
+            "link": "/resources?year=2021#analytics-and-publications",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 157,
+                "text": "Trade Integration and Facilitation Reforms in the Horn of Africa and Way Forward",
+                "link": "/publication/trade-integration-and-facilitation-reforms-horn-africa-and-way-forward?destination=/resources&amp;cat=Publications",
+                "hasSub": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Newsletters",
+        "link": "/resources#newsletters",
+        "hasSub": true,
+        "sub_menu": [
+          {
+            "text": 2023,
+            "link": "/resources?year=2023#newsletters",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 284,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.9, July - August 2023",
+                "link": "https://mailchi.mp/94a3e93a1dca/hoai-periodic-e-bulletin-9?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 283,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.8, June 2023",
+                "link": "https://mailchi.mp/26d556d422cd/hoai-periodic-e-bulletin-8?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 210,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.7, May 2023",
+                "link": "https://mailchi.mp/7ba581564f1c/hoai-periodic-e-bulletin-7?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 211,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.6, April 2023",
+                "link": "https://mailchi.mp/18ab793e79d3/hoai-periodic-e-bulletin-6?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 212,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.5, March 2023",
+                "link": "https://mailchi.mp/e830fac0e4bf/hoai-periodic-e-bulletin-5?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 213,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.4, January - February 2023",
+                "link": "https://mailchi.mp/f47291fece63/hoai-periodic-e-bulletin-13880900?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              }
+            ]
+          },
+          {
+            "text": 2022,
+            "link": "/resources?year=2022#newsletters",
+            "hasSub": true,
+            "sub_menu": [
+              {
+                "nid": 214,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.3, November - December 2022",
+                "link": "https://mailchi.mp/304550577778/hoai-periodic-e-bulletin-13769432?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 215,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.2, October 2022",
+                "link": "https://mailchi.mp/dc0bf1b2f64f/hoai-periodic-e-bulletin-2?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              },
+              {
+                "nid": 216,
+                "text": "HoAI PERIODIC E-BULLETIN Edition No.1, September 2022",
+                "link": "https://mailchi.mp/950c2b54a3ea/hoai-periodic-e-bulletin-1?destination=/resources&amp;cat=Newsletters",
+                "hasSub": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Gallery",
+        "link": "/gallery",
+        "hasSub": false
+      }
+    ]
+  },
+  {
+    "text": "Projects",
+    "link": "/projects",
+    "hasSub": true,
+    "sub_menu": [
+      {
+        "text": "Active Projects",
+        "link": "/projects#active-projects",
+        "hasSub": false
+      },
+      {
+        "text": "Pipeline Projects",
+        "link": "/projects#pipeline-projects",
+        "hasSub": false
+      },
+      {
+        "text": "Advisory Services and Analytics",
+        "link": "/projects#advisory-services-and-analytics",
+        "hasSub": false
+      }
+    ]
+  },
+  {
+    "text": "Trust Fund",
+    "link": "/trust-fund",
+    "hasSub": true,
+    "sub_menu": [
+      {
+        "text": "Overview",
+        "link": "/trust-fund#overview",
+        "hasSub": false
+      },
+      {
+        "text": "Activities and Finance",
+        "link": "/trust-fund#activities-and-finance",
+        "hasSub": false
+      },
+      {
+        "text": "Trust Fund Donor ",
+        "link": "/trust-fund#trust-fund-donor",
+        "hasSub": false
+      },
+      {
+        "text": "Trust Fund Documents",
+        "link": "/trust-fund#trust-fund-documents",
+        "hasSub": false
+      }
+    ]
+  },
+  {
+    "text": "What's New",
+    "link": "/whats-new",
+    "hasSub": true,
+    "sub_menu": [
+      {
+        "text": "News",
+        "link": "/whats-new#news",
+        "hasSub": false
+      },
+      {
+        "text": "Events",
+        "link": "/whats-new#events",
+        "hasSub": false
+      },
+      {
+        "text": "Blogs",
+        "link": "/whats-new#blogs",
+        "hasSub": false
+      },
+      {
+        "text": "Stories",
+        "link": "/whats-new#stories",
+        "hasSub": false
+      }
+    ]
+  }
+]

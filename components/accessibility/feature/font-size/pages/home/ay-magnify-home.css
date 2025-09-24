@@ -1,0 +1,7 @@
+.magnified-font .we-card {
+  --we-card-circle-size: 95px;
+}
+
+.magnified-font .we-card-content {
+  padding: 0 10px;
+}

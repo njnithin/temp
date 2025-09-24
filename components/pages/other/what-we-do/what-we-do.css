@@ -1,0 +1,53 @@
+.what-we-do-page [id] {
+  scroll-margin-top: 200px;
+}
+
+.what-we-do .fullwidth-section {
+  padding-top: 31px;
+}
+
+.each-sec:not(:last-child)>div,
+.sub-sec:not(:last-child) {
+  border-bottom: 1px solid var(--br-c2);
+}
+
+.each-sec:not(:last-child)>div {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.sub-sec p:last-of-type {
+  margin-bottom: 0;
+}
+
+.sub-sec:not(:last-child) {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.sub-sec-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.custom-tabs-content.what-we-do {
+  /* margin-bottom: 55px; */
+  margin-bottom: 100px;
+}
+
+/* .overview-body {
+  margin-bottom: 30px;
+} */
+.overview-body table {
+  margin-top: 30px;
+}
+
+.sub-sec ul:last-child {
+  margin-bottom: 0;
+}
+
+.priority-package h2 {
+  /* to make 40px total mb-35px + pb-5px*/
+  padding-bottom: 5px;
+}
+
+/*** Priority package ***/

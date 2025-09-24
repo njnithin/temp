@@ -1,0 +1,4 @@
+/* >>> Set image uploaded by user as block background image <<< */
+.block-bg-img {
+  display: none;
+}

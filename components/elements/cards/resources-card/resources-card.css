@@ -1,0 +1,49 @@
+/* >>> Resources Card <<< */
+.resource-card {
+  /* https://projects.panapps.co/issues/356166 issue 2 height 362px reverted back*/
+  --resource-card-img-height: 362px;
+  /* --resource-card-img-height: 270px; */
+}
+
+.resource-card-content-wrap {
+  position: relative;
+  padding: 19px 45px 96px 45px;
+  /* border-radius: 10px 10px 0 0; */
+  border-radius: 10px;
+  margin-top: -10px;
+  z-index: 1;
+  /* box-shadow: 0px 5px 23px rgba(50, 50, 50, 0.75); */
+}
+
+.resource-card-img,
+.resource-card-img>a,
+.resource-card-img img {
+  width: 100%;
+  height: var(--resource-card-img-height);
+}
+
+.resource-card-img {
+  border: 1px solid var(--br-c4);
+  display: flex;
+  align-items: center;
+  background: var(--br-c2);
+}
+
+.resource-card-img>a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-card-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.resource-card .hoai-card-title a {
+  color: var(--secondary);
+}
+
+.resource-card .hoai-card-title a:hover {
+  color: var(--primary);
+}

@@ -1,0 +1,32 @@
+/* >>> Sub menu styling <<< */
+/*** Background black ***/
+
+/*** END OF Background black ***/
+[ay-theme="high-contrast"] .site-header .sub-item {
+  background: var(--ay-bg);
+}
+
+/*** Color ***/
+[ay-theme="high-contrast"] .site-header .level-1 a {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="high-contrast"] .site-header .level-1 li:not(:hover)>a.active {
+  color: var(--ay-alt);
+}
+
+/*** END OF Color ***/
+
+/*** Full border ***/
+[ay-theme="high-contrast"] .site-header .sub-item {
+  border: 1px solid var(--ay-font-color);
+}
+
+/*** END OF Full border ***/
+
+/*** Invert filter ***/
+[ay-theme="high-contrast"] .site-header .level-1 li.has-sub:not(:hover)>a::after {
+  filter: invert(1);
+}
+
+/*** END OF Invert filter ***/

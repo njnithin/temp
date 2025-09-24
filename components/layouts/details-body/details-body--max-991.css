@@ -1,0 +1,7 @@
+.details-body p {
+  margin-bottom: 20px;
+}
+
+.details-body ul:not(.multi-line-text) li {
+  background: url(img/circle.svg) top 5px left 0 no-repeat;
+}

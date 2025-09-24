@@ -1,0 +1,101 @@
+/* >>> What we do card <<< */
+.we-card {
+  position: relative;
+  --we-card-circle-size: 84px;
+  color: var(--white);
+  /* contrast issue */
+  background: var(--bg-c2);
+}
+
+.we-card-title-wrap {
+  position: relative;
+}
+
+.we-card-title-wrap .editor-icon {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.we-card-circle {
+  width: var(--we-card-circle-size);
+  height: var(--we-card-circle-size);
+  border-radius: 50%;
+  background: var(--primary);
+  /* contrast error fix */
+  color: var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.we-card-circle>* {
+  width: 100%;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.we-card-content {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 15px 0 40px;
+  width: 100%;
+  display: flex;
+}
+
+.we-card-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+/* .we-card-circle {
+  margin-right: 20px;
+} */
+
+.we-card-circle-count {
+  font-size: 2rem;
+  margin-top: -3px;
+}
+
+.we-card-circle-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.we-card-title {
+  font-size: 1.3125rem;
+  font-weight: 700;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.we-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.we-card-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  background: var(--gr-c4);
+}
+
+.we-card-img img {
+  transition: transform 0.5s ease;
+}
+
+.we-card-wrap-link:hover .we-card-img img {
+  transform: scale(1.1);
+}
+
+.we-card-wrap-link:hover .we-card-title {
+  opacity: 0.8;
+}

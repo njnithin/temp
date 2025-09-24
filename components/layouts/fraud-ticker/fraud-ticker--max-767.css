@@ -1,0 +1,12 @@
+.fraud-ticker-popup.nj-popup {
+  --nj-popup-size: 15px;
+}
+
+.fraud-ticker-popup .nj-popup-box {
+  padding: 40px 17px;
+}
+
+.caution-msg::before {
+  width: 17px;
+  height: 17px;
+}

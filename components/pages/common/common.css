@@ -1,0 +1,104 @@
+/* >>> Common style for all pages <<< */
+/* custom drupal message region */
+/* .custom-drupal-message { */
+.custom-drupal-message .alert {
+  margin-top: 16px;
+}
+
+.vanish {
+  display: none !important;
+}
+
+/*** Titles and Desc ***/
+.section-title {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  font-weight: 400;
+}
+
+.section-desc {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--fc-c1);
+}
+
+.section-desc *:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-title--white,
+.section-desc--white {
+  color: var(--white);
+}
+
+.section-title--black,
+.section-title--black > a {
+  color: var(--black);
+}
+
+/*** END OF Titles and Desc ***/
+/* Tab Switch */
+*:focus-visible,
+.non-touch-device input:focus-visible,
+.non-touch-device a:focus-visible,
+.non-touch-device .btn:focus-visible,
+.non-touch-device select:focus-visible,
+.non-touch-device .btn:focus:focus-visible,
+.non-touch-device button:focus-visible {
+  outline: 1px solid var(--black);
+  box-shadow: none;
+}
+
+/* End of Tab Switch */
+.main-min-height .site-header + main > .container {
+  min-height: calc(100vh - var(--header-height));
+}
+
+.no-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  padding: 50px;
+  background-color: var(--bg-c1);
+}
+
+/*** Node content ***/
+.tabs-primary {
+  margin: 50px 0;
+}
+
+.tabs-primary a[href*="/revisions"] {
+  display: none;
+}
+
+body:not(.detail-page,
+  .progress-page) .node__content {
+  margin: 50px auto 100px;
+}
+
+/*** END OF Node content ***/
+/*** Responsive Iframe video ***/
+.responsive-iframe-video {
+  position: relative;
+}
+
+.responsive-iframe-video > iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+}
+
+.responsive-iframe-video:after {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%;
+}
+
+/*** END OF Responsive Iframe video ***/

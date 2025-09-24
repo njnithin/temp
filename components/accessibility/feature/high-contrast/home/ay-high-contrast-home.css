@@ -1,0 +1,73 @@
+/* >>> High contrast theme: Home <<< */
+[ay-theme="high-contrast"] .home-about-box {
+  padding: 30px 40px 40px 40px;
+}
+
+[ay-theme="high-contrast"] .we-card-content {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[ay-theme="high-contrast"] .readmore-btn:hover,
+[ay-theme="high-contrast"] .readmore-btn-wrap a:hover {
+  color: var(--ay-bg) !important;
+}
+
+/* End of Banner Section */
+/* What we do */
+[ay-theme="high-contrast"] .what-we-do-block {
+  --we-do-container-width: 100%;
+}
+
+[ay-theme="high-contrast"] .what-we-do-block,
+[ay-theme="high-contrast"] .what-we-do-block>[data-block="fullwidth_content"],
+[ay-theme="high-contrast"] .what-we-do-sec {
+  min-height: auto !important;
+}
+
+/* End of What we do */
+/* Whats new */
+[ay-theme="high-contrast"] .new-card-img,
+[ay-theme="high-contrast"] .new-card-img>a,
+[ay-theme="high-contrast"] .new-card-img img {
+  height: auto;
+}
+
+[ay-theme="high-contrast"] .mCS-hoai-theme.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: var(--bg-c3);
+}
+
+/* End of Whats new */
+/* Resources */
+[ay-theme="high-contrast"] .resource-card-content-wrap {
+  border-radius: 10px;
+}
+
+[ay-theme="high-contrast"] .resource-card-content-wrap {
+  margin-top: 0;
+}
+
+[ay-theme="high-contrast"] .new-card-img {
+  padding: 25px 30px 20px;
+}
+
+[ay-theme="high-contrast"] .new-card-img .new-card-type {
+  position: static;
+  display: inline-flex;
+}
+
+[ay-theme="high-contrast"] .new-card-img {
+  position: relative;
+}
+
+[ay-theme="high-contrast"] .what-we-do-sec>.view-header .container {
+  margin-bottom: 100px;
+}
+
+/* End of Resources */
+[ay-theme="high-contrast"] .developement-partners-sec .each-partner {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+}

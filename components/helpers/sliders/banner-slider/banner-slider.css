@@ -1,0 +1,141 @@
+/* >>> slider banner style <<< */
+/*** Banner Slider ***/
+.banner-slider {
+  position: relative;
+  --banner-slider-height: var(--home-banner-height);
+  --banner-slider-nav-size: 48px;
+}
+
+.banner-slide {
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  /* inset: 0; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.banner-slide:not(:first-child) {
+  opacity: 0;
+}
+
+.slick-slider .banner-slide:not(:first-child) {
+  opacity: 1;
+}
+
+.banner-slider .slick-arrow {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: 18px;
+  background: url(img/carousel_left.png) no-repeat 0 0 transparent;
+  background-size: cover;
+  width: var(--banner-slider-nav-size);
+  height: var(--banner-slider-nav-size);
+  z-index: 2;
+  font-size: 0;
+  border: 0;
+  color: var(--white);
+}
+
+.banner-slider .slick-arrow:hover {
+  background-image: url(img/carousel_left_hover.png);
+}
+
+.banner-slider .slick-next {
+  left: auto;
+  right: 18px;
+  background-image: url(img/carousel_right.png);
+}
+
+.banner-slider .slick-next:hover {
+  background-image: url(img/carousel_right_hover.png);
+}
+
+.banner-slider .slick-disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+/* .banner-slider ul.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: var(--header-padding);
+  list-style: none;
+  position: absolute;
+  left: auto;
+  z-index: 1;
+  transform: none;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 0 45px 0;
+  padding-bottom: 45px;
+  max-height: calc(var(--banner-slider-height)/2);
+}
+ */
+.banner-slider ul.slick-dots {
+  list-style: none;
+  position: absolute;
+  left: auto;
+  z-index: 1;
+  transform: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column-reverse;
+  right: 0;
+  bottom: 0;
+  padding: 15px 0 45px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  width: var(--header-padding);
+  padding-bottom: 45px;
+  max-height: calc(var(--banner-slider-height)/2);
+}
+
+.banner-slider ul.slick-dots button {
+  width: 13px;
+  height: 13px;
+  font-size: 0;
+  padding: 0;
+  background: var(--tc-c3);
+  border: 0;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.banner-slider ul.slick-dots .slick-active button {
+  background: var(--white);
+  border: 1px solid var(--white);
+}
+
+/* Banner Slider animation */
+.banner-slider .slick-dots li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-slide.slick-active.zoom .banner-img img,
+.banner-slider .slick-dots .slick-active {
+  animation-duration: 10s;
+  animation-name: zoomImg;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+/* End of banner-slider animation */
+/*** End of Banner Slider ***/

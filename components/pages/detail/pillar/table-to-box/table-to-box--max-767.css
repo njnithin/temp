@@ -1,0 +1,13 @@
+.pillar-boxes {
+  --pillar-box-count: 1;
+  --pillar-box-gap: 20px;
+  --pillar-box-padding: 20px;
+}
+
+.pillar-box>.pillar-box-item {
+  text-align: center;
+}
+
+.pillar-box-values {
+  justify-content: center;
+}

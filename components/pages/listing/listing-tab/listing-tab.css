@@ -1,0 +1,115 @@
+/* >>> Listing page tabs using script, used in listing pages, /projects <<< */
+
+.custom-tabs {
+  --custom-tabs-gap: 54.6px;
+  /* --custom-tabs-gap: 54.6px; */
+  --custom-tabs-height: 5px;
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid var(--br-c2);
+  overflow: auto hidden;
+}
+
+.custom-tabs.center {
+  /* justify-content: center; */
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+  padding: 0 15px;
+}
+
+.custom-tabs.center .each-tab-item {
+  display: inline-block;
+}
+
+/* orginal tabs inside form */
+.wrapper-select-tabs {
+  display: none;
+}
+
+/* .each-tab-item {
+  margin-bottom: 6px;
+} */
+.each-tab-item {
+  flex-shrink: 0;
+}
+
+.each-tab-item:not(:last-child) {
+  margin-right: var(--custom-tabs-gap);
+}
+
+.each-tab {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-wrap: nowrap;
+  outline: none;
+  white-space: nowrap;
+}
+
+.each-tab-item.active .each-tab:focus-visible {
+  border: 0;
+  outline: 0;
+}
+
+.each-tab:hover {
+  color: var(--secondary);
+}
+
+/* https://projects.panapps.co/issues/355056 issue 1*/
+.non-touch-device .each-tab:hover {
+  color: var(--primary);
+}
+
+.each-tab.active {
+  pointer-events: none;
+}
+
+.each-tab.active::after {
+  content: "";
+  width: 100%;
+  height: var(--custom-tabs-height);
+  background: var(--primary);
+  margin-bottom: -1px;
+}
+
+.custom-tabs-wrap {
+  position: sticky;
+  top: var(--header-height);
+  /* z-index: 9; */
+  /* accessibility panel overlapping */
+  z-index: 8;
+  background: var(--white);
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+/* Responsive tabs */
+/* .custom-tabs::-webkit-scrollbar { */
+.non-touch-device .custom-tabs::-webkit-scrollbar {
+  /* height: 8px; */
+  height: 5px;
+  background-color: var(--bg-c5);
+}
+
+.non-touch-device .custom-tabs::-webkit-scrollbar-thumb {
+  /* .custom-tabs::-webkit-scrollbar-thumb { */
+  border-radius: 10px;
+  background-color: var(--bg-c6);
+  border-top: 1px solid var(--bg-c5);
+  border-bottom: 1px solid var(--bg-c5);
+}
+
+/* End of Responsive tabs */
+/*** Custom tab Content sec(Used in Projects page) ***/
+.custom-tabs-sec {
+  display: none;
+}
+
+.custom-tabs-sec.active {
+  display: block;
+}
+
+/*** END OF Custom tab Content sec(Used in Projects page) ***/

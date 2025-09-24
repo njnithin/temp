@@ -1,0 +1,8 @@
+.custom-tabs {
+  --custom-tabs-gap: 40px;
+  --custom-tabs-height: 3px;
+}
+
+.custom-tabs-wrap {
+  padding-top: 15px;
+}

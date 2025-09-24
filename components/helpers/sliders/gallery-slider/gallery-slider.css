@@ -1,0 +1,125 @@
+/* >>> Gallery slider  <<< */
+.gallery-sec {
+  --gallery-preview-img-height: 455px;
+  --gallery-thumb-img-height: 84px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-sec.loaded {
+  opacity: 1;
+}
+
+.gallery-sec h2 {
+  margin-bottom: 35px;
+}
+
+.gallery-preview-sec {
+  margin-bottom: 10px;
+}
+
+.gallery-preview-sec .gallery-slider-item img {
+  object-fit: cover;
+  /* object-fit: contain; */
+  height: var(--gallery-preview-img-height);
+}
+
+/* .gallery-preview-sec .gallery-slider-items {
+  background-color: var(--bg-c1);
+}
+
+*/
+.gallery-thumb-sec {
+  position: relative;
+  --st-icon-size: 24px;
+  --st-icon-negative-offset: -39px;
+  margin: 0 54px;
+}
+
+.gallery-thumb-sec .gallery-slider-item {
+  position: relative;
+  margin: 0 5px;
+}
+
+.gallery-thumb-sec .gallery-slider-item img {
+  height: var(--gallery-thumb-img-height);
+  object-fit: cover;
+  /* object-fit: contain; */
+}
+
+.gallery-thumb-sec .slick-slide:not(.slick-current) img {
+  border: 0.5px solid var(--br-c2);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.gallery-thumb-sec .slick-slide:not(.slick-current) img:hover {
+  opacity: 0.8;
+  transition: .5s;
+}
+
+.gallery-thumb-sec .slick-slide.slick-current img {
+  /* border: 1.5px solid var(--br-c2); */
+  border: 1.5px solid var(--primary);
+}
+
+.gallery-thumb-sec .slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: var(--st-icon-size);
+  height: var(--st-icon-size);
+  font-size: 0;
+  background: url(img/prev.svg) center no-repeat;
+  background-size: contain;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  transition: all 0.3s ease;
+}
+
+.gallery-thumb-sec .slick-arrow:hover {
+  background: url(img/prev-hover.svg) center no-repeat;
+  background-size: contain;
+}
+
+.gallery-thumb-sec .slick-prev {
+  left: var(--st-icon-negative-offset);
+  transform: translateY(-50%);
+}
+
+.gallery-thumb-sec .slick-next {
+  right: var(--st-icon-negative-offset);
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/*** Fix for thumb section alignment when lesser items ***/
+/* function used checkSlickNoSlide($galleryThumb) */
+.slick-no-slide .slick-track {
+  width: 100% !important;
+  transform: inherit !important;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-no-slide .slick-slide {
+  float: none;
+  display: inline-block;
+}
+
+/*** END OF Fix for thumb section alignment when lesser items ***/
+/* contain added as per suggestion from sreeraj --> otherwise some people in image will cut off */
+/* cover will remain in thumbnail section, because this looks odd */
+.gallery-preview-sec .gallery-slider-item img {
+  object-fit: contain;
+}
+
+.gallery-preview-sec .gallery-slider-item img {
+  margin: 0 auto;
+}
+
+/*** Gallery video preview ***/
+.video-frame {
+  max-height: var(--gallery-preview-img-height);
+}
+
+/*** END OF Gallery video preview ***/

@@ -1,0 +1,9 @@
+.basic-page {
+  background: var(--bg-c1);
+}
+
+.basic-page-view {
+  margin: 70px auto;
+  padding: 55px 30px;
+  background: var(--white);
+}

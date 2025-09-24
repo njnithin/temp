@@ -1,0 +1,22 @@
+[ay-font-zoom="4"] .ay-item.increase-text a,
+[ay-font-zoom="1"] .ay-item.decrease-text a {
+  pointer-events: none;
+}
+
+[ay-font-zoom="4"] .ay-item.increase-text .ay-tool-icon,
+[ay-font-zoom="4"] .ay-item.increase-text .ay-tool-label,
+[ay-font-zoom="1"] .ay-item.decrease-text a {
+  opacity: 0.3;
+}
+
+[ay-font-zoom="2"] {
+  font-size: calc(var(--base-font-size) + 2px) !important;
+}
+
+[ay-font-zoom="3"] {
+  font-size: calc(var(--base-font-size) + 3px) !important;
+}
+
+[ay-font-zoom="4"] {
+  font-size: calc(var(--base-font-size) + 4px) !important;
+}

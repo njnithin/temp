@@ -1,0 +1,6 @@
+body {
+  /*** Header variables ***/
+  --header-padding: 60px;
+  --header-search-input-width: 150px;
+  --header-link-space: 15px;
+}

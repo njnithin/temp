@@ -1,0 +1,4 @@
+.custom-filter-item .level-1>li.has-sub>a::after,
+.custom-filter-item .level-1 .filter-sub {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.banner-slider {
+  --banner-slider-nav-size: 40px;
+}
+
+.banner-content-container {
+  max-width: calc(100% - var(--banner-slider-nav-size)*3);
+}
+
+.banner-content-panel {
+  max-width: 700px;
+}

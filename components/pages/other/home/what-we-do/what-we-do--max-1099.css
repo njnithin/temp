@@ -1,0 +1,12 @@
+.what-we-do-block {
+  --we-do-card-width: 350px;
+}
+
+.we-card-content {
+  padding: 10px;
+}
+
+.what-we-do-desc {
+  max-width: 485px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,3 @@
+.projects-page .scroll-up-arrow-wrap {
+  right: calc(var(--header-padding)/2);
+}

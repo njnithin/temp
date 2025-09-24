@@ -1,0 +1,54 @@
+/* >>> We page card (used in who-we-are page) <<< */
+.we-page-card-sec {
+  --we-page-card-count: 2;
+  --we-page-card-gap: 30px;
+}
+
+.we-page-card-sec>.view-content {
+  display: grid;
+  grid-template-columns: repeat(var(--we-page-card-count), minmax(0, 1fr));
+  grid-gap: var(--we-page-card-gap);
+}
+
+.we-page-card {
+  height: 100%;
+  padding: 30px 32px 30px 30px;
+  background: var(--white);
+}
+
+.we-page-card--shadow {
+  box-shadow: 2px 2px 25px 3px var(--tc-c1);
+}
+
+.we-page-card-img {
+  margin-bottom: 11px;
+}
+
+.we-page-card-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.56;
+  color: var(--secondary);
+  margin-bottom: 11px;
+}
+
+.we-page-card-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+}
+
+.country-list-sec img {
+  height: 55px;
+  object-fit: contain;
+}
+
+.union-list-sec .we-page-card img {
+  height: 100px;
+  object-fit: contain;
+  width: 154px;
+}
+
+.union-list-sec .we-page-card-name {
+  margin-bottom: 16px;
+}

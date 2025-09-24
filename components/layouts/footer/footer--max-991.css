@@ -1,0 +1,78 @@
+/* >>> Footer max 991 <<< */
+.site-footer {
+  --sf-top-bottom-space: 60px;
+}
+
+.footer-top-container {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.footer-logo {
+  margin-bottom: 50px;
+}
+
+.footer-links .nav {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.footer-links .nav {
+  grid-gap: 10px 30px;
+}
+
+.footer-links .nav-item {
+  padding-bottom: 10px;
+}
+
+.hoai-newsletter {
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+
+/*** centralize content ***/
+.footer-top-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.footer-copyright-text {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-location-sec,
+.footer-contact,
+.footer-links .nav,
+.hoai-newsletter-title,
+.hoai-newsletter h2 {
+  text-align: center;
+}
+
+.footer-location-sec strong {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-location-sec .footer-label {
+  margin-bottom: 10px;
+}
+
+.footer-copyright-text+div {
+  margin: 0 auto;
+}
+
+.footer-copyright-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.follow-us {
+  justify-content: center;
+}
+
+/*** END OF centralize content ***/

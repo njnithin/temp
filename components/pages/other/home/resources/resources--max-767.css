@@ -1,0 +1,17 @@
+.resources-block {
+  --resources-item-count: 1;
+}
+
+.resources-sec {
+  padding-top: 85px;
+}
+
+.resources-sec .each-card {
+  max-width: 335px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.resources-sec>.view-footer {
+  justify-content: center;
+}

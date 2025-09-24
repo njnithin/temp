@@ -1,0 +1,158 @@
+/* >>> Details body common style <<< */
+.details-body {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+}
+
+.details-body > div > .each-file:last-child {
+  margin-bottom: 20px;
+}
+
+.details-body > *:last-child {
+  margin-bottom: 0;
+}
+
+.details-body h1,
+.details-body h2,
+.details-body h3,
+.details-body h4,
+.details-body h5,
+.details-body h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary);
+}
+
+.details-body strong {
+  font-weight: 700;
+}
+
+.details-body h2 {
+  font-size: 1.875rem;
+  color: var(--secondary);
+  /* margin-bottom: 26px; */
+  margin-bottom: 35px;
+}
+
+.details-body h2 + img {
+  margin-top: 34px;
+}
+
+.details-body h3 {
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+}
+
+.details-body h3.fs-twenty {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* .details-body h3 {
+  font-size: 1.25rem;
+} */
+
+.details-body h4 {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.details-body h5 {
+  font-size: 1rem;
+}
+
+.details-body h6 {
+  font-size: 0.875rem;
+}
+
+.details-body p {
+  margin-bottom: 35px;
+}
+
+.details-body p.info,
+.details-body p.info a:not(:hover) {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--fc-c1);
+  line-height: 1.29;
+  font-style: italic;
+}
+
+.details-body p.info a {
+  text-decoration: underline;
+}
+
+.details-body img {
+  /* margin-bottom: 32px; */
+  /* 30px in what we do  */
+  margin-bottom: 30px;
+}
+
+.details-body p.italic-text {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--fc-c1);
+  line-height: 1.2222222222222223;
+}
+
+.details-body ul:not(.multi-line-text) {
+  /* list-style-image: url(img/circle.svg);
+  background-position: left center;
+  padding-left: 18px; */
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  margin-left: 9px;
+}
+
+.details-body ul:not(.multi-line-text) li {
+  list-style-type: none;
+  background: url(img/circle.svg) top 9px left 0 no-repeat;
+  padding-left: 23px;
+}
+
+.details-body ul:not(.multi-line-text) li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.publications-reports-detail-page .details-body img {
+  margin-bottom: 0;
+}
+
+.details-body .gallery-slider-item img {
+  margin-bottom: 0;
+}
+
+.details-body-attachments {
+  margin-top: 35px;
+}
+
+/* What's New Detail Page : UI Issue --> https://projects.panapps.co/issues/357554 */
+.details-body iframe {
+  max-width: 100%;
+}
+
+.details-body p:has(iframe) {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (Height / Width * 100) */
+}
+
+.details-body p iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* https://hoai.assyst-uc.com/news/faire-face-linsecurite-alimentaire-et-au-changement-climatique-dans-la-corne-de-lafrique?destination=/whats-new&cat=News */
+/* inline style with width breaks img outside (suggested by sreeraj reported  by vidya on whatsapp group) */
+.details-body *:not(.slick-list, .slick-track, .listing-intro-box) {
+  max-width: 100%;
+}

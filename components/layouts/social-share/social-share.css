@@ -1,0 +1,102 @@
+.a2a_kit {
+  --social-icon-size: 30px;
+  --social-icon-gap: 20px;
+  display: inline-block;
+  width: 100%;
+  padding-top: 30px;
+  margin-top: 55px;
+  border-top: 1px solid var(--br-c2);
+}
+
+.hoai-social-share,
+.hoai-share-icon-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hoai-share-icon {
+  display: inline-block;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background: url(img/share.svg) center no-repeat;
+  margin-right: var(--social-icon-gap);
+  background-size: contain !important;
+  transition: all 0.3s ease;
+}
+
+/* .hoai-share-icon:hover {
+  background: url(img/share_hover.svg) center no-repeat;
+}
+ */
+.social-share.open .hoai-share-icon {
+  background: url(img/close.svg) center no-repeat;
+}
+
+/* .social-share.open .hoai-share-icon:hover {
+  background: url(img/close_hover.svg) center no-repeat;
+} */
+
+.social-share.open .hoai-share-links {
+  display: flex;
+}
+
+.social-share.open .hoai-share-icon-title {
+  display: none;
+}
+
+.social-share.open .share-title {
+  opacity: 0;
+}
+
+.share-title {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+  margin-bottom: 5px;
+}
+
+.hoai-share-icon-title {
+  font-size: 1rem;
+  color: var(--fc-c1);
+  text-decoration: underline;
+}
+
+.hoai-share-icon-title:hover {
+  color: var(--primary);
+}
+
+.hoai-share-links {
+  display: none;
+}
+
+.hoai-share-links a * {
+  display: none !important;
+}
+
+.hoai-share-links a {
+  display: inline-block;
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
+  border-radius: 50%;
+  padding: 0;
+  background-size: var(--social-icon-size);
+  font-size: 0;
+}
+
+.hoai-share-links a:not(:last-child) {
+  margin-right: var(--social-icon-gap);
+}
+
+.a2a_button_facebook {
+  background: url(img/facebook.svg) center no-repeat;
+}
+
+.a2a_button_twitter {
+  background: url(img/twitter.svg) center no-repeat;
+}
+
+.a2a_button_linkedin {
+  background: url(img/linkedin.svg) center no-repeat;
+}

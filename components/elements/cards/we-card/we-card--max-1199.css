@@ -1,0 +1,18 @@
+/* .we-card-circle {
+  margin-right: 10px;
+} */
+.we-card-title {
+  padding-left: 10px;
+}
+
+.we-card-content {
+  padding: 0 15px;
+}
+
+.we-card {
+  --we-card-circle-size: 70px;
+}
+
+.we-card-img::after {
+  background: var(--gr-c5);
+}

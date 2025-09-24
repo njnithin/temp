@@ -1,0 +1,124 @@
+/* >>> Whats new section styling <<< */
+.whats-new-block {
+  background: var(--bg-c2);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.whats-new-sec {
+  color: var(--white);
+  padding-right: 0;
+}
+
+.whats-new-desc {
+  max-width: 580px;
+  margin-bottom: 42px;
+}
+
+.whats-new-title {
+  margin-bottom: 23px;
+}
+
+.whats-new-sec>.view-content {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.whats-new-sec.loaded>.view-content {
+  opacity: 1;
+}
+
+/*** Infinite scroll style ***/
+.whats-new-sec {
+  /* variables */
+  --new-item-width: 356;
+  --new-item-gap: 40;
+  /* end of variables */
+}
+
+.whats-new-items {
+  max-width: calc(100% - (100% - var(--container-actual-width))/2);
+  width: 100%;
+}
+
+/* .whats-new-items:not(.mCustomScrollbar),
+.whats-new-items .mCSB_container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: var(--new-item-width);
+  grid-gap: 40px;
+}
+ */
+.whats-new-items-scroll {
+  width: 100%;
+  overflow-x: auto;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+
+.whats-new-items-scroll .mCSB_container {
+  display: flex;
+  height: 100%;
+}
+
+.whats-new-items-scroll .whats-new-item {
+  flex-shrink: 0;
+  max-width: calc(var(--new-item-width)*1px);
+  display: flex;
+  width: 100%;
+}
+
+/* .whats-new-items-scroll .whats-new-item:not(:last-child) { */
+.whats-new-items-scroll .whats-new-item {
+  margin-right: calc(var(--new-item-gap)*1px);
+}
+
+.whats-new-items .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  opacity: 1;
+  height: 25px;
+  margin-right: calc((100% - var(--container-actual-width)));
+  right: 96px;
+}
+
+.whats-new-items .mCSB_horizontal.mCSB_inside>.mCSB_container {
+  margin-bottom: 66px;
+}
+
+.whats-new-items .mCSB_scrollTools .mCSB_draggerContainer {
+  top: calc(50% - 2px);
+  left: 75px;
+  transform: translateY(-50%);
+}
+
+/* .whats-new-items .mobile-arrows {
+  display: none;
+} */
+.whats-new-items .new-arrows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.whats-new-items .new-arrow:not(:last-child) {
+  margin-right: 10px;
+}
+
+.whats-new-items .new-arrow.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.whats-new-sec>.view-footer .container {
+  position: relative;
+  height: 24px;
+}
+
+.whats-new-view-all {
+  position: absolute;
+  bottom: 29px;
+  right: 0;
+}
+
+/*** END OF Infinite scroll style ***/

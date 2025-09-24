@@ -1,0 +1,152 @@
+/* >>> Accessibility panel styling <<< */
+.ay-tool {
+  --ay-black: var(--black);
+  --ay-primary: var(--secondary);
+  --ay-white: var(--white);
+  --ay-box-color: var(--white);
+  --ay-box-shadow-color: var(--tc-c5);
+  --ay-tool-size: 52px;
+  /* --ay-tool-box-width: 180px; */
+  /* changed due to magnified fonts */
+  --ay-tool-box-width: 200px;
+  --ay-tool-fc-c1: var(--fc-c1);
+  --ay-tool-fc-c2: var(--fc-c2);
+  position: fixed;
+  top: 160px;
+  /* z-index: 11; */
+  z-index: 9;
+  right: calc(var(--ay-tool-box-width)*-1);
+  transition: right 0.5s ease-in-out;
+  pointer-events: none;
+  display: none;
+}
+
+body.toolbar-fixed.toolbar-tray-open .ay-tool {
+  top: calc(var(--toolbar-tray-open-padding-top) + 15px);
+}
+
+body.toolbar-fixed:not(.toolbar-tray-open) .ay-tool {
+  top: calc(var(--toolbar-tray-closed-padding-top) + 15px);
+}
+
+.home .ay-tool,
+.who-we-are .ay-tool,
+.trust-fund .ay-tool,
+.listing-page .ay-tool,
+.contact-us .ay-tool,
+.what-we-do .ay-tool,
+.projects-page .ay-tool,
+.detail-page .ay-tool,
+.search-page .ay-tool,
+.basic-page .ay-tool {
+  display: flex;
+}
+
+/* .ay-tool {
+  display: flex;
+} */
+
+.ay-tool.loaded {
+  pointer-events: auto;
+}
+
+.ay-tool.open {
+  right: 0;
+}
+
+/* .ay-tool {
+  right: 0;
+} */
+.ay-tool-box {
+  padding: 15px 0;
+  border: 1px solid var(--ay-primary);
+  background: var(--ay-box-color);
+  width: var(--ay-tool-box-width);
+}
+
+
+.ay-tool-icon-area {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: calc(var(--ay-tool-size) * -1);
+}
+
+/* .ay-handicap-icon {
+  font-size: 0;
+  display: inline-block;
+  width: var(--ay-tool-size);
+  height: var(--ay-tool-size);
+  background: var(--ay-primary) url(img/ay-icon.svg) center no-repeat;
+  color: var(--ay-white);
+  box-shadow: 0 0 10px 0 var(--ay-box-shadow-color);
+}
+ */
+.ay-handicap-icon {
+  font-size: 0;
+  width: var(--ay-tool-size);
+  height: var(--ay-tool-size);
+  background: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--ay-white);
+  transition: opacity 0.8s ease;
+}
+
+.ay-handicap-icon:hover svg {
+  opacity: 0.9;
+}
+
+.ay-handicap-icon-svg {
+  width: calc(var(--ay-tool-size) - 22px);
+  height: calc(var(--ay-tool-size) - 22px);
+}
+
+.ay-tools-header {
+  padding: 0 15px 10px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ay-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ay-tool-icon svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  color: var(--ay-black);
+}
+
+/*** Each Feature ***/
+.ay-item a {
+  padding: 8px 15px;
+  font-size: 0.7813rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  color: var(--ay-tool-fc-c2);
+}
+
+.ay-item.active a {
+  font-weight: 700;
+  background-color: var(--ay-primary);
+}
+
+.ay-item.active a,
+.ay-item.active svg {
+  color: var(--ay-white);
+}
+
+
+.ay-tool-label {
+  flex: 1;
+}
+
+/*** END OF Each Feature ***/

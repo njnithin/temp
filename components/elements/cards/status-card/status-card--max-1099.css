@@ -1,0 +1,11 @@
+.status-card {
+  padding: 35px 15px 0 25px;
+}
+
+.status-card-content {
+  padding-bottom: 95px;
+}
+
+.status-card::before {
+  top: 40px;
+}

@@ -1,0 +1,17 @@
+/* >>> Header Menu For Smaller devices <<< */
+[ay-theme="high-contrast"] .site-header .navbar-nav>.nav-item>a,
+[ay-theme="high-contrast"] .site-header .sub-link>a {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="high-contrast"] .site-header li.has-sub>ul {
+  background: var(--ay-bg);
+}
+
+[ay-theme="high-contrast"] .header-mid-right {
+  border: 2px solid var(--ay-font-color);
+}
+
+[ay-theme="high-contrast"] .site-header li.has-sub>ul {
+  border: 1px solid var(--ay-font-color);
+}

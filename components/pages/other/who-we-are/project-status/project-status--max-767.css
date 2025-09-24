@@ -1,0 +1,25 @@
+.projects-status-sec>.view-content {
+  padding: 50px 30px;
+}
+
+.pro-item {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 30px;
+  --pro-item-circle-size: 100px;
+  text-align: center;
+  max-width: 350px;
+}
+
+.pro-item:not(:last-child) {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.pro-title {
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.pro-left::after {
+  display: none;
+}

@@ -1,0 +1,104 @@
+.secure-files-page {
+  background: var(--bg-c1);
+}
+
+.secure-files-page main {
+  padding: 50px;
+  /* min-height: 400px; */
+  display: flex;
+  align-items: center;
+}
+
+.secure-files-page .region-content {
+  background: var(--white);
+  min-height: 180px;
+  max-width: 810px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 50px;
+}
+
+.secure-files-page .region-content h1 {
+  margin-bottom: 18px;
+}
+
+.secure-files-page .node__content {
+  display: none;
+}
+
+.secure-files-page .alert {
+  margin: 15px auto 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.secure-access-key .form-item:first-child {
+  margin: 0;
+}
+
+.secure-access-key .form-text,
+.secure-access-key .form-submit {
+  min-height: 50px;
+  margin-bottom: 0;
+}
+
+.secure-access-title {
+  font-size: 1.1563rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.secure-access-key form>div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.secure-access-key label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.secure-access-key .form-text {
+  border-radius: 0;
+  outline: 0 !important;
+  box-shadow: 0 !important;
+  border: 1px solid var(--br-c1);
+  font-size: 0.875rem;
+  color: var(--fc-c7);
+}
+
+.secure-access-key .form--inline .form-actions {
+  margin: 0;
+}
+
+
+.secure-access-key .form-text:placeholder {
+  font-size: 0.875rem;
+  color: var(--fc-c7);
+}
+
+
+
+.secure-access-key .form-text::placeholder {
+  font-size: 0.875rem;
+  color: var(--fc-c7);
+}
+
+.secure-access-key .form-text::-ms-input-placeholder {
+  font-size: 0.875rem;
+  color: var(--fc-c7);
+}
+
+.secure-access-key .form-text::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}

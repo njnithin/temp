@@ -1,0 +1,4 @@
+/* Issue 2: face cuts https://projects.panapps.co/issues/359501 */
+.detail-banner {
+  --detail-banner-height: 185px;
+}

@@ -1,0 +1,41 @@
+[ay-theme="negative-contrast"] .footer-social-media-icons .twitter {
+  background-position: 0 -31px;
+}
+
+[ay-theme="negative-contrast"] .footer-social-media-icons .facebook {
+  background-position: -43px -29px;
+}
+
+[ay-theme="negative-contrast"] .footer-social-media-icons .linkedin {
+  background-position: -79px -29px;
+}
+
+[ay-theme="negative-contrast"] .footer-social-media-icons .twitter:hover {
+  background-position: 0 0;
+}
+
+[ay-theme="negative-contrast"] .footer-social-media-icons .facebook:hover {
+  background-position: -43px 0;
+}
+
+[ay-theme="negative-contrast"] .footer-social-media-icons .linkedin:hover {
+  background-position: -79px 0;
+}
+
+[ay-theme="negative-contrast"] .hoai-newsletter .subscribe-btn:active,
+[ay-theme="negative-contrast"] .hoai-newsletter .subscribe-btn:focus,
+[ay-theme="negative-contrast"] .hoai-newsletter .subscribe-btn:disabled {
+  background: var(--ay-alt) !important;
+  color: var(--ay-bg) !important;
+  border-color: var(--ay-font-color) !important;
+}
+
+[ay-theme="negative-contrast"] .hoai-newsletter .alert {
+  background: var(--ay-bg);
+  color: var(--ay-font-color);
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="negative-contrast"] .hoai-newsletter .alert .btn-close {
+  filter: invert(1)
+}

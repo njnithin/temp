@@ -1,0 +1,33 @@
+.reg-community {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reg-community .editor-icon {
+  width: 100%;
+}
+
+.reg-community-img {
+  width: 100px;
+  padding: 10px 10px 10px 0;
+  margin-right: 10px;
+}
+
+.reg-community-img img {
+  width: 80px;
+  object-fit: contain;
+  margin-bottom: 0;
+}
+
+.reg-community-name,
+.reg-community-name a {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.reg-community-name a:hover {
+  color: var(--primary);
+}

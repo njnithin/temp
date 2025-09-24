@@ -1,0 +1,20 @@
+.users-list-sec {
+  --users-list-count: 2;
+  --users-list-gap: 35px;
+}
+
+.users-list-sec {
+  margin-top: 30px;
+}
+
+.user-preview {
+  padding-bottom: 40px;
+}
+
+.user-preview-contact {
+  bottom: 3px;
+}
+
+.user-preview.no-social-media {
+  padding-bottom: 30px;
+}

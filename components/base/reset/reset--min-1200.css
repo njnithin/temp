@@ -1,0 +1,12 @@
+/* container reset */
+
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  max-width: 1170px;
+}
+
+/* end of container reset */

@@ -1,0 +1,3 @@
+.each-pillar:not(:last-child) {
+  padding-bottom: 30px;
+}

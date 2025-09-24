@@ -1,0 +1,92 @@
+body .file {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 50px;
+  padding-left: 60px;
+  background: transparent;
+}
+
+body .file a {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--fc-c1);
+  border-bottom: 1px solid var(--br-c10);
+  transition: all 0.3s ease;
+}
+
+body .file a:hover {
+  color: var(--primary);
+}
+
+body .file--application-pdf {
+  background: url(img/pdf.svg) left center no-repeat;
+}
+
+/* .file--mime-application-text file--text */
+body .file--text,
+body .file--mime-application-txt {
+  background: url(img/txt.svg) left center no-repeat;
+}
+
+/* file--mime-application-msword file--x-office-document */
+/* file--mime-application-vnd-openxmlformats-officedocument-wordprocessingml-document */
+body .file--mime-application-doc,
+body .file--mime-application-docx,
+body .file--mime-application-msword,
+body .file--mime-application-vnd-openxmlformats-officedocument-wordprocessingml-document {
+  background: url(img/word.svg) left center no-repeat;
+}
+
+/* file--mime-application-vnd-ms-excel file--x-office-spreadsheet */
+/* file--mime-application-vnd-openxmlformats-officedocument-spreadsheetml-sheet */
+body .file--mime-application-xls,
+body .file--application-xls,
+body .file--mime-application-xlsx,
+body .file--mime-application-vnd-ms-excel,
+body .file--mime-application-vnd-openxmlformats-officedocument-spreadsheetml-sheet {
+  background: url(img/xls.svg) left center no-repeat;
+}
+
+/* file--mime-application-vnd-ms-powerpoint file--x-office-presentation */
+/* file--mime-application-vnd-openxmlformats-officedocument-presentationml-presentation */
+body .file--mime-application-ppt,
+body .file--application-pptx,
+body .file--mime-application-vnd-ms-powerpoint,
+body .file--mime-application-vnd-openxmlformats-officedocument-presentationml-presentation {
+  background: url(img/ppt.svg) left center no-repeat;
+}
+
+/* file--mime-application-vnd-oasis-opendocument-text file--x-office-document */
+body .file--mime-application-odt,
+body .file--application-odt,
+body .file--mime-application-vnd-oasis-opendocument-text {
+  background: url(img/odt.svg) left center no-repeat;
+}
+
+/* file--mime-application-vnd-oasis-opendocument-spreadsheet file--x-office-spreadsheet */
+body .file--mime-application-ods,
+body .file--application-ods,
+body .file--mime-application-vnd-oasis-opendocument-spreadsheet {
+  background: url(img/ods.svg) left center no-repeat;
+}
+
+/* file--mime-text-csv file--text */
+body .file--mime-application-csv,
+body .file--application-csv,
+body .file--mime-text-csv {
+  background: url(img/csv.svg) left center no-repeat;
+}
+
+.file:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.all-files-wrap {
+  margin-top: 30px;
+}
+
+.all-files-wrap .view-more-less-wrap {
+  text-align: center;
+  margin-top: 30px;
+}

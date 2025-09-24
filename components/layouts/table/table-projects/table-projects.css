@@ -1,0 +1,39 @@
+/*** Projects ***/
+.projects-page .table-area {
+  position: relative;
+  pointer-events: none;
+}
+
+.projects-page .table-area.loaded {
+  pointer-events: auto;
+}
+
+
+.projects-page .table-area:not(.loaded)>.view>.view-content::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: url(img/loader.gif) center no-repeat;
+  background-size: 50px;
+}
+
+.table-area.table-to-clone {
+  display: none;
+}
+
+/* for testing purpose */
+/* .countries-list {
+  background: lightcoral;
+}
+
+.table-area tr.remove td {
+  background: peru !important;
+  color: white !important;
+}
+*/
+/*** END OF Projects ***/

@@ -1,0 +1,27 @@
+/*** Detail page Common Styling ***/
+[ay-theme="light-background"] .detail-header *,
+[ay-theme="light-background"] .social-share *,
+[ay-theme="light-background"] .detail-attachment * {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .a2a_kit {
+  border-top: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .hoai-share-icon {
+  filter: saturate(0);
+}
+
+[ay-theme="light-background"] .hoai-share-links a {
+  filter: brightness(1) invert(0) grayscale(5);
+  background-color: var(--ay-alt);
+}
+
+[ay-theme="light-background"] .hoai-share-icon:hover,
+[ay-theme="light-background"] .hoai-share-links a:hover {
+  opacity: 0.8;
+}
+
+
+/*** END OF Detail page Common Styling ***/

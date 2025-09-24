@@ -1,0 +1,211 @@
+/* >>> Map projects <<< */
+.map-area {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--bg-c1);
+  /* opacity: 0;
+  transition: opacity 0.3s ease; */
+}
+
+/* .map-area.map-loaded {
+  opacity: 1;
+}
+*/
+.map-box {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.map-area.map-loaded .map-box {
+  opacity: 1;
+}
+
+.map-area:not(.map-loaded) {
+  position: relative;
+  min-height: 520px;
+  /* background: var(--tc-c5); */
+  /* background: var(--tc-c12); */
+  background: var(--secondary);
+  border-radius: 12px;
+}
+
+.map-area:not(.map-loaded)::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: url(img/loader.gif) center no-repeat;
+  background-size: 50px;
+}
+
+.map-draw {
+  width: 100%;
+  max-width: 710px;
+  border-radius: 12px;
+  /* box-shadow: -2px 0px 10px 0px var(--tc-c1); */
+  margin-right: 50px;
+}
+
+.map-box {
+  border-radius: 12px;
+  box-shadow: -2px 0px 10px 0px var(--tc-c5);
+  background: var(--white);
+  flex: 1;
+  padding: 30px;
+}
+
+.map-box-flag-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--primary);
+}
+
+.map-box-flag {
+  margin-right: 15px;
+}
+
+.map-box-flag img {
+  object-fit: contain;
+  height: 20px;
+}
+
+.map-box-title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.map-box-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+  min-height: 60px;
+  border-bottom: 1px solid var(--br-c2);
+}
+
+.map-box-item:first-child {
+  padding-top: 0;
+}
+
+.map-box-label {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  max-width: 240px;
+  flex: 1;
+  color: var(--fc-c1);
+}
+
+.map-box-value {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  /* font-size: 1.5rem; */
+  /* line-height: 1.2083333333333333; */
+  /* https://projects.panapps.co/issues/358924 issue 1 */
+  /* font size reduced to accomodate upto three digits by navaneeth */
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--white);
+  min-width: 40px;
+  min-height: 40px;
+  background: var(--fc-c1);
+  padding: 5px;
+}
+
+.map-box-value--highlight {
+  background: var(--primary);
+  color: var(--black);
+}
+
+.map-area .highcharts-point:not(.highcharts-null-point) {
+  stroke: var(--secondary);
+}
+
+.map-area .highcharts-point.active-country {
+  /* pointer-events: none; */
+  fill: var(--primary);
+}
+
+.map-area .highcharts-null-point {
+  cursor: auto;
+}
+
+/*** Map Tooltip styling ***/
+.map-tooltip {
+  padding: 5px;
+  min-width: 200px;
+}
+
+.map-tooltip-head {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  color: var(--black);
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+
+.map-tooltip-total {
+  width: 100%;
+  font: 500;
+  color: var(--fc-c1);
+}
+
+.map-tooltip-total-val {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.map-tooltip-flag {
+  margin-right: 5px;
+}
+
+.map-tooltip-flag img {
+  object-fit: contain;
+  height: 10px;
+}
+
+.map-tooltip-values > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/*** END OF Map Tooltip styling ***/
+/*** Map Box Close ***/
+.map-box {
+  position: relative;
+}
+
+.map-box-close {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  display: inline-block;
+  background: url(img/close.svg) center no-repeat;
+  background-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.map-box-close:hover {
+  opacity: 0.8;
+}
+
+/*** END OF Map Box Close ***/

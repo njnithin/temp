@@ -1,0 +1,15 @@
+.custom-tabs {
+  --custom-tabs-gap: 30px;
+}
+
+/* .each-tab-item {
+  margin-bottom: 10px;
+} */
+
+.resource-listing .custom-tabs-wrap {
+  padding-top: 15px;
+}
+
+.custom-tabs.center {
+  padding: 0 20px;
+}

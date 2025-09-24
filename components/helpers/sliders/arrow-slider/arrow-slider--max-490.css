@@ -1,0 +1,4 @@
+/* >>> Arrow slider smaller devices <<< */
+.arrow-slider {
+  --arrow-slider-position: -35px;
+}

@@ -1,0 +1,9 @@
+.users-list-sec {
+  --users-list-count: 1;
+}
+
+.users-list-sec>.view-content {
+  /* .users-list-sec>.view-content>div { */
+  max-width: 250px;
+  margin: 0 auto;
+}

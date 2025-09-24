@@ -1,0 +1,13 @@
+.banner-arrow,
+.banner-arrow-wrap a {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+
+.secondary-btn,
+.secondary-btn-wrap a,
+.listing-view .pager .button,
+.users-list-sec .pager .button {
+  font-size: 0.9232rem;
+}

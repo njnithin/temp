@@ -1,0 +1,7 @@
+.contact-us-top {
+  margin: 45px auto 50px;
+}
+
+.contact-card-item:not(:last-child) {
+  margin-bottom: 20px;
+}

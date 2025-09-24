@@ -1,0 +1,51 @@
+.what-we-do-block {
+  --we-do-card-container-height: 600px;
+}
+
+.we-card {
+  --we-card-circle-size: 65px;
+}
+
+.we-card-content {
+  top: 0;
+  bottom: 0;
+}
+
+.we-card-title-wrap {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.we-card-circle {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.we-card-title {
+  width: 100%;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.we-card-title-wrap {
+  padding: 0 5px;
+}
+
+.we-card-circle {
+  margin-right: 0;
+  margin-bottom: 10px;
+  position: absolute;
+  top: calc(var(--we-card-circle-size) * -1);
+}
+
+.we-card-circle-count {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.we-card-title {
+  padding-left: 0;
+}

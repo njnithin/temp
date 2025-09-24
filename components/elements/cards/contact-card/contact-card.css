@@ -1,0 +1,95 @@
+/* >>> Contact us page cards <<< */
+.contact-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-card-flag-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-card-flag {
+  margin-right: 20px;
+}
+
+.contact-card-flag img {
+  object-fit: contain;
+  height: 40px;
+}
+
+.contact-card-flag-name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.1818181818181819;
+  color: var(--secondary);
+}
+
+.contact-card a {
+  color: var(--fc-c1);
+  text-decoration: underline;
+}
+
+.contact-card a:hover {
+  color: var(--primary);
+}
+
+.contact-card-content {
+  display: flex;
+  margin: 0 -30px;
+}
+
+.contact-card-content>div {
+  position: relative;
+  width: 50%;
+  padding: 0 30px;
+}
+
+.contact-card-content>div:first-child {
+  width: 54.3%;
+}
+
+.contact-card-content>div:last-child {
+  width: 44.7%;
+}
+
+.contact-card-person p:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact-card-content>div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0%;
+  bottom: 0;
+  width: 1px;
+  background: var(--br-c2);
+}
+
+.contact-card-person h4 {
+  font-size: 1.125rem;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-card-person h5,
+.contact-card-person p {
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--fc-c1);
+}
+
+.contact-card-person h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-card-person p {
+  font-weight: 400;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,4 @@
+[ay-theme="light-background"] .we-page-card,
+[ay-theme="light-background"] .po-item {
+  box-shadow: 2px 2px 25px 3px var(--tc-c1);
+}

@@ -1,0 +1,33 @@
+.listing-view .form--inline {
+  align-items: end;
+}
+
+.listing-view label {
+  margin-bottom: 5px;
+}
+
+
+/***  /resources --> Ministerial meeting with title filter ***/
+
+/* .listing-view.with-two-filter .form--inline {
+  grid-template-columns: repeat(2, minmax(0, auto));
+}
+
+.listing-view.with-two-filter {
+  padding-top: 27px;
+}
+
+.listing-view.with-two-filter .listing-search-wrap {
+  top: -30px;
+  right: 0;
+  transform: none;
+  bottom: auto;
+}
+
+.listing-view.with-two-filter .search-icon {
+  width: 12px;
+  height: 12px;
+  right: 14px;
+} */
+
+/*** END OF /resources --> Ministerial meeting with title filter ***/

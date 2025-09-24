@@ -1,0 +1,30 @@
+.magnified-font .home-about-box {
+  padding: 40px 50px 60px 80px;
+}
+
+.magnified-font .we-card-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+}
+
+.magnified-font .we-card-circle {
+  margin-bottom: 10px;
+}
+
+.magnified-font .we-card-title {
+  padding-left: 0;
+  flex: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.magnified-font .we-card-content {
+  height: 100%;
+  bottom: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}

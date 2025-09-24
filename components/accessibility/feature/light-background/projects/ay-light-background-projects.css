@@ -1,0 +1,105 @@
+[ay-theme="light-background"] .each-blk-title,
+[ay-theme="light-background"] .map-area .map-box *,
+[ay-theme="light-background"] .map-tooltip *,
+[ay-theme="light-background"] .chart-card * {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .map-area,
+[ay-theme="light-background"] .each-blk:not(.bg-white):nth-child(even),
+[ay-theme="light-background"] .map-area.map-loaded .map-box,
+[ay-theme="light-background"] .chart-card {
+  background: var(--ay-bg);
+}
+
+/*** Map Area ***/
+[ay-theme="light-background"] .map-box-value,
+[ay-theme="light-background"] .map-area img,
+[ay-theme="light-background"] .chart-card {
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .map-loaded .map-draw,
+[ay-theme="light-background"] .map-area.map-loaded .map-box {
+  border: 1.5px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .map-area.map-loaded .map-box,
+[ay-theme="light-background"] .chart-card {
+  box-shadow: none;
+}
+
+[ay-theme="light-background"] .map-box-flag-title,
+[ay-theme="light-background"] .map-box-item,
+[ay-theme="light-background"] .map-tooltip-head {
+  border-bottom: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .map-box-value,
+[ay-theme="light-background"] .map-area img {
+  background: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+
+[ay-theme="light-background"] .map-area .highcharts-point:not(.highcharts-null-point),
+[ay-theme="light-background"] .highcharts-tooltip path {
+  stroke: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .highcharts-tooltip {
+  filter: none;
+}
+
+[ay-theme="light-background"] .highcharts-tooltip path {
+  stroke-width: 1px;
+}
+
+[ay-theme="light-background"] .map-area .highcharts-background,
+[ay-theme="light-background"] .charts-area .highcharts-background,
+[ay-theme="light-background"] .highcharts-tooltip path,
+[ay-theme="light-background"] .charts-area .highcharts-point {
+  fill: var(--ay-bg);
+}
+
+[ay-theme="light-background"] .map-area .highcharts-point-hover,
+[ay-theme="light-background"] .map-area .active-country {
+  fill: var(--ay-font-color) !important;
+}
+
+/*** END OF Map Area ***/
+/*** Chart Area ***/
+[ay-theme="light-background"] .chart-legends {
+  display: none;
+}
+
+[ay-theme="light-background"] .charts-area .highcharts-label text {
+  color: var(--ay-font-color) !important;
+  fill: var(--ay-font-color) !important;
+}
+
+[ay-theme="light-background"] .charts-area .highcharts-halo {
+  fill: var(--ay-bg);
+  fill-opacity: 0.85;
+}
+
+[ay-theme="light-background"] .charts-area .highcharts-point-hover,
+[ay-theme="light-background"] .charts-area .highcharts-point-select {
+  fill: var(--ay-slice-color);
+}
+
+[ay-theme="light-background"] .charts-area .highcharts-point {
+  stroke-width: 1px;
+  stroke: var(--ay-font-color)
+}
+
+[ay-theme="light-background"] .charts-area .highcharts-label[opacity="0.2"] text {
+  display: none;
+}
+
+/* [ay-theme="light-background"] .highcharts-series-hover .highcharts-label[opacity="1"] text {
+  color: var(--ay-bg) !important;
+  fill: var(--ay-bg) !important;
+} */
+
+/*** END OF Chart Area ***/

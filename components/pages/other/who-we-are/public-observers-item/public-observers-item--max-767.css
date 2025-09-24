@@ -1,0 +1,9 @@
+.po-item-img img {
+  height: 190px;
+}
+
+.po-item {
+  grid-template-columns: minmax(0, 1fr);
+  grid-gap: 20px;
+  padding: 30px;
+}

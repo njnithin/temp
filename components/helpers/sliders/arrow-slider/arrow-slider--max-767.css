@@ -1,0 +1,9 @@
+.arrow-slider {
+  --arrow-slider-position: -35px;
+}
+
+.arrow-slider {
+  max-width: calc(100% - 60px);
+  margin-left: auto;
+  margin-right: auto;
+}

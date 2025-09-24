@@ -1,0 +1,10 @@
+/* >>> Fonts upto large phone <<< */
+:root {
+  --base-font-size: 13px;
+  /* font-size: 13px; */
+  /* font size variable for font in pixel (very large and verysmall font size) */
+  --fs-px65: 3.5rem;
+  --fs-px60: 3rem;
+  --fs-px50: 2.5rem;
+  --fs-px12: 1rem;
+}

@@ -1,0 +1,50 @@
+[ay-theme="negative-contrast"] .table-wrap table tr,
+[ay-theme="negative-contrast"] .table-wrap table .sub-row-title-td,
+[ay-theme="negative-contrast"] .table-wrap table .row-highlight td,
+[ay-theme="negative-contrast"] .table-wrap table ul.multi-line-text li:not(:last-child) {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="negative-contrast"] .table-wrap table * {
+  color: var(--ay-font-color) !important;
+}
+
+[ay-theme="negative-contrast"] .table-wrap table thead th,
+[ay-theme="negative-contrast"] .table-wrap table tr,
+[ay-theme="negative-contrast"] .table-wrap table tr td {
+  background: var(--ay-bg);
+}
+
+[ay-theme="negative-contrast"] .table-wrap table tr td {
+  background: var(--ay-bg) !important;
+}
+
+[ay-theme="negative-contrast"] .table-wrap table {
+  border: 1px solid var(--ay-alt);
+}
+
+[ay-theme="negative-contrast"] .table-wrap table thead th,
+[ay-theme="negative-contrast"] .table-wrap table tr:not(:last-child) {
+  border-bottom: 1px solid var(--ay-alt);
+}
+
+[ay-theme="negative-contrast"] .table-wrap table th:not(:last-child),
+[ay-theme="negative-contrast"] .table-wrap table td:not(:last-child) {
+  border-right: 1px solid var(--ay-alt);
+}
+
+[ay-theme="negative-contrast"] .table-wrap table th {
+  filter: contrast(0.95);
+}
+
+[ay-theme="negative-contrast"] .table-wrap table tr:not(.row-highlight, .sub-row-title, .total-row, .sub-total-row):nth-child(even) td {
+  filter: contrast(0.85) !important;
+}
+
+[ay-theme="negative-contrast"] .table-wrap table tr:not(.row-highlight, .sub-row-title, .total-row, .sub-total-row):nth-child(odd) td {
+  filter: contrast(0.75) !important;
+}
+
+[ay-theme="negative-contrast"] .table-wrap table a:hover {
+  color: var(--ay-alt) !important;
+}

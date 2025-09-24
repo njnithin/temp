@@ -1,0 +1,40 @@
+/* >>> Participating Countries <<< */
+.par-countries {
+  --par-country-item-width: 187.5px;
+  --par-country-item-gap: 20px;
+  --par-country-count: auto-fit;
+}
+
+.par-countries>.view-content {
+  display: grid;
+  grid-template-columns: repeat(var(--par-country-count), minmax(0, var(--par-country-item-width)));
+  grid-gap: var(--par-country-item-gap);
+}
+
+.par-country {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  border: 0.1px solid var(--br-c2);
+  border-radius: 5px;
+}
+
+.par-country-flag {
+  margin-right: 10px;
+}
+
+.par-country-flag img {
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 0;
+}
+
+.par-country-name {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--fc-c1);
+  flex: 1;
+}

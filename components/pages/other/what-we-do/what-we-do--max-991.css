@@ -1,0 +1,21 @@
+.what-we-do-page [id] {
+  scroll-margin-top: 150px;
+}
+
+.each-sec:not(:last-child)>div {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.sub-sec:not(:last-child) {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.sub-sec-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.custom-tabs-content.what-we-do {
+  margin-bottom: 55px;
+}

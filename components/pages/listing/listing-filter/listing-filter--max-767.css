@@ -1,0 +1,53 @@
+.listing-view .form-select {
+  min-width: 100%;
+}
+
+.listing-view input:not(.button) {
+  min-height: auto;
+  max-width: 170px;
+}
+
+.listing-view .select2-container .select2-selection--single {
+  height: 100%;
+}
+
+.listing-view .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: unset;
+}
+
+.listing-view .form--inline {
+  margin: 20px -5px 25px;
+}
+
+.listing-view .form--inline>div {
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+
+.listing-view .form--inline .form-item:not(.listing-search-wrap) {
+  flex: 1;
+  order: 2;
+}
+
+.listing-view .listing-search-wrap {
+  order: 1;
+}
+
+.listing-view .form-item .select2-container {
+  max-width: 100%;
+}
+
+.listing-view:not(.with-two-filter) .listing-search-wrap {
+  flex: 1;
+}
+
+.listing-view:not(.with-two-filter) .form--inline .form-item:not(.listing-search-wrap) {
+  order: 1;
+}
+
+.listing-view.with-two-filter .listing-search-wrap {
+  margin-bottom: 10px !important;
+}

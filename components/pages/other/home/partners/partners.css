@@ -1,0 +1,71 @@
+/* >>> Partners section (Member States,Development partners, Regional organizations) <<< */
+.partners-block {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.partners-block>div:not(:last-child) {
+  margin-bottom: 101px;
+}
+
+.partners-title {
+  text-align: center;
+  margin-bottom: 61px;
+}
+
+
+/*** Member States ***/
+.member-states-sec>.view-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-states-sec .each-partner:not(:last-child) {
+  margin-right: 20px;
+}
+
+.member-states-sec img {
+  height: 75px;
+  width: auto;
+  object-fit: contain;
+}
+
+/*** END OF Member States ***/
+/*** Development Partners ***/
+.developement-partners-sec>.view-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.developement-partners-sec .each-partner:not(:last-child) {
+  margin-right: 50px;
+}
+
+.developement-partners-sec .each-partner img {
+  max-width: 154px;
+  height: 100px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*** END OF Development Partners ***/
+/*** Regional Organizations ***/
+.regional-org-sec>.view-content {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.regional-org-sec .each-partner img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.regional-org-sec .each-partner:not(:last-child) {
+  margin-right: 50px;
+}
+
+/*** END OF Regional Organizations ***/

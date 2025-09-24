@@ -1,0 +1,16 @@
+.site-header .navbar-nav>li {
+  position: relative;
+}
+
+.site-header .navbar-nav>li>ul.sub-item {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  padding: 30px;
+}
+
+.site-header .nav-link.has-sub:hover+ul {
+  display: block;
+}

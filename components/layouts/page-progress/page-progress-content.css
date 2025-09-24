@@ -1,0 +1,24 @@
+/* >>> Specifically for HOAI site <<< */
+
+.country-list-sec {
+  margin-top: 33px;
+  margin-bottom: 8px;
+}
+
+.users-list-sec {
+  margin-top: 73px;
+}
+
+.po-items-sec {
+  margin-top: 43px;
+  margin-bottom: 8px;
+}
+
+.union-list-sec {
+  margin-top: 23px;
+}
+
+.union-list-sec>.view-content {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}

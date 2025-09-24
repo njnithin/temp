@@ -1,0 +1,21 @@
+[ay-theme="light-background"].magnified-font {
+  --mag-menu-main-bg: var(--ay-bg);
+  --mag-menu-sub-bg1: var(--ay-bg);
+  --mag-menu-sub-bg2: var(--ay-bg);
+  --mag-menu-sub-bg3: var(--ay-bg);
+  --mag-menu-link-color: var(--ay-font-color);
+  --mag-menu-highlight-color: var(--ay-alt);
+}
+
+[ay-theme="light-background"].magnified-font .ay-menu-toggle span {
+  background: var(--ay-font-color);
+}
+
+[ay-theme="light-background"].magnified-font .site-header .nav-item.has-sub>a::before,
+[ay-theme="light-background"].magnified-font .site-header .level-1 li.has-sub>a::after {
+  filter: none;
+}
+
+[ay-theme="light-background"].magnified-font .site-header .sub-item .back-li:hover>a {
+  border: 1px solid var(--ay-font-color);
+}

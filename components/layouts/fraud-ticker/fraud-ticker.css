@@ -1,0 +1,51 @@
+.fraud-ticker {
+  display: none;
+}
+
+.fraud-ticker-popup.nj-popup {
+  --nj-popup-bg: rgba(0, 0, 0, 0.4);
+  --nj-popup-box-width: 740px;
+  --nj-popup-box-bg: var(--white);
+  --nj-popup-size: 21px;
+}
+
+.fraud-ticker-popup .nj-popup-close {
+  display: block !important;
+  top: 15px;
+  right: 15px;
+  filter: brightness(0.7);
+}
+
+.fraud-ticker-popup .nj-popup-box {
+  padding: 50px;
+  /* max-height: max-content; */
+  max-height: 260px;
+  min-height: 211px;
+}
+
+.fraud-ticker-popup p:last-child {
+  margin-bottom: 0;
+}
+
+.caution-msg {
+  position: relative;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  padding-left: 30px;
+}
+
+.caution-msg::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(img/caution.png) top 0 left no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

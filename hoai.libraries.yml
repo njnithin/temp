@@ -1,0 +1,940 @@
+global-styling:
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+  css:
+    theme:
+      css/style.css: {weight: -10}
+      # Animations
+      components/base/animations.css: {weight: -10}
+      # Base theme
+      components/base/fonts/fonts.css: {weight: -10}
+      components/base/fonts/fonts--max-1299.css: {media: '(max-width: 1299px)', weight: -10}
+      components/base/fonts/fonts--max-1199.css: {media: '(max-width: 1199px)', weight: -10}
+      components/base/fonts/fonts--max-991.css: {media: '(max-width: 991px)', weight: -10}
+      components/base/fonts/fonts--max-767.css: {media: '(max-width: 767px)', weight: -10}
+      components/base/fonts/fonts--max-450.css: {media: '(max-width: 450px)', weight: -10}
+      components/base/fonts/fonts--max-320.css: {media: '(max-width: 320px)', weight: -10}
+      components/base/base.css: {weight: -10}
+      # Reset
+      components/base/reset/reset.css: {weight: -10}
+      components/base/reset/reset--min-1200.css: {media: '(min-width: 1200px)', weight: -10}
+      components/base/reset/reset--max-767.css: {media: '(max-width: 767px)', weight: -10}
+      # Variables
+      components/variables/colors.css: {weight: -10}
+      components/variables/transitions.css: {weight: -10}
+      components/variables/containers/containers.css: {weight: -10}
+      components/variables/containers/containers--min-576.css: {media: '(min-width: 576px)', weight: -10}
+      components/variables/containers/containers--min-768.css: {media: '(min-width: 768px)', weight: -10}
+      components/variables/containers/containers--min-992.css: {media: '(min-width: 992px)', weight: -10}
+      components/variables/containers/containers--min-1200.css: {media: '(min-width: 1200px)', weight: -10}
+      components/variables/containers/containers--max-767.css: {media: '(max-width: 767px)', weight: -10}
+      # Buttons
+      components/elements/buttons/buttons.css: {weight: -10}
+      components/elements/buttons/buttons--max-767.css: {media: '(max-width: 767px)', weight: -10}
+      components/elements/buttons/buttons--max-450.css: {media: '(max-width: 450px)', weight: -10}
+      components/elements/buttons/buttons--max-320.css: {media: '(max-width: 320px)', weight: -10}
+      # Header
+      components/layouts/header/header.css: {weight: -10}
+      components/layouts/header/header-sub-menu/header-sub-menu--min-992.css: {media: '(min-width: 992px)', weight: -10}
+      components/layouts/header/header--min-992.css: {media: '(min-width: 992px)', weight: -10}
+      components/layouts/header/header--max-1399.css: {media: '(max-width: 1399px)', weight: -10}
+      components/layouts/header/header--max-1299.css: {media: '(max-width: 1299px)', weight: -10}
+      components/layouts/header/header--max-1199.css: {media: '(max-width: 1199px)', weight: -10}
+      components/layouts/header/header--max-1024.css: {media: '(max-width: 1024px)', weight: -10}
+      components/layouts/header/header-menu/header-menu--max-991.css: {media: '(max-width: 991px)', weight: -10}
+      # Footer
+      components/layouts/footer/footer.css: {weight: -10}
+      components/layouts/footer/footer--max-1199.css: {media: '(max-width: 1199px)', weight: -10}
+      components/layouts/footer/footer--max-991.css: {media: '(max-width: 991px)', weight: -10}
+      components/layouts/footer/footer--max-767.css: {media: '(max-width: 767px)', weight: -10}
+      components/layouts/footer/footer--max-490.css: {media: '(max-width: 490px)', weight: -10}
+      # Common for all pages
+      components/pages/common/common.css: {weight: -10}
+      components/pages/common/common--max-991.css: {media: '(max-width: 991px)', weight: -10}
+  js:
+    components/helpers/global-functions/global-functions.js: {weight: -10} # global helper functions
+    components/pages/common/common.js: {weight: -10}
+    components/layouts/header/header.js: {weight: -10} 
+    components/layouts/header/header-sub-menu/header-sub-menu.js: {weight: -10}
+    components/layouts/header/header-menu/header-menu.js: {weight: -10}
+### LIBRARIES ###
+# Scrollbar
+library-mCustomScrollbar:
+  css:
+    theme:
+      /libraries/mCustomscroll/mCustomScrollbar.css: {weight: -10}
+      /libraries/mCustomscroll/mCustomScrollbarCustom.css: {weight: -10} # user defined theme and styles
+  js:
+    /libraries/mCustomscroll/mCustomScrollbar.concat.min.js: {weight: -10}
+# Slick
+library-slick:
+  css:
+    theme:
+      /libraries/slick-slider/slick.css: {weight: -10}
+      /libraries/slick-slider/slick-custom.css: {weight: -10} # custom styles
+  js:
+    /libraries/slick-slider/slick.min.js: {weight: -10}
+# AOS
+library-aos:
+  css:
+    theme:
+      /libraries/aos/aos.css: {weight: -10}
+  js:
+    /libraries/aos/aos.js: {weight: -10}
+# Select 2
+library-select2:
+  css:
+    theme:
+      /libraries/select2/select2.min.css: {weight: -10}
+  js:
+    /libraries/select2/select2.min.js: {weight: -10}
+    /libraries/select2/select2-force-below.min.js: {weight: -10}
+# Highmaps
+library-highmaps:
+  js:
+    /libraries/highmaps/highmaps.js: {weight: -10}
+    /libraries/highmaps/exporting.js: {weight: -10}
+    /libraries/highmaps/accessibility.js: {weight: -10}
+# Highmaps exporting
+library-highmaps-exporting:
+  js:
+    /libraries/highmaps/exporting.js: {weight: -10}
+# Highmaps Africa JS
+library-highmaps-africa:
+  js:
+    /libraries/highmaps/highmaps-africa.js: {weight: -10}
+# Highcharts
+library-highcharts:
+  js:
+    /libraries/highcharts/highcharts.js: {weight: -10}
+### END OF LIBRARIES ###
+### ACCESSIBILITY TOOLS ###
+# Features
+# gray scale
+ay-gray-scale:
+  css:
+    theme:
+      components/accessibility/feature/gray-scale/ay-gray-scale.css: {}
+ay-high-contrast:
+  css:
+    theme:
+      components/accessibility/feature/high-contrast/header-sub-menu/ay-high-contrast-header-sub-menu--min-992.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/high-contrast/header-magnify/ay-high-contrast-header-magnify--min-992.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/high-contrast/header-menu/ay-high-contrast-header-menu--max-991.css: {media: '(max-width: 991px)'}
+      # accordion
+      components/accessibility/feature/high-contrast/accordion/ay-high-contrast-accordion.css: {}
+      # home
+      components/accessibility/feature/high-contrast/home/ay-high-contrast-home.css: {}
+      components/accessibility/feature/high-contrast/home/ay-high-contrast-home--max-767.css: {media: '(max-width: 767px)'}
+      # projects
+      components/accessibility/feature/high-contrast/projects/ay-high-contrast-projects.css: {}
+      components/accessibility/feature/high-contrast/table-area/ay-high-contrast-table-area.css: {}
+      components/accessibility/feature/high-contrast/details-body-table/ay-high-contrast-details-body-table.css: {}
+      components/accessibility/feature/high-contrast/detail-page/ay-high-contrast-detail-page.css: {}
+      # search
+      components/accessibility/feature/high-contrast/search/ay-high-contrast-search.css: {}
+      # pagination
+      components/accessibility/feature/high-contrast/pagination/ay-high-contrast-pagination.css: {}
+      components/accessibility/feature/high-contrast/ay-high-contrast.css: {}
+ay-negative-contrast:
+  css:
+    theme:
+      components/accessibility/feature/negative-contrast/header/ay-negative-contrast-header.css: {}
+      components/accessibility/feature/negative-contrast/header-sub-menu/ay-negative-contrast-header-sub-menu--min-992.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/negative-contrast/header-magnify/ay-negative-contrast-header-magnify--min-992.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/negative-contrast/header-menu/ay-negative-contrast-header-menu--max-991.css: {media: '(max-width: 991px)'}
+      components/accessibility/feature/negative-contrast/accordion/ay-negative-contrast-accordion.css: {}
+      components/accessibility/feature/negative-contrast/footer/ay-negative-contrast-footer.css: {}
+      components/accessibility/feature/negative-contrast/home/ay-negative-contrast-home.css: {}
+      components/accessibility/feature/negative-contrast/home/ay-negative-contrast-home--max-767.css: {media: '(max-width: 767px)'}
+      components/accessibility/feature/negative-contrast/table-area/ay-negative-contrast-table-area.css: {}
+      components/accessibility/feature/negative-contrast/details-body-table/ay-negative-contrast-details-body-table.css: {}
+      components/accessibility/feature/negative-contrast/projects/ay-negative-contrast-projects.css: {}
+      components/accessibility/feature/negative-contrast/detail-page/ay-negative-contrast-detail-page.css: {}
+      # search
+      components/accessibility/feature/negative-contrast/search/ay-negative-contrast-search.css: {}
+      # pagination
+      components/accessibility/feature/negative-contrast/pagination/ay-negative-contrast-pagination.css: {}
+      components/accessibility/feature/negative-contrast/ay-negative-contrast.css: {}
+ay-light-background:
+  css:
+    theme:
+      components/accessibility/feature/light-background/header/ay-light-header.css: {}
+      components/accessibility/feature/light-background/header-sub-menu/ay-light-background-header-sub-menu--min-992.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/light-background/header-magnify/ay-light-background-header-magnify--min-992.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/light-background/header/ay-light-header-magnify.css: {media: '(min-width: 992px)'}
+      components/accessibility/feature/light-background/header-menu/ay-light-background-header-menu--max-991.css: {media: '(max-width: 991px)'}
+      components/accessibility/feature/light-background/accordion/ay-light-background-accordion.css: {}
+      components/accessibility/feature/light-background/footer/ay-light-footer.css: {}
+      components/accessibility/feature/light-background/home/ay-light-home.css: {}
+      components/accessibility/feature/light-background/home/ay-light-home--max-767.css: {media: '(max-width: 767px)'}
+      components/accessibility/feature/light-background/page-progress/ay-light-page-progress.css: {}
+      components/accessibility/feature/light-background/who-we-are/ay-light-who-we-are.css: {}
+      # projects
+      components/accessibility/feature/light-background/table-area/ay-light-background-table-area.css: {}
+      components/accessibility/feature/light-background/details-body-table/ay-light-background-details-body-table.css: {}
+      components/accessibility/feature/light-background/projects/ay-light-background-projects.css: {}
+      # detail page
+      components/accessibility/feature/light-background/detail-page/ay-light-background-detail-page.css: {}
+      # search
+      components/accessibility/feature/light-background/search/ay-light-background-search.css: {}
+      # pagination
+      components/accessibility/feature/light-background/pagination/ay-light-background-pagination.css: {}
+      components/accessibility/feature/light-background/ay-light-background.css: {}
+# increase decrease fontsize
+ay-font-size:
+  css:
+    theme:
+      ## layouts
+      # magnified header
+      components/accessibility/feature/font-size/layouts/header-magnify/header-magnify--min-992.css: {media: '(min-width: 992px)'}
+      # Home
+      components/accessibility/feature/font-size/pages/home/ay-magnify-home.css: {}
+      components/accessibility/feature/font-size/pages/home/ay-magnify-home--min-768--max-1299.css:  {media: '(min-width: 768px) and (max-width: 1299px)'}
+      components/accessibility/feature/font-size/pages/home/ay-magnify-home--max-991.css: {media: '(max-width: 991px)'}
+      components/accessibility/feature/font-size/pages/home/ay-magnify-home--max-767.css: {media: '(max-width: 767px)'}
+      components/accessibility/feature/font-size/pages/home/ay-magnify-home--max-375.css: {media: '(max-width: 375px)'}
+      # What we do page
+      components/accessibility/feature/font-size/pages/what-we-do/ay-magnify-what-we-do.css: {}
+      components/accessibility/feature/font-size/pages/what-we-do/ay-magnify-what-we-do--max-767.css: {media: '(max-width: 767px)'}
+      ## common
+      components/accessibility/feature/font-size/ay-font-size.css: {}
+  js:
+    components/accessibility/feature/font-size/layouts/header-magnify/header-magnify.js: {weight: -1}
+# links underline
+ay-links-underline:
+  css:
+    theme:
+      components/accessibility/feature/links-underline/ay-links-underline.css: {}
+# readable font
+ay-readable-font:
+  css:
+    theme:
+      components/accessibility/feature/readable-font/ay-readable-font.css: {}
+### END OF ACCESSIBILITY TOOLS ###
+### HELPERS(function widgets, helper functions for the site) ###
+# limit pagination
+limit-drupal-pagination:
+  css:
+    theme:
+      components/helpers/limit-pagination/limit-pagination.css: {media: '(max-width: 767px)'}
+  js:
+    components/helpers/limit-pagination/limit-pagination.js: {}
+# popup
+popup:
+  css:
+    theme:
+      components/helpers/popup/popup.css: {}
+      components/helpers/popup/popup--max-767.css: {media: '(max-width: 767px)'}
+      components/helpers/popup/popup--max-320.css: {media: '(max-width: 320px)'}
+  js:
+    components/helpers/popup/popup.js: {}
+# running counter
+running-counter:
+  js:
+    components/helpers/running-counter/running-counter.js: {}
+# custom-loadmore
+custom-loadmore:
+  css:
+    theme:
+      components/helpers/loadmore/loadmore.css: {}
+  js:
+    components/helpers/loadmore/loadmore.js: {}
+## Sliders
+# banner slider
+banner-slider:
+  css:
+    theme:
+      components/helpers/sliders/banner-slider/banner-slider.css: {}
+      components/helpers/sliders/banner-slider/banner-slider--max-1299.css: {media: '(max-width: 1299px)'}
+      components/helpers/sliders/banner-slider/banner-slider--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/helpers/sliders/banner-slider/banner-slider.js: {}
+# arrow slider
+arrow-slider:
+  css:
+    theme:
+      components/helpers/sliders/arrow-slider/arrow-slider.css: {}
+      components/helpers/sliders/arrow-slider/arrow-slider--max-1299.css: {media: '(max-width: 1299px)'}
+      components/helpers/sliders/arrow-slider/arrow-slider--max-1199.css: {media: '(max-width: 1199px)'}
+      components/helpers/sliders/arrow-slider/arrow-slider--max-1024.css: {media: '(max-width: 1024px)'}
+      components/helpers/sliders/arrow-slider/arrow-slider--max-767.css: {media: '(max-width: 767px)'}
+      components/helpers/sliders/arrow-slider/arrow-slider--max-575.css: {media: '(max-width: 575px)'}
+      components/helpers/sliders/arrow-slider/arrow-slider--max-490.css: {media: '(max-width: 490px)'}
+  js:
+    components/helpers/sliders/arrow-slider/arrow-slider.js: {}
+# gallery slider
+gallery-slider:
+  css:
+    theme:
+      components/helpers/sliders/gallery-slider/gallery-slider.css: {}
+      components/helpers/sliders/gallery-slider/gallery-slider--max-1399.css: {media: '(max-width: 1399px)'}
+      components/helpers/sliders/gallery-slider/gallery-slider--max-767.css: {media: '(max-width: 767px)'}
+      components/helpers/sliders/gallery-slider/gallery-slider--max-540.css: {media: '(max-width: 540px)'}
+      components/helpers/sliders/gallery-slider/gallery-slider--max-399.css: {media: '(max-width: 399px)'}
+      components/helpers/sliders/gallery-slider/gallery-slider--max-320.css: {media: '(max-width: 320px)'}
+  js:
+    components/helpers/sliders/gallery-slider/gallery-slider.js: {}
+### END OF HELPERS ###
+### LAYOUTS ###
+# pagination
+pagination:
+  css:
+    theme:
+      components/layouts/pagination/pagination.css: {}   
+# Social media share (used in detail-page)
+social-share:
+  css:
+    theme:
+      components/layouts/social-share/social-share.css: {}
+  js:
+    components/layouts/social-share/social-share.js: {}      
+# Page progress
+page-progress:
+  css:
+    theme:
+      components/layouts/page-progress/page-progress.css: {}
+      components/layouts/page-progress/page-progress--max-1199.css: {media: '(max-width: 1199px)'}
+      components/layouts/page-progress/page-progress--max-991.css: {media: '(max-width: 991px)'}
+      components/layouts/page-progress/page-progress--max-767.css: {media: '(max-width: 767px)'}
+      components/layouts/page-progress/page-progress-content.css: {}
+      components/layouts/page-progress/page-progress-content--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/layouts/page-progress/add-gray-bg.js: {}
+    components/layouts/page-progress/page-progress.js: {}
+# Banners
+banners-common:
+  css:
+    theme:
+      components/layouts/banners/banners-common.css: {}
+      components/layouts/banners/banners-common--max-767.css: {media: '(max-width: 767px)'}
+# Home Banner
+home-banner:
+  css:
+    theme:
+      components/layouts/banners/home-banner/home-banner.css: {}
+      components/layouts/banners/home-banner/home-banner--min-1025.css: {media: '(min-width: 1025px)'}
+      components/layouts/banners/home-banner/home-banner--max-991.css: {media: '(max-width: 991px)'}
+      components/layouts/banners/home-banner/home-banner--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/layouts/banners/home-banner/home-banner.js: {}
+# Detail banner ( Banners used in detail pages)
+detail-banner:
+  css:
+    theme:
+      components/layouts/banners/detail-banner/detail-banner.css: {}
+      components/layouts/banners/detail-banner/detail-banner--max-991.css: {media: '(max-width: 991px)'}
+      components/layouts/banners/detail-banner/detail-banner--max-400.css: {media: '(max-width: 400px)'}
+# Details body
+details-body:
+  css:
+    theme:
+      # body styles
+      components/layouts/details-body/details-body.css: {}
+      components/layouts/details-body/details-body--max-991.css: {media: '(max-width: 991px)'}
+      components/layouts/details-body/details-body--max-767.css: {media: '(max-width: 767px)'}
+# Details body table
+details-body-table:
+  css:
+    theme:
+      # table
+      components/layouts/details-body/details-body-table/details-body-table.css: {}
+  js:
+    components/layouts/details-body/details-body-table/details-body-table.js: {}
+# file-upload-preview
+file-upload-preview:
+  css:
+    theme:
+      components/layouts/file-upload-preview/file-upload-preview.css: {}
+  js:
+    components/layouts/file-upload-preview/file-upload-preview.js: {}
+### MAPS ###
+## Projects Map ##
+map-projects:
+  css:
+    theme:
+      components/layouts/maps/projects/map-projects.css: {}
+      components/layouts/maps/projects/map-projects--max-1199.css: {media: '(max-width: 1199px)'}
+      components/layouts/maps/projects/map-projects--max-991.css: {media: '(max-width: 991px)'}
+      components/layouts/maps/projects/map-projects--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/layouts/maps/projects/map-projects.js: {} 
+    components/layouts/maps/projects/map-projects-call.js: {}
+### Charts ###
+## Projects Charts ##
+chart-projects:
+  css:
+    theme:
+      components/layouts/charts/projects/chart-projects.css: {}
+      components/layouts/charts/projects/chart-projects--max-1199.css: {media: '(max-width: 1199px)'}
+      components/layouts/charts/projects/chart-projects--max-991.css: {media: '(max-width: 991px)'}
+      components/layouts/charts/projects/chart-projects--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/layouts/charts/projects/chart-projects.js: {} 
+    components/layouts/charts/projects/chart-projects-call.js: {}
+### Tables ###
+table-common:
+  css:
+    theme:
+      components/layouts/table/table-area.css: {}  
+## Projects table ##      
+table-projects:
+  css:
+    theme:
+      components/layouts/table/table-projects/table-projects.css: {}         
+  js:
+    components/layouts/table/table-projects/table-projects.js: {} 
+## Table what we do page (table-priority-package) ##      
+table-priority-package:
+  css:
+    theme:
+      components/layouts/table/table-priority-package/table-priority-package.css: {}   
+  js:
+    components/layouts/table/table-priority-package/table-priority-package.js: {}                
+### END OF LAYOUTS ###
+### ELEMENTS ###
+# site-loader
+site-loader:
+  css:
+    theme:
+      components/elements/site-loader/site-loader.css: {}
+  js:
+    components/elements/site-loader/site-loader.js: {weight: -1}
+## Cards
+# cards
+cards:
+  css:
+    theme:
+      components/elements/cards/cards.css: {}
+# we card
+we-card:
+  css:
+    theme:
+      components/elements/cards/we-card/we-card.css: {}
+      components/elements/cards/we-card/we-card--max-1399.css: {media: '(max-width: 1399px)'}
+      components/elements/cards/we-card/we-card--max-1199.css: {media: '(max-width: 1199px)'}
+      components/elements/cards/we-card/we-card--max-767.css: {media: '(max-width: 767px)'}
+# whats-new-card
+whats-new-card:
+  css:
+    theme:
+      components/elements/cards/whats-new-card/whats-new-card.css: {}
+# resources card (now this is used as a common card)
+resources-card:
+  css:
+    theme:
+      components/elements/cards/resources-card/resources-card.css: {}
+      components/elements/cards/resources-card/resources-card--max-1099.css: {media: '(max-width: 1099px)'}
+      components/elements/cards/resources-card/resources-card--max-991.css: {media: '(max-width: 991px)'}
+# status card
+status-card:
+  css:
+    theme:
+      components/elements/cards/status-card/status-card.css: {}
+      components/elements/cards/status-card/status-card--max-1099.css: {media: '(max-width: 1099px)'}
+# we page country and union card (used in who-we-are page)
+we-page-card:
+  css:
+    theme:
+      components/elements/cards/we-page-card/we-page-card.css: {}
+      components/elements/cards/we-page-card/we-page-card--max-767.css: {media: '(max-width: 767px)'}
+# contact us card card (used in contact us page)
+contact-card:
+  css:
+    theme:
+      components/elements/cards/contact-card/contact-card.css: {}
+      components/elements/cards/contact-card/contact-card--max-767.css: {media: '(max-width: 767px)'}
+# accordion
+accordion:
+  css:
+    theme:
+      components/elements/accordion/accordion.css: {}
+      components/elements/accordion/accordion--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/elements/accordion/accordion.js: {}      
+### END OF ELEMENTS ###
+### PAGES ###
+## Other pages ##
+# 404,other exception pages
+page-exception:
+  css:
+    theme:
+      components/pages/other/page-exception/page-exception.css: {}
+# Home
+# block backround image
+block-background:
+  css:
+    theme:
+      components/pages/other/home/block-background/block-background.css: {}
+  js:
+    components/pages/other/home/block-background/block-background.js: {}
+# home video
+home-video:
+  css:
+    theme:
+      components/pages/other/home/home-video/home-video.css: {}
+      components/pages/other/home/home-video/home-video--max-1024.css: {media: '(max-width: 1024px)'}
+      components/pages/other/home/home-video/home-video--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/pages/other/home/home-video/home-video.js: {}    
+# home-about
+home-about:
+  css:
+    theme:
+      components/pages/other/home/about/about.css: {}
+      components/pages/other/home/about/about--max-1024.css: {media: '(max-width: 1024px)'}
+      components/pages/other/home/about/about--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/other/home/about/about--max-767.css: {media: '(max-width: 767px)'}
+# what we do
+what-we-do:
+  css:
+    theme:
+      components/pages/other/home/what-we-do/what-we-do.css: {}
+      components/pages/other/home/what-we-do/what-we-do--max-1199.css: {media: '(max-width: 1199px)'}
+      components/pages/other/home/what-we-do/what-we-do--max-1099.css: {media: '(max-width: 1099px)'}
+      components/pages/other/home/what-we-do/what-we-do--min-500--max-991.css: {media: '(min-width: 500px) and (max-width: 991px)'}
+      components/pages/other/home/what-we-do/what-we-do--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/other/home/what-we-do/what-we-do--max-540.css: {media: '(max-width: 540px)'}
+      components/pages/other/home/what-we-do/what-we-do--max-499.css: {media: '(max-width: 499px)'}
+# whats new
+whats-new:
+  css:
+    theme:
+      components/pages/other/home/whats-new/whats-new.css: {}
+      components/pages/other/home/whats-new/whats-new--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/other/home/whats-new/whats-new--max-575.css: {media: '(max-width: 575px)'}
+      components/pages/other/home/whats-new/whats-new--max-375.css: {media: '(max-width: 375px)'}
+      components/pages/other/home/whats-new/whats-new--max-320.css: {media: '(max-width: 320px)'}
+  js:
+    components/pages/other/home/whats-new/whats-new.js: {}
+# resources
+resources:
+  css:
+    theme:
+      components/pages/other/home/resources/resources.css: {}
+      components/pages/other/home/resources/resources--max-1099.css: {media: '(max-width: 1099px)'}
+      components/pages/other/home/resources/resources--max-767.css: {media: '(max-width: 767px)'}
+# status
+status:
+  css:
+    theme:
+      components/pages/other/home/status/status.css: {}
+      components/pages/other/home/status/status--max-1099.css: {media: '(max-width: 1099px)'}
+      components/pages/other/home/status/status--max-767.css: {media: '(max-width: 767px)'}
+# partners
+partners:
+  css:
+    theme:
+      components/pages/other/home/partners/partners.css: {}
+      components/pages/other/home/partners/partners--max-1099.css: {media: '(max-width: 1099px)'}
+      components/pages/other/home/partners/partners--max-1024.css: {media: '(max-width: 1024px)'}
+      components/pages/other/home/partners/partners--max-767.css: {media: '(max-width: 767px)'}      
+# Who we are page
+# users-list
+users-list:
+  css:
+    theme:
+      components/pages/other/who-we-are/users-list/users-list.css: {}
+      components/pages/other/who-we-are/users-list/users-list--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/other/who-we-are/users-list/users-list--max-540.css: {media: '(max-width: 540px)'}
+  js:
+    components/pages/other/who-we-are/users-list/users-list.js: {}      
+# public observers
+public-observers-item:
+  css:
+    theme:
+      components/pages/other/who-we-are/public-observers-item/public-observers-item.css: {}
+      components/pages/other/who-we-are/public-observers-item/public-observers-item--max-1024.css: {media: '(max-width: 1024px)'}
+      components/pages/other/who-we-are/public-observers-item/public-observers-item--max-767.css: {media: '(max-width: 767px)'}
+# project status
+project-status:
+  css:
+    theme:
+      components/pages/other/who-we-are/project-status/project-status.css: {}
+      components/pages/other/who-we-are/project-status/project-status--max-1199.css: {media: '(max-width: 1199px)'}
+      components/pages/other/who-we-are/project-status/project-status--max-1024.css: {media: '(max-width: 1024px)'}
+      components/pages/other/who-we-are/project-status/project-status--max-767.css: {media: '(max-width: 767px)'}
+# participating countries
+participating-countries:
+  css:
+    theme:
+      components/pages/other/what-we-do/participating-countries/participating-countries.css: {}
+      components/pages/other/what-we-do/participating-countries/participating-countries--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/other/what-we-do/participating-countries/participating-countries--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/other/what-we-do/participating-countries/participating-countries--max-320.css: {media: '(max-width: 320px)'}
+# supporting countries
+supporting-countries:
+  css:
+    theme:
+      components/pages/other/what-we-do/supporting-countries/supporting-countries.css: {}
+      components/pages/other/what-we-do/supporting-countries/supporting-countries--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/other/what-we-do/supporting-countries/supporting-countries--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/other/what-we-do/supporting-countries/supporting-countries--max-400.css: {media: '(max-width: 400px)'}
+# regional community
+regional-community:
+  css:
+    theme:
+      components/pages/other/what-we-do/regional-community/regional-community.css: {}
+# pillars
+pillars-section:
+  css:
+    theme:
+      components/pages/other/what-we-do/pillars/pillars.css: {}
+      components/pages/other/what-we-do/pillars/pillars--max-991.css: {media: '(max-width: 991px)'}
+## End of what we do page ##
+# listing tab
+listing-tab:
+  css:
+    theme:
+      components/pages/listing/listing-tab/listing-tab.css: {}
+      components/pages/listing/listing-tab/listing-tab--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/listing-tab/listing-tab--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/pages/listing/listing-tab/listing-tab.js: {}
+# custom tab used in: /projects
+custom-listing-tab:
+  css:
+    theme:
+      # common style for tabs structure
+      components/pages/listing/listing-tab/listing-tab.css: {}
+      components/pages/listing/listing-tab/listing-tab--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/listing-tab/listing-tab--max-767.css: {media: '(max-width: 767px)'}
+      # used in: /projects
+      components/pages/listing/listing-tab/custom-listing-tab/custom-listing-tab.css: {}
+      components/pages/listing/listing-tab/custom-listing-tab/custom-listing-tab--max-991.css: {media: '(max-width: 991px)'}
+  js:
+    # used in: /projects
+    components/pages/listing/listing-tab/custom-listing-tab/custom-listing-tab.js: {}
+# gallery page listing-tab    
+gallery-page-listing-tab:
+  css:
+    theme:
+      # common style for tabs structure
+      components/pages/listing/listing-tab/listing-tab.css: {}
+      components/pages/listing/listing-tab/listing-tab--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/listing-tab/listing-tab--max-767.css: {media: '(max-width: 767px)'}
+      # used in: /gallery
+      components/pages/listing/listing-tab/gallery-listing-tab/gallery-listing-tab.css: {}
+      components/pages/listing/listing-tab/gallery-listing-tab/gallery-listing-tab--max-991.css: {media: '(max-width: 991px)'}
+  js:
+    # used in: /gallery
+    components/pages/listing/listing-tab/gallery-listing-tab/gallery-listing-tab.js: {}    
+# listing filter
+listing-filter:
+  css:
+    theme:
+      components/pages/listing/listing-filter/listing-filter.css: {}
+      components/pages/listing/listing-filter/listing-filter--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/listing-filter/listing-filter--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/listing/listing-filter/listing-filter--max-540.css: {media: '(max-width: 540px)'}
+      components/pages/listing/listing-filter/listing-filter--max-499.css: {media: '(max-width: 499px)'}
+  js:
+    components/pages/listing/listing-filter/listing-filter.js: {}
+# gallery page filter (done differently due to structure difference)
+gallery-listing-filter:
+  css:
+    theme:
+      # inheritted styles from listing-filter 
+      components/pages/listing/listing-filter/listing-filter.css: {}
+      components/pages/listing/listing-filter/listing-filter--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/listing-filter/listing-filter--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/listing/listing-filter/listing-filter--max-540.css: {media: '(max-width: 540px)'}
+      components/pages/listing/listing-filter/listing-filter--max-499.css: {media: '(max-width: 499px)'}
+      # special styles for gallery-page
+      components/pages/listing/gallery-page/gallery-filter/gallery-filter.css: {}
+  js:
+    components/pages/listing/gallery-page/gallery-filter/gallery-listing-filter.js: {}
+# menu like filter: used in /resources
+menu-like-filter:
+  css:
+    theme:
+      components/pages/listing/listing-filter/menu-like-filter/menu-like-filter.css: {}
+      components/pages/listing/listing-filter/menu-like-filter/menu-like-filter--max-539.css: {media: '(max-width: 539px)'}
+  js:
+    components/pages/listing/listing-filter/menu-like-filter/menu-like-filter.js: {}
+# gallery-page photos
+gallery-page-photos:
+  css:
+    theme:
+      components/pages/listing/gallery-page/photos/photos.css: {}
+  js:
+    components/pages/listing/gallery-page/photos/photos.js: {}
+# gallery-page-video
+gallery-page-video:
+  css:
+    theme:
+      components/pages/listing/gallery-page/video/video.css: {}
+  js:
+    components/pages/listing/gallery-page/video/video.js: {}
+# End of Listing pages ##
+## Detail pages ##
+# table to box in pillar detail page      
+table-to-box:
+  css:
+    theme:
+      components/pages/detail/pillar/table-to-box/table-to-box.css: {}
+      components/pages/detail/pillar/table-to-box/table-to-box--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/pages/detail/pillar/table-to-box/table-to-box.js: {}     
+# detail page download styling
+detail-download:
+  css:
+    theme:
+      components/pages/detail/download/detail-download.css: {}
+      components/pages/detail/download/detail-download--max-991.css: {media: '(max-width: 991px)'}
+  js:
+    components/pages/detail/download/detail-download.js: {}     
+# detail page scroll up arrow       
+scroll-up-arrow:
+  css:
+    theme:
+      components/pages/detail/scroll-up/scroll-up-arrow.css: {}
+      components/pages/detail/scroll-up/scroll-up-arrow--max-1399.css: {media: '(max-width: 1399px)'}
+      components/pages/detail/scroll-up/scroll-up-arrow--max-991.css: {media: '(max-width: 991px)'}
+  js:
+    components/pages/detail/scroll-up/scroll-up-arrow.js: {}      
+## End of Detail pages ##
+### END OF PAGES ###   
+###### CORE CORRECTION ######
+# fraud ticker
+fraud-ticker:
+  dependencies:
+    - hoai/popup
+  css:
+    theme:
+      components/layouts/fraud-ticker/fraud-ticker.css: {}
+      components/layouts/fraud-ticker/fraud-ticker--max-767.css: {media: '(max-width: 767px)'}
+  js:
+    components/layouts/fraud-ticker/fraud-ticker.js: {}
+# home common
+home:
+  dependencies:
+    - hoai/library-aos
+    - hoai/library-slick
+    - hoai/library-mCustomScrollbar
+    - hoai/block-background
+    - hoai/banner-slider
+    - hoai/banners-common
+    - hoai/home-banner
+    - hoai/cards
+    - hoai/home-video
+    - hoai/home-about
+    - hoai/we-card
+    - hoai/what-we-do
+    - hoai/whats-new-card
+    - hoai/whats-new
+    - hoai/resources-card
+    - hoai/resources
+    - hoai/status-card
+    - hoai/status
+    - hoai/partners
+  css:
+    theme:
+      components/pages/other/home/home.css: {}
+  js:
+    components/pages/other/home/animation/animation.js: {}
+# Progress left and content right page
+progress-page:
+  dependencies:
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/page-progress
+    - hoai/custom-loadmore
+    - hoai/details-body
+# Who we are page common
+who-we-are-page:
+  dependencies:
+    - hoai/file-upload-preview
+    - hoai/running-counter
+    - hoai/we-page-card
+    - hoai/users-list
+    - hoai/public-observers-item
+    - hoai/project-status
+  css:
+    theme:
+      components/pages/other/who-we-are/who-we-are.css: {}    
+# Trust fund page
+trust-fund-page:      
+  dependencies:
+    - hoai/detail-download
+# What we do page           
+what-we-do-page:
+  dependencies:
+    - hoai/custom-loadmore
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/detail-download
+    - hoai/file-upload-preview
+    - hoai/custom-listing-tab
+    - hoai/table-common
+    - hoai/table-priority-package
+    - hoai/details-body
+    - hoai/participating-countries
+    - hoai/supporting-countries
+    - hoai/regional-community
+    - hoai/pillars-section
+  css:
+    theme:
+      components/pages/other/what-we-do/what-we-do.css: {}
+      components/pages/other/what-we-do/what-we-do--min-992.css: {media: '(min-width: 992px)'}
+      components/pages/other/what-we-do/what-we-do--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/other/what-we-do/what-we-do--max-767.css: {media: '(max-width: 767px)'}
+# Contact us page      
+contact-us:
+  dependencies:
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/details-body
+    - hoai/contact-card
+  css:
+    theme:
+      components/pages/other/contact-us/contact-us.css: {}
+      components/pages/other/contact-us/contact-us--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/other/contact-us/contact-us--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/other/contact-us/contact-us--min-1200.css: {media: '(min-width: 1200px)'}
+# Secure files page
+secure-files:
+  dependencies:
+    - hoai/details-body
+  css:
+    theme:
+      components/pages/other/secure-files/secure-files.css: {}
+## Listing pages ##
+# listing common
+listing-page:
+  dependencies:
+    - hoai/site-loader
+    - hoai/library-select2
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/details-body
+    - hoai/listing-tab
+    - hoai/listing-filter
+  css:
+    theme:
+      components/pages/listing/listing-page.css: {}
+      components/pages/listing/listing-page--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/listing-page--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/listing/listing-page--max-540.css: {media: '(max-width: 540px)'}
+# Resource listing page      
+resource-listing-page:
+  dependencies:
+    - hoai/cards
+    - hoai/resources-card
+    - hoai/menu-like-filter    
+# Whats new listing page      
+whats-new-listing:
+  dependencies:
+    - hoai/cards
+    - hoai/resources-card    
+# Gallery page
+gallery-page:
+  dependencies:
+    - hoai/library-select2
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/details-body
+    - hoai/site-loader
+    - hoai/gallery-page-listing-tab
+    - hoai/gallery-listing-filter
+    - hoai/listing-page
+    - hoai/library-slick
+    - hoai/popup
+    - hoai/gallery-slider
+    - hoai/gallery-page-photos
+    - hoai/gallery-page-video
+  css:
+    theme:
+      components/pages/listing/gallery-page/gallery-page.css: {}
+# search page
+search-page:
+  dependencies:
+    - hoai/pagination
+    - hoai/limit-drupal-pagination
+  css:
+    theme:
+      components/pages/listing/search-page/search-page.css: {}
+      components/pages/listing/search-page/search-page--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/listing/search-page/search-page--max-767.css: {media: '(max-width: 767px)'}            
+## Detail pages ##
+# Detail page common      
+detail-page:
+  dependencies:
+    - hoai/custom-loadmore
+    - hoai/library-slick
+    - hoai/gallery-slider
+    - hoai/scroll-up-arrow
+    - hoai/social-share
+    - hoai/details-body
+    - hoai/detail-download
+  css:
+    theme:
+      components/pages/detail/detail-page.css: {}
+      components/pages/detail/detail-page--max-991.css: {media: '(max-width: 991px)'}
+      components/pages/detail/detail-page--max-767.css: {media: '(max-width: 767px)'}
+      components/pages/detail/detail-page--max-540.css: {media: '(max-width: 540px)'}
+  js:
+    components/pages/detail/detail-page.js: {}  
+# Projects detail page
+projects-page:
+  dependencies:
+    - hoai/library-highmaps
+    - hoai/library-highmaps-africa
+    - hoai/banners-common
+    - hoai/scroll-up-arrow
+    - hoai/detail-banner
+    - hoai/details-body
+    - hoai/custom-listing-tab
+    - hoai/map-projects
+    - hoai/chart-projects
+    - hoai/accordion
+    - hoai/table-common
+    - hoai/table-projects
+  css:
+    theme:
+      components/pages/detail/projects/projects.css: {}
+      components/pages/detail/projects/projects--min-1200.css: {media: '(min-width: 1200px)'}
+      components/pages/detail/projects/projects--max-991.css: {media: '(max-width: 991px)'}
+  js:
+    components/pages/detail/projects/projects.js: {}
+# Pillar page      
+pillar-page:
+  dependencies:
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/table-to-box
+  css:
+    theme:
+      components/pages/detail/pillar/pillar.css: {}
+      components/pages/detail/pillar/pillar--max-767.css: {media: '(max-width: 767px)'}
+# basic page
+basic-page:
+  dependencies:
+    - hoai/banners-common
+    - hoai/detail-banner
+    - hoai/details-body
+  css:
+    theme:
+      components/pages/other/basic-page/basic-page.css: {}
+      components/pages/other/basic-page/basic-page--max-991.css: {media: '(max-width: 991px)'}
+# Accesibility                  
+z-accessibility:
+  dependencies:
+    - hoai/ay-font-size
+    - hoai/ay-links-underline
+    - hoai/ay-readable-font
+    - hoai/ay-gray-scale
+    - hoai/ay-high-contrast
+    - hoai/ay-negative-contrast
+    - hoai/ay-light-background
+  css:
+    theme:
+      components/accessibility/panel/ay-panel.css: {}
+  js:
+    components/accessibility/panel/ay-panel.js: {weight: -1}      
+###### END OF CORE CORRECTION ######
+

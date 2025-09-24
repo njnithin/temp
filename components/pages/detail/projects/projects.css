@@ -1,0 +1,43 @@
+.projects-page .overview {
+  margin: 0 auto 30px;
+}
+
+.footnote {
+  margin-top: 30px;
+}
+
+.projects-data-desc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--fc-c1);
+}
+
+.projects-data-desc * {
+  margin-bottom: 15px;
+}
+
+.each-blk-title {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: var(--secondary);
+  margin-bottom: 40px;
+}
+
+.each-blk-wrap {
+  --blk-gap: 55px;
+}
+
+/* not first child since overview is having different spacing 50px 30px */
+.each-blk:not(:first-child) {
+  padding-top: var(--blk-gap);
+  padding-bottom: var(--blk-gap);
+}
+
+.each-blk:not(.bg-white):nth-child(even) {
+  background: var(--bg-c1);
+}
+
+td .countries-list {
+  margin-right: 5px;
+}

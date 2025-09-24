@@ -1,0 +1,8 @@
+.magnified-font .home-banner {
+  --home-banner-height: 600px;
+}
+
+/* to avoid touching with dots */
+.magnified-font .banner-content {
+  margin-top: -40px;
+}

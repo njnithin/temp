@@ -1,0 +1,10 @@
+/*
+* issue 4 --> pillar image is not aligned with top border:  https://projects.panapps.co/issues/359501
+* reason --> bootstrap container is having a min-width: of 960px => 930px (960px - 30px padding)
+* in desktop it is
+*/
+.each-sec .container-810 {
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
+}

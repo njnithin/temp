@@ -1,0 +1,7 @@
+.par-countries {
+  --par-country-count: 1;
+}
+
+.par-country-name {
+  width: 100%;
+}

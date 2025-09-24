@@ -1,0 +1,6 @@
+/* body.pojo-a11y-readable-font *:not(i):not(span), */
+[ay-readable-font="readable-font"] body {
+  /* font-family: Verdana, Arial, Helvetica, sans-serif !important; */
+  /* set to arial since verdana is bigger */
+  font-family: Arial, Helvetica, Verdana, sans-serif !important;
+}

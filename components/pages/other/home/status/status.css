@@ -1,0 +1,53 @@
+/* >>> Status Block <<< */
+.status-block {
+  position: relative;
+}
+
+.status-block>[data-block="fullwidth_content"] {
+  position: relative;
+  z-index: 1;
+  background: url(img/status-pattern.svg) center top 0 no-repeat;
+}
+
+.status-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--tc-c10);
+}
+
+.status-sec {
+  --status-items: 3;
+  --status-items-gap: 30px;
+  --status-content-min-height: 800px;
+  position: relative;
+  z-index: 1;
+  min-height: var(--status-content-min-height);
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.status-sec>.view-content {
+  display: grid;
+  grid-template-columns: repeat(var(--status-items), minmax(0, 1fr));
+  grid-gap: var(--status-items-gap);
+  align-items: start;
+}
+
+.each-status-item {
+  height: 100%;
+}
+
+.status-sec .editor-icon a {
+  background-color: #fff;
+}
+
+.status-sec .editor-icon a:hover {
+  background-color: black;
+  opacity: 0.8;
+}

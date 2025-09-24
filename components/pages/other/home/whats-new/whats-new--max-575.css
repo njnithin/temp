@@ -1,0 +1,65 @@
+.whats-new-items .mCSB_scrollTools .mCSB_draggerContainer {
+  display: none;
+}
+
+.whats-new-sec {
+  --new-item-width: 335;
+}
+
+.whats-new-sec>.view-content {
+  justify-content: center;
+}
+
+.whats-new-items {
+  max-width: calc(var(--new-item-width)*1px);
+}
+
+.whats-new-items .new-arrows,
+.whats-new-sec>.view-footer {
+  max-width: 356px;
+}
+
+.whats-new-sec>.view-footer {
+  margin: 25px auto 0;
+}
+
+.whats-new-sec>.view-footer .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.whats-new-view-all {
+  position: static;
+}
+
+
+.whats-new-items {
+  position: relative;
+}
+
+.whats-new-items-scroll .whats-new-item:last-child {
+  margin-right: 0;
+}
+
+/* .whats-new-items-scroll .new-arrows {
+  display: none;
+}
+
+.whats-new-items .mobile-arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 23px;
+} */
+
+.whats-new-items .mCSB_horizontal.mCSB_inside>.mCSB_container {
+  margin-bottom: 40px;
+}
+
+.whats-new-desc {
+  margin-bottom: 30px;
+}
+
+.whats-new-items .new-arrows {
+  justify-content: center;
+}

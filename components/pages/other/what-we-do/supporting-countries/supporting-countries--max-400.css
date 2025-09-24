@@ -1,0 +1,7 @@
+.sup-countries {
+  --sup-country-item-count: 1;
+}
+
+.sup-country-name {
+  width: 100%;
+}

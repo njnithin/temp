@@ -1,0 +1,28 @@
+[ay-theme="light-background"] .ast-accordion-title {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .ast-accordion-title::after {
+  filter: brightness(0.1) sepia(0.1);
+}
+
+[ay-theme="light-background"] .ast-accordion-title {
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .ast-accordion-item:not(:last-child) .ast-accordion-title,
+[ay-theme="light-background"] .ast-accordion-body .table-wrap:not(:last-child) table {
+  border-bottom: 0;
+}
+
+[ay-theme="light-background"] .active>.ast-accordion-title {
+  background: transparent;
+}
+
+[ay-theme="light-background"] .active>.ast-accordion-title {
+  border-bottom: 0 !important;
+}
+
+[ay-theme="light-background"] .ast-accordion-title:hover {
+  color: var(--ay-link-hover);
+}

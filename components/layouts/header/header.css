@@ -1,0 +1,567 @@
+/* >>> Header layout for the site <<< */
+body {
+  /*** Header variables ***/
+  --header-padding: 80px;
+  --header-height: 90px;
+  --header-logo-height: 44px;
+  --header-link-space: 25px;
+  --header-animation-time: 1s;
+  --header-search-input-width: 240px;
+  --header-user-size: 30px;
+  --header-bg: var(--white);
+  --header-user-bg: var(--bg-c1);
+  /* login */
+  --toolbar-tray-open-height: 78px;
+  --toolbar-tray-closed-height: 39px;
+  --toolbar-tray-open-padding-top: calc(var(--header-height) + var(--toolbar-tray-open-height));
+  --toolbar-tray-closed-padding-top: calc(var(--header-height) + var(--toolbar-tray-closed-height));
+  /* Search */
+  --header-search-size: 40px;
+  /*** End of Header variables ***/
+  padding-top: var(--header-height);
+  transition: padding-top var(--header-animation-time) ease;
+}
+
+/* header animation */
+body.animate-header {
+  --header-height: 60px;
+  --header-logo-height: 40px;
+  --header-search-size: 30px;
+}
+
+body.user-logged-in.animate-header {
+  --header-height: 90px;
+}
+
+/* end of header animation */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background: var(--white);
+  min-height: var(--header-height);
+  box-shadow: 0px 0px 3px 0px var(--tc-c1);
+  /* fix header */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: min-height var(--header-animation-time) ease;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  padding: 0 var(--header-padding);
+  max-width: 1590px;
+  margin: 0 auto;
+}
+
+/* header fix admin cases */
+#toolbar-item-administration-tray {
+  opacity: 0;
+}
+
+.header-loaded #toolbar-item-administration-tray {
+  opacity: 1;
+}
+
+body.toolbar-fixed.toolbar-tray-open {
+  padding-top: var(--toolbar-tray-open-padding-top) !important;
+}
+
+body.toolbar-fixed.toolbar-tray-open .site-header {
+  top: var(--toolbar-tray-open-height);
+}
+
+body.toolbar-fixed:not(.toolbar-tray-open) {
+  padding-top: var(--toolbar-tray-closed-padding-top) !important;
+}
+
+body.toolbar-fixed:not(.toolbar-tray-open) .site-header {
+  top: var(--toolbar-tray-closed-height);
+}
+
+/* end of header fix admin cases */
+
+/* logo Section */
+.header-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-header .navbar-brand img {
+  margin-right: 0;
+  height: var(--header-logo-height);
+  transition: height var(--header-animation-time) ease;
+}
+
+/* end of Logo Section */
+/* header mid-right */
+
+.header-mid-right {
+  position: relative;
+  display: flex;
+  background: var(--white);
+  flex: 1;
+}
+
+.header-login {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  display: none;
+  transition: top var(--header-animation-time) ease;
+}
+
+.header-login a {
+  position: relative;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: var(--fc-c2);
+  transition: var(--transition-all);
+  padding-left: 26px;
+  display: inline-block;
+  display: inline-flex;
+  justify-content: start;
+}
+
+.header-login a:hover {
+  color: var(--primary);
+}
+
+.header-login > a:not(:last-child) {
+  margin-right: 30px;
+  /* border-right: 1px solid var(--br-c1); */
+}
+
+.header-login > a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
+  width: 1px;
+  height: 17px;
+  background: var(--br-c1);
+  pointer-events: none;
+}
+
+body.animate-header .header-login a {
+  font-size: var(--fs-px12);
+  line-height: 1.5;
+}
+
+body.simple-user-role .header-login .dashboard {
+  display: none;
+}
+
+.header-login .dashboard {
+  background: url(img/login/dashboard.svg) center left 0 no-repeat;
+  background-size: 16px !important;
+}
+
+.header-login .dashboard:hover {
+  background: url(img/login/dashboard_hover.svg) center left 0 no-repeat;
+}
+
+.header-login .logout {
+  background: url(img/login/logout.svg) center left 0 no-repeat;
+  background-size: 16px !important;
+}
+
+.header-login .logout:hover {
+  background: url(img/login/logout_hover.svg) center left 0 no-repeat;
+}
+
+.user-logged-in .header-login {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* end of header mid-right */
+/* navigation link and search */
+.header-right > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* end of navigation link and search */
+/* navigation links */
+.header-mid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.site-header .navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.site-header .nav-link {
+  position: relative;
+  /* H4 */
+  /* font-size: 1.125rem; */
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--black);
+  line-height: normal;
+  transition: var(--transition-all);
+  padding: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.site-header .nav-link::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  border: 0;
+  margin-left: 0;
+  background: var(--primary);
+  transition: width var(--header-animation-time) ease;
+}
+
+/* .site-header .nav-item:hover>.nav-link {
+  color: var(--primary);
+} */
+
+.site-header .nav-item:hover > a.nav-link::after,
+.site-header .nav-item > a.nav-link.is-active::after,
+.site-header .nav-item > a.nav-link.active::after {
+  width: 100%;
+}
+
+.unset-magnify .site-header .nav-item {
+  opacity: 0;
+}
+
+:root:not(.unset-magnify) .site-header .nav-item {
+  transition: padding-bottom var(--header-animation-time) ease, opacity 1s ease;
+}
+
+.site-header .nav-item {
+  padding-bottom: calc(var(--header-height)/2 - 18px);
+}
+
+.site-header .nav-item.mobile-link {
+  display: none;
+}
+
+.site-header .nav-item:not(:last-child) {
+  margin-right: var(--header-link-space);
+}
+
+
+/* end of navigation links */
+/* Search section*/
+/* search btn */
+.header-right {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* .header-search-block .form-submit, */
+/* .header-search-block .form-submit:focus, */
+.header-search-block .search-btn {
+  display: inline-block;
+  width: var(--header-search-size);
+  height: var(--header-search-size);
+  font-size: 0;
+  background: url(img/search/search.svg) center no-repeat;
+  background-size: contain !important;
+  border: 0;
+  transition: width var(--header-animation-time) ease, height var(--header-animation-time) ease, background 0.5s ease;
+}
+
+/* .header-search-block .form-submit:hover, */
+.header-search-block .search-btn:hover {
+  background: url(img/search/search_hover.svg) center no-repeat;
+}
+
+/* Search panel styling */
+.header-search-block {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-search-block .contextual {
+  top: -15px;
+  right: -30px;
+}
+
+.header-search-block.open-search .search-btn {
+  background: url(img/search/search_close.svg) center no-repeat;
+}
+
+.header-search-block form .input-search {
+  position: relative;
+}
+
+
+body.toolbar-fixed.toolbar-tray-open .header-search-block form {
+  top: calc(var(--toolbar-tray-open-height) + var(--header-height));
+}
+
+body.toolbar-fixed:not(.toolbar-tray-open) .header-search-block form {
+  top: calc(var(--toolbar-tray-closed-height) + var(--header-height));
+}
+
+.header-search-block.open-search form {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  right: 0;
+}
+
+.site-header.loaded .header-search-block form {
+  display: flex;
+}
+
+.header-search-block .form-search {
+  padding: 10px 44px 10px 25px;
+  border-color: var(--primary);
+  width: 100%;
+  border-radius: 30px;
+  font-size: var(--fs-px12);
+  color: var(--fc-c6);
+  min-width: var(--header-search-input-width);
+  width: 100%;
+  max-height: 40px;
+}
+
+.header-search-block .form-search:placeholder {
+  font-size: var(--fs-px12);
+  color: var(--fc-c6);
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+
+.header-search-block .form-search::placeholder {
+  font-size: var(--fs-px12);
+  color: var(--fc-c6);
+}
+
+/* Internet Explorer 10-11 */
+
+/* Microsoft Edge */
+
+.header-search-block .form-search::-ms-input-placeholder {
+  font-size: var(--fs-px12);
+  color: var(--fc-c6);
+}
+
+.header-search-block .form-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.header-search-block .form-search:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.header-search-block form .form-submit {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 19px;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 50%;
+  background: url(img/search/search.svg) center no-repeat;
+  padding: 0;
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.header-search-block form .form-submit:hover {
+  background: url(img/search/search_hover.svg) center no-repeat;
+}
+
+.header-right .header-search-block {
+  max-width: var(--header-search-input-width);
+}
+
+.header-search-block label {
+  /* display: none; */
+  /* Wave tool error --> Hence display: none removed,Missing form label in WAVE tool */
+  /* https://stackoverflow.com/questions/49673965/missing-form-label-in-wave-tool */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+.header-search-block form .form--inline,
+.header-search-block form .form-item,
+.header-search-block form .form-actions {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+/* end of search section*/
+/* get involved button */
+.site-header .get-involved-btn-wrap {
+  margin-left: 36px;
+}
+
+/* end of get involved button */
+
+/*responsive extra*/
+.menu-toggle,
+.ay-menu-toggle,
+.back-li,
+.parent-link {
+  display: none;
+}
+
+.site-header a[href=""] {
+  cursor: default;
+}
+
+.site-header .navbar-nav > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+/*** User Menu ***/
+body:not(.user-logged-in) .et-user-menu {
+  display: none;
+}
+
+.et-user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.et-user-circle {
+  display: inline-block;
+  font-size: 0;
+  background: url(img/user-circle.svg) center no-repeat;
+  background-size: contain;
+  width: calc(var(--header-user-size) + 35px);
+  height: var(--header-user-size);
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.et-user-circle,
+.et-user-circle:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+.header-loaded .et-user-circle {
+  pointer-events: auto;
+}
+
+.et-user-box {
+  display: none;
+  position: absolute;
+  top: var(--header-height);
+  right: 0;
+  z-index: 1;
+  /* max-width: 150px; */
+  min-width: 150px;
+  border: 1px solid var(--br-c1);
+  padding: 10px 15px;
+  width: 100%;
+  background: var(--header-bg);
+}
+
+.et-user-box .navbar-nav li .nav-link {
+  padding: 0 0 5px;
+}
+
+.et-user-box .navbar-nav li:not(:last-child) .nav-link {
+  font-size: 1rem;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--br-c1);
+  padding: 0 0 5px;
+  margin-bottom: 5px;
+}
+
+.et-user-box .navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
+.site-header .et-user-box .nav-link::after {
+  display: none;
+}
+
+:root:not(.unset-magnify) .site-header .et-user-box .nav-item {
+  padding-bottom: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+:root:not(.unset-magnify) .site-header .et-user-box .nav-link {
+  width: 100%;
+  text-transform: unset;
+}
+
+:root:not(.unset-magnify) .site-header .et-user-box .nav-link.is-active,
+:root:not(.unset-magnify) .site-header .et-user-box .is-active > .nav-link {
+  color: var(--primary);
+}
+
+.et-user-circle {
+  position: relative;
+  padding-right: 0;
+}
+
+.et-user-circle::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: url(img/dropdown.svg) center no-repeat;
+  transition: transform 0.3s ease;
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.open .et-user-circle::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.et-user-circle:hover::after,
+.open .et-user-circle::after {
+  background: url(img/dropdown_hover.svg) center no-repeat;
+}
+
+/*** END OF User Menu ***/

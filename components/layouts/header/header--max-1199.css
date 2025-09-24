@@ -1,0 +1,11 @@
+body {
+  /*** Header variables ***/
+  --header-padding: 50px;
+  --header-search-input-width: 130px;
+  --header-link-space: 13px;
+  --header-logo-height: 35px;
+}
+
+body.animate-header {
+  --header-logo-height: 30px;
+}

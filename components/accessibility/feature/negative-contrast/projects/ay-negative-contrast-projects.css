@@ -1,0 +1,103 @@
+[ay-theme="negative-contrast"] .each-blk-title,
+[ay-theme="negative-contrast"] .map-area .map-box *,
+[ay-theme="negative-contrast"] .map-tooltip *,
+[ay-theme="negative-contrast"] .chart-card * {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="negative-contrast"] .map-area,
+[ay-theme="negative-contrast"] .each-blk:not(.bg-white):nth-child(even),
+[ay-theme="negative-contrast"] .map-area.map-loaded .map-box,
+[ay-theme="negative-contrast"] .chart-card {
+  background: var(--ay-bg);
+}
+
+/*** Map Area ***/
+[ay-theme="negative-contrast"] .map-box-value,
+[ay-theme="negative-contrast"] .map-area img,
+[ay-theme="negative-contrast"] .chart-card {
+  border: 1px solid var(--ay-font-color);
+}
+
+[ay-theme="negative-contrast"] .map-loaded .map-draw,
+[ay-theme="negative-contrast"] .map-area.map-loaded .map-box {
+  border: 2px solid var(--ay-font-color);
+}
+
+[ay-theme="negative-contrast"] .map-box-flag-title,
+[ay-theme="negative-contrast"] .map-box-item,
+[ay-theme="negative-contrast"] .map-tooltip-head {
+  border-bottom: 1px solid var(--ay-alt);
+}
+
+[ay-theme="negative-contrast"] .map-box-value,
+[ay-theme="negative-contrast"] .map-area img {
+  background: transparent;
+  background-color: transparent;
+  padding: 0;
+}
+
+[ay-theme="negative-contrast"] .map-area .highcharts-point:not(.highcharts-null-point) {
+  stroke: var(--ay-bg);
+}
+
+[ay-theme="negative-contrast"] .highcharts-tooltip path {
+  stroke: var(--ay-alt);
+}
+
+[ay-theme="negative-contrast"] .highcharts-tooltip path {
+  stroke-width: 1.5px;
+}
+
+[ay-theme="negative-contrast"] .map-area .highcharts-background,
+[ay-theme="negative-contrast"] .charts-area .highcharts-background,
+[ay-theme="negative-contrast"] .highcharts-tooltip path,
+[ay-theme="negative-contrast"] .charts-area .highcharts-point {
+  fill: var(--ay-bg);
+}
+
+[ay-theme="negative-contrast"] .map-area .highcharts-point-hover,
+[ay-theme="negative-contrast"] .map-area .active-country {
+  fill: var(--ay-font-color) !important;
+}
+
+[ay-theme="negative-contrast"] .highcharts-tooltip {
+  filter: none;
+}
+
+/*** END OF Map Area ***/
+/*** Chart Area ***/
+[ay-theme="negative-contrast"] .chart-legends {
+  display: none;
+}
+
+[ay-theme="negative-contrast"] .charts-area .highcharts-label text {
+  color: var(--ay-alt) !important;
+  fill: var(--ay-alt) !important;
+}
+
+[ay-theme="negative-contrast"] .charts-area .highcharts-halo {
+  fill: var(--ay-alt);
+  fill-opacity: 0.85;
+}
+
+[ay-theme="negative-contrast"] .charts-area .highcharts-point-hover,
+[ay-theme="negative-contrast"] .charts-area .highcharts-point-select {
+  fill: var(--ay-font-color);
+}
+
+[ay-theme="negative-contrast"] .charts-area .highcharts-point {
+  stroke-width: 1px;
+  stroke: var(--ay-font-color)
+}
+
+[ay-theme="negative-contrast"] .charts-area .highcharts-label[opacity="0.2"] text {
+  display: none;
+}
+
+[ay-theme="negative-contrast"] .highcharts-series-hover .highcharts-label[opacity="1"] text {
+  color: var(--ay-bg) !important;
+  fill: var(--ay-bg) !important;
+}
+
+/*** END OF Chart Area ***/

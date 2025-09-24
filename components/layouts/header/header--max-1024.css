@@ -1,0 +1,18 @@
+body {
+  /*** Header variables ***/
+  --header-padding: 30px;
+  --header-search-input-width: 130px;
+  --header-link-space: 10px;
+}
+
+body.user-logged-in {
+  --header-logo-height: 25px;
+}
+
+.header-search-block .form-search {
+  padding: 10px 30px 10px 20px;
+}
+
+.header-search-block form .form-submit {
+  right: 14px;
+}

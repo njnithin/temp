@@ -1,0 +1,11 @@
+.details-body h2,
+.details-body img {
+  margin-bottom: 25px;
+}
+
+.details-body ul:not(.multi-line-text) li {
+  /* background: url(img/circle.svg) top 3px left 0 no-repeat; */
+  /* https://projects.panapps.co/issues/370650 */
+  /* Issue 1 */
+  background: url(img/circle.svg) top 5px left 0 no-repeat;
+}

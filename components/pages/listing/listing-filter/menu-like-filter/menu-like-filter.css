@@ -1,0 +1,191 @@
+/*** Only for minsiterial tab (as per client request) ***/
+.listing-view .year-filter,
+.listing-view .title-filter {
+  display: none !important;
+}
+
+/* show normal filter if empty sub items found in header menu */
+.listing-view .custom-filter-item.empty + .year-filter {
+  display: flex !important;
+}
+
+.listing-view .custom-filter-item.empty + .year-filter .select2-container {
+  flex: 1;
+}
+
+/*** END OF Only for minsiterial tab (as per client request) ***/
+
+/* .listing-view:not(.ministerial-tab-active) { */
+/* .listing-view {
+  --select-width: 315px;
+} */
+/*
+ * not made display none; because when there is no form-item then the search will goes left align
+ * using grid layout for the form -->  form--inline
+ */
+.filter-parent-link {
+  display: none;
+}
+
+.custom-filter-item.empty {
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
+  /* hidden year-filter is shown */
+  display: none !important;
+}
+
+.custom-filter-item .select-link {
+  position: relative;
+  font-size: 0.75rem;
+  color: var(--black);
+  flex: 1;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--black);
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  padding: 5px 30px 5px 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 34px;
+}
+
+.custom-filter-item .show > .select-link {
+  color: var(--fc-c5);
+}
+
+.custom-filter-item .select-link::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 15px;
+  background: url(img/dropdown.svg) center no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.custom-filter-item .select-li.show .select-link::after,
+.custom-filter-item .select-link:hover::after {
+  background: url(img/dropdown_hover.svg) center no-repeat;
+}
+
+.custom-filter-item .show > .select-link::after {
+  transform: rotate(180deg);
+}
+
+.custom-filter-item ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.custom-filter-select {
+  position: relative;
+}
+
+
+.custom-filter-item .filter-sub {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0px 3px 10px 0px var(--tc-c5);
+  transition: opacity 1s ease 0s, transform .5s ease .1s;
+  transform: translate(0, 0);
+  opacity: 0;
+  visibility: hidden;
+  /* min-height: 210px; */
+}
+
+
+.custom-filter-item .select-li.show > ul,
+.custom-filter-item li.has-sub:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.custom-filter-item .level-1 a {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--fc-c5);
+  padding: 10px 15px;
+}
+
+
+.custom-filter-item .level-1 li > a.active {
+  color: var(--primary);
+}
+
+.custom-filter-item .level-1 li:hover > a {
+  /* color: var(--black); */
+  background: var(--bg-c4);
+}
+
+.custom-filter-item .level-1 li.has-sub > ul {
+  /* width: 100%; */
+  width: 200px;
+  top: 0;
+  transform: translate(-20%, 0);
+  left: 100%;
+  min-height: 100%;
+}
+
+.custom-filter-item .level-1 li.has-sub:hover > ul {
+  transform: translate(0, 0);
+}
+
+.custom-filter-item .level-1 li.has-sub > a {
+  position: relative;
+  padding-right: 30px;
+}
+
+.custom-filter-item .level-1 li.has-sub > a::after {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url(img/sub-arrow.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.custom-filter-select {
+  flex: 1;
+}
+
+.custom-filter-item .filter-sub.level-2 {
+  /* max-height: 360px; */
+  max-height: 267px;
+  overflow-y: auto;
+}
+
+.custom-filter-item .filter-sub.level-2::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+.custom-filter-item .filter-sub.level-2::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--fc-c3);
+}
+
+
+.custom-filter-item .level-1 li > a {
+  border-bottom: 1px solid var(--br-c2);
+}
+
+@media (pointer:coarse) {
+  .filter-parent-link {
+    display: list-item;
+  }
+}

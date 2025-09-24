@@ -1,0 +1,15 @@
+.pagination.js-pager__items {
+  opacity: 0;
+}
+
+.pagination.js-pager__items.show-pagination {
+  opacity: 1;
+}
+
+.page-item:not(.active, .pager__item--first, .pager__item--previous, .pager__item--next, .pager__item--last) {
+  display: none;
+}
+
+.page-item.show-page {
+  display: inline;
+}

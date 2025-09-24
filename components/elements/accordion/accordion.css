@@ -1,0 +1,69 @@
+/**** Accordian ****/
+.ast-accordion-item {
+  --acc-title-color: var(--white);
+  --acc-title-br-cr: var(--br-c2);
+  --acc-title-bg: var(--secondary);
+  --acc-title-bg-hover: var(--aqua);
+  --acc-title-color-hover: var(--primary);
+}
+
+.ast-accordion-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px 75px 20px 15px;
+  min-height: 40px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--acc-title-br-cr);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.1818181818181819;
+  color: var(--acc-title-bg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ast-accordion-title:hover {
+  color: var(--acc-title-color-hover);
+}
+
+.active>.ast-accordion-title {
+  background: var(--acc-title-bg);
+  color: var(--acc-title-color);
+  border-color: transparent;
+}
+
+.ast-accordion-title.no-data {
+  pointer-events: none;
+}
+
+.ast-accordion-title.no-data::after {
+  display: none;
+}
+
+.ast-accordion-title::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  right: 15px;
+  background: url(img/down.svg) center no-repeat;
+  background-size: contain;
+  transition: background 0.3s ease;
+}
+
+.ast-accordion-title:hover::after {
+  background: url(img/down-hover.svg) center no-repeat;
+  background-size: contain;
+}
+
+.active>.ast-accordion-title::after {
+  background: url(img/up.svg) center no-repeat;
+  background-size: contain;
+}
+
+.ast-accordion-body {
+  display: none;
+}
+
+/**** End of Accordians ****/

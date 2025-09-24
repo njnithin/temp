@@ -1,0 +1,32 @@
+/* >>> Pillar detail page <<< */
+.what-we-do-head {
+  margin-bottom: 20px;
+}
+
+.what-we-do-head h2 {
+  padding-bottom: 15px;
+}
+
+/*** Pillar section ***/
+.each-pillar:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+.pillar-title {
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--secondary);
+  margin-bottom: 30px;
+}
+
+.pillar-title-no {
+  margin-right: 5.5px;
+}
+
+.pillar-body ul:last-child {
+  margin-bottom: 0;
+}
+
+/*** END OF Pillar section ***/

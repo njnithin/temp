@@ -1,0 +1,177 @@
+/* >>> Page progress related CSS <<< */
+
+body {
+  --pro-view-top-space: 95px;
+  --pro-view-bottom-space: 100px;
+  /* Aside related variables (left section) */
+  --pro-header-height: var(--header-height);
+  --pro-left-bg: var(--white);
+  --pro-left-width: 230px;
+  --pro-left-border-clr: var(--br-c2);
+  --pro-left-link-padding: 15.5px 0;
+  --pro-left-link-normal: var(--fc-c2);
+  /* --pro-left-link-highlight: var(--primary); */
+  /* contrast issue */
+  --pro-left-link-highlight: var(--aqua);
+  --pro-lr-gap: 100px;
+  --pro-bar-bg: var(--primary);
+  --pro-bar-height: 3px;
+  --pro-overflow-strip-width: 0;
+  --pro-overflow-strip-left: 0;
+  /* End of Aside related variables */
+}
+
+.rearrange-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.progress-view {
+  display: flex;
+  margin-top: var(--pro-view-top-space);
+  margin-bottom: var(--pro-view-bottom-space);
+}
+
+.progress-view > .view-header {
+  width: var(--pro-left-width);
+  padding: 0;
+}
+
+.progress-view > .view-content {
+  flex: 1;
+  padding-left: var(--pro-lr-gap);
+  /* align first title to the left panel */
+  margin-top: -3px;
+  max-width: calc(100% - var(--pro-left-width));
+}
+
+/*** Aside ***/
+/* .cd-read-more { */
+.progress-left {
+  position: sticky;
+  /* background: var(--pro-left-bg); */
+  top: calc(var(--pro-header-height) + 36px);
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+body.toolbar-fixed.toolbar-tray-open .progress-left {
+  /* from header.css */
+  top: calc(var(--toolbar-tray-open-height) + var(--pro-header-height) + 36px);
+}
+
+body.toolbar-fixed:not(.toolbar-tray-open) .progress-left {
+  /* from header.css */
+  top: calc(var(--toolbar-tray-closed-height) + var(--pro-header-height) + 36px);
+}
+
+.cd-read-more ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+
+.cd-read-more li {
+  counter-increment: articles;
+  border-bottom: 1px solid var(--pro-left-border-clr);
+  margin: 0;
+}
+
+
+.cd-read-more li a {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875;
+  color: var(--pro-left-link-normal);
+  padding: var(--pro-left-link-padding);
+  z-index: 0;
+  outline: 0 !important;
+  cursor: pointer;
+}
+
+.cd-read-more li:first-child a {
+  padding-top: 0;
+}
+
+/* .cd-read-more li a.reading,
+.cd-read-more li a:hover {
+  color: var(--pro-left-link-highlight);
+} */
+.cd-read-more li a.reading {
+  color: var(--pro-left-link-highlight);
+}
+
+/* Issue 2: https://projects.panapps.co/issues/357346 */
+@media (hover: hover) {
+  .cd-read-more li a:hover {
+    color: var(--pro-left-link-highlight);
+  }
+}
+
+.cd-read-more li .progress {
+  background: var(--pro-bar-bg) none repeat scroll 0 0;
+  height: var(--pro-bar-height);
+  bottom: -1px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  z-index: -1;
+  margin: 0;
+  border-radius: 0;
+}
+
+/*** END OF Aside ***/
+/*** Right side ***/
+.cd-articles {
+  --section-gap: 55px;
+}
+
+.cd-articles > div {
+  position: relative;
+}
+
+
+.cd-articles > div:not(:first-child) {
+  padding-top: var(--section-gap);
+  /* margin-top: 48px; */
+}
+
+.cd-articles > div {
+  padding-bottom: var(--section-gap);
+  /* margin-bottom: 57px; */
+}
+
+body:not(.alterate-gray-bg) .cd-articles > div:last-child {
+  padding-bottom: 0;
+}
+
+.cd-articles > div:nth-child(even),
+.cd-articles > div.bg-gray {
+  z-index: 0;
+  /* background: var(--bg-c1); */
+}
+
+/* added because the background gray is overflowing outside the container */
+
+.cd-articles > div:nth-child(even)::before,
+.cd-articles > div.bg-gray::before {
+  background: var(--bg-c1);
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: calc(var(--pro-overflow-strip-width) * 1px);
+  left: calc(var(--pro-overflow-strip-left) * -1px);
+  height: 100%;
+  z-index: -1;
+}
+
+/*** Page progress without gray strip (/trust-fund) ***/
+body:not(.alterate-gray-bg) .cd-articles > div:not(:last-child) {
+  border-bottom: 1px solid var(--br-c2);
+}
+
+/*** END OF Page progress without gray strip (/trust-fund) ***/
+/*** END OF Right side ***/

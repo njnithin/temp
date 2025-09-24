@@ -1,0 +1,61 @@
+/* >>> supticipating Countries <<< */
+.sup-countries {
+  --sup-country-item-width: 250px;
+  --sup-country-item-gap: 30px;
+  --sup-country-item-count: auto-fit;
+}
+
+.sup-countries>.view-content {
+  display: grid;
+  grid-template-columns: repeat(var(--sup-country-item-count), minmax(0, var(--sup-country-item-width)));
+  grid-gap: var(--sup-country-item-gap);
+}
+
+.sup-country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid var(--br-c2);
+  border-radius: 5px;
+  padding: 10px;
+  height: 100%;
+  min-height: 149px;
+}
+
+.sup-country-name {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6923076923076923;
+  color: var(--fc-c1);
+}
+
+.sup-country-name {
+  text-align: center;
+}
+
+.sup-img img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.details-body .sup-img {
+  width: 100%;
+  max-width: 154px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sup-country {
+  transition: transform 0.5s ease;
+}
+
+.sup-country-wrap-link:hover .sup-country {
+  transform: scale(1.05);
+}

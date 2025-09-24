@@ -1,0 +1,28 @@
+/* Header */
+[ay-theme="light-background"] .header-search-block .form-search {
+  border-color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .header-search-block form .form-submit:hover {
+  opacity: 0.8;
+}
+
+[ay-theme="light-background"] .header-search-block .form-search:placeholder {
+  color: var(--ay-font-color);
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+
+[ay-theme="light-background"] .header-search-block .form-search::placeholder {
+  color: var(--ay-font-color);
+}
+
+/* Internet Explorer 10-11 */
+
+/* Microsoft Edge */
+
+[ay-theme="light-background"] .header-search-block .form-search::-ms-input-placeholder {
+  color: var(--ay-font-color);
+}
+
+/* End of Header */

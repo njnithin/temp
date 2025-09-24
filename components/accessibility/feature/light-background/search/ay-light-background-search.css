@@ -1,0 +1,7 @@
+[ay-theme="light-background"] .search-result * {
+  color: var(--ay-font-color);
+}
+
+[ay-theme="light-background"] .search-result-title a:hover {
+  color: var(--ay-link-hover);
+}

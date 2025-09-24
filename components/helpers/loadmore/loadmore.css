@@ -1,0 +1,8 @@
+.loadmore-wrap {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.loadmore-wrap.loaded {
+  opacity: 1;
+}

@@ -1,0 +1,4 @@
+/* in design it is top aligned */
+.priority-package table tr td:last-child {
+  vertical-align: top;
+}

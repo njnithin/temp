@@ -1,0 +1,84 @@
+/* >>> Light theme: Home <<< */
+[ay-theme="light-background"] .we-card-content {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[ay-theme="light-background"] .banner-slider .slick-arrow:hover {
+  opacity: 0.8;
+}
+
+[ay-theme="light-background"] .readmore-btn:hover,
+[ay-theme="light-background"] .readmore-btn-wrap a:hover {
+  color: var(--ay-bg) !important;
+}
+
+[ay-theme="light-background"] .banner-slider ul.slick-dots {
+  background: transparent;
+  filter: grayscale(1) brightness(0.1);
+}
+
+/* End of Banner Section */
+/* about */
+/* [ay-theme="light-background"] .home-about-content {
+  display: flex;
+  justify-content: center;
+}
+
+[ay-theme="light-background"] .home-about-box {
+  margin-left: 0;
+} */
+
+/* End of about */
+/* What we do */
+[ay-theme="light-background"] .what-we-do-block {
+  --we-do-container-width: 100%;
+}
+
+[ay-theme="light-background"] .what-we-do-block,
+[ay-theme="light-background"] .what-we-do-block>[data-block="fullwidth_content"],
+[ay-theme="light-background"] .what-we-do-sec {
+  min-height: auto !important;
+}
+
+/* End of What we do */
+/* Whats new */
+[ay-theme="light-background"] .new-card-img,
+[ay-theme="light-background"] .new-card-img>a,
+[ay-theme="light-background"] .new-card-img img {
+  height: auto;
+}
+
+[ay-theme="light-background"] .mCS-hoai-theme.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: var(--bg-c3);
+}
+
+/* End of Whats new */
+/* Resources */
+[ay-theme="light-background"] .resource-card-content-wrap {
+  border-radius: 10px;
+}
+
+[ay-theme="light-background"] .resource-card-content-wrap {
+  margin-top: 0;
+}
+
+[ay-theme="light-background"] .new-card-img {
+  padding: 25px 30px 20px;
+}
+
+[ay-theme="light-background"] .new-card-img .new-card-type {
+  position: static;
+  display: inline-flex;
+}
+
+[ay-theme="light-background"] .new-card-img {
+  position: relative;
+}
+
+[ay-theme="light-background"] .what-we-do-sec>.view-header .container {
+  margin-bottom: 100px;
+}
+
+/* End of Resources */

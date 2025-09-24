@@ -1,0 +1,9 @@
+.map-draw {
+  max-width: 500px;
+  margin-right: 30px;
+}
+
+.map-box {
+  max-width: 380px;
+  margin: 0 auto;
+}
